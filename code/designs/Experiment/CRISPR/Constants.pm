@@ -1,0 +1,11 @@
+package designs::Experiment::CRISPR::Constants;
+use strict;
+
+sub CRISPR_TAIL {
+    return "GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGCTTTT";
+}
+
+
+
+
+1;

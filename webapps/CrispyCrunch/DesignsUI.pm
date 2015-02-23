@@ -1,0 +1,192 @@
+package CrispyCrunch::DesignsUI;
+
+use strict;
+use base 'CGI::Application';
+
+use HTML::Template;
+use Util::SequenceUtil;
+use Util::StringUtil;
+use CrispyCrunch::CrispyDesignUI;
+use designs::Experiment::CRISPR::CRISPRExperimentDesign;
+use File::Temp 'tempdir';
+use Bio::SeqIO;
+
+sub setup {
+    my $self = shift;
+    $self->run_modes(
+        'index' => 'show_design_param',
+        'design_param' => 'show_design_param',
+        'do_design_crispy' => 'generate_crispy_design',
+        'get_offtargets' => 'show_off_targets'
+        );
+    $self->start_mode('index');
+    $self->mode_param('page');
+}
+
+sub show_index {
+    my($self,$msg) = @_;
+    
+    my $tmpl_obj = $self->load_tmpl('index.tmpl');
+    $tmpl_obj->param(
+        ERRORMSG => $msg
+    );
+    my $content = $tmpl_obj->output();
+    return $content;
+}
+
+sub show_design_param {
+    my $self = shift;
+    my $q = $self->query();
+    
+    return CrispyCrunch::CrispyDesignUI::show_crispy_design_page($self);
+}
+
+sub generate_crispy_design{
+    my $self = shift;
+    my $q = $self->query();
+    my $sequence = $q->param("seq");
+    if(!defined($sequence)){
+        return CrispyCrunch::CrispyDesignUI::show_crispy_design_page(
+            $self,
+            "Please provide a target sequence."
+        );
+    }
+    elsif(!$self->is_valid_sequence($sequence)){
+        return CrispyCrunch::CrispyDesignUI::show_crispy_design_page(
+            $self,
+            "Please provide a valid DNA sequence composed of only A, T, G or C nucleotides."
+        );
+    }
+    
+    my $db = $q->param("blast_db");
+    if(!defined($db)){
+        return CrispyCrunch::CrispyDesignUI::show_crispy_design_page(
+            $self,
+            "Please provide a blast database name."
+        );
+    }
+    
+    use Data::Dump qw(dump);
+    print STDERR dump($db) . "\n";
+    
+    return CrispyCrunch::CrispyDesignUI::generate_crispy_design($self,$sequence,$db);
+}
+
+sub is_valid_sequence{
+    my($self,$seq) = @_;
+    
+    if(!defined($seq) or length($seq) == 0){
+        return 0;
+    }
+    #print STDERR "bef=$seq\n";
+    $seq =~ s/\r?\n//gm;
+    #print STDERR "after=$seq\n";
+    if(!Util::SequenceUtil::isValidDNASeq($seq)){
+        return 0;
+    }
+    return 1;
+}
+
+sub get_bioseq_obj {
+    my($self,$id,$seq)=@_;
+    my $path = $self->getTmpPath();
+    open(FH,">$path/$id.fa") or die("Unable to create the sequence file $id.");
+    print FH ">$id\n$seq\n";
+    close(FH);
+    my $in  = Bio::SeqIO->new(-file => "$path/$id.fa" , '-format' => 'Fasta');
+    my $seq_obj = $in->next_seq();
+    unlink("$path/$id.fa");
+    return $seq_obj;
+}
+
+sub getTmpPath{
+    my($self) = @_;
+    my $cacheName = "_tmp_path";
+    if (!defined($self->{$cacheName})) {
+        $self->{$cacheName} = tempdir(File::Spec->tmpdir()."/design_web.XXXX", CLEANUP => 1);
+    }
+    return $self->{$cacheName};
+}
+
+
+sub sequenceWrap{
+    my($self,$seq, $limit) = @_;
+    my @charSet = split(//,$seq);
+    my $charCnt = 1;
+    my $finalStr = "";
+    my $inTag = 0;
+    foreach my $char (@charSet){
+        if($char eq '<'){
+            # we are in color tag (see color mapping methods, i.e. rtextremity::mapSequence3)
+            $inTag = 1;
+            $finalStr .= $char;
+            next;
+        }
+        elsif($char eq '>'){
+            # we are exiting a color tag (see color mapping methods, i.e. rtextremity::mapSequence3)
+            $inTag = 0;
+            $finalStr .= $char;
+            next;
+        }
+        elsif(!$inTag){
+            # check if we are on junction
+            if($char eq ' ' or $char eq '/'){
+                $finalStr .= $char;
+            }
+            else{
+                $charCnt++;
+                $finalStr .= $char;
+            }
+        }
+        else{
+            # we are still in a tag, do not increment nucleotide number
+            $finalStr .= $char;
+        }
+        
+        if($charCnt >= $limit){
+            # we have reached the specified nucleotide limit, insert a space
+            $finalStr .= "\n";
+            $charCnt = 1;
+        }
+    }
+    return $finalStr;
+}
+
+sub sequenceWrapForExport{
+    my($self,$seq, $limit) = @_;
+    my @charSet = split(//,$seq);
+    my $charCnt = 1;
+    my $finalStr = "";
+    my $inTag = 0;
+    foreach my $char (@charSet){
+        if($char eq '<'){
+            # we are in mapped tag
+            $inTag = 1;
+            next;
+        }
+        elsif($char eq '>'){
+            # we are exiting a mapped tag (see color mapping methods, i.e. rtextremity::mapSequence3)
+            $inTag = 0;
+            next;
+        }
+        elsif(!$inTag){
+            # increment nucleotide count (we are not in a tag)
+            $charCnt++;
+            $finalStr .= $char;
+        }
+        else{
+            # we are still in a tag, do not increment nucleotide number and add char has mapped seperator
+            $finalStr .= $char;
+            $charCnt++;
+        }
+        
+        if($charCnt >= $limit){
+            # we have reached the specified nucleotide limit, insert a space
+            $finalStr .= "<br />";
+            $charCnt = 1;
+        }
+    }
+    return $finalStr;
+}
+
+1; 

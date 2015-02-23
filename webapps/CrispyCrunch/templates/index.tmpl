@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title><TMPL_VAR NAME='home'></title>
+    </head>
+    <body>
+        <h1>TOSS (<b>T</b>argeted <b>O</b>ligonucleotide <b>S</b>ilencer of <b>S</b>plicing) design</h1>
+        <form name = 'edit' method='post'>
+            <input type='hidden' name='page' value = 'search_gene'>
+            <h2>Search your target gene</h2>
+            <TMPL_IF name='ERRORMSG'>
+                <font color='red'>Error: <TMPL_VAR name = 'ERRORMSG'></font><br/>
+            </TMPL_IF>
+            Gene name:
+            <input type='text' name='gene_name' /><br />
+            Annotation:
+            <select name="annotation">
+                <TMPL_LOOP name = 'ANNS'>
+                    <option value="<TMPL_VAR name = 'ANN_ID'>"><TMPL_VAR name = 'ANN_NAME'></option>
+                </TMPL_LOOP>
+            </select><br/>
+            <br />
+            <input type='submit' name='Search' />
+            <input type='reset' name='Reset' />
+        </form>
+    </body>
+</html>

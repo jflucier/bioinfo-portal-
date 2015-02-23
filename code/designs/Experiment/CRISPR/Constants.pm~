@@ -1,0 +1,17 @@
+package designs::Experiment::CRISPR::Constants;
+use strict;
+
+sub CRISPR_TAIL {
+    return "GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGCTTTT";
+}
+
+sub rc {
+    my ($seq) = @_;
+    $seq = reverse($seq);
+    $seq =~ tr/ACGTUacgtu/TGCAAtgcaa/;
+    return $seq;
+}
+
+
+
+1;

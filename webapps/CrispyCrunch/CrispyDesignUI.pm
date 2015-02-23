@@ -1,0 +1,149 @@
+package CrispyCrunch::CrispyDesignUI;
+
+use strict;
+
+use designs::Experiment::CRISPR::CRISPRExperimentDesign;
+use designs::Tool::NCBIBlast;
+use designs::Experiment::CRISPR::Constants;
+
+
+sub _get_sequence_info {
+    my($self,$is_event) = @_;
+    my $q = $self->query();
+    my $seq = $q->param("seq");
+    
+    if(!defined($seq)){
+        $self->error_msg("Sequence must be defined.");
+        return undef;
+    }
+    
+    my $seq_obj = $self->_get_bioseq_obj('si_seq',$seq);
+    
+    return $seq_obj;
+}
+
+sub show_crispy_design_page {
+    my($self,$errMsg) = @_;
+    
+    my $tmpl_obj = $self->load_tmpl('design_param_crispy.tmpl');
+    $tmpl_obj->param(
+        ERRMSG => $errMsg
+    );
+    my $content = $tmpl_obj->output();
+    return $content;
+}
+
+sub generate_crispy_design {
+    my($self,$sequence,$db) = @_;
+    
+    my $seq_obj = $self->get_bioseq_obj('tha_seq',$sequence);
+    
+    if(!defined($seq_obj)){
+        return CrispyCrunch::CrispyDesignUI::show_crispy_design_page(
+            $self,
+            "Unable to create sequence with bioperl. Contact system admin."
+        );
+    }
+    
+    my $blastdb = $self->param("BLAST_DB") . "/" . $db;
+    my $blastdb_filecheck = $blastdb . ".nhr";
+    
+    if(-z $blastdb_filecheck){
+        return CrispyCrunch::CrispyDesignUI::show_crispy_design_page(
+            $self,
+            "Unable to to find selected blast database. Contact system admin."
+        );
+    }
+    
+    my $blaster = designs::Tool::NCBIBlast->new(
+        location => $self->param("BLAST_LOCATION"),
+        database => $blastdb
+    );
+    
+    my $crispr_exp_obj = designs::Experiment::CRISPR::CRISPRExperimentDesign->new(
+         'blaster'  => $blaster,
+         'sequence'     => uc($seq_obj->seq())
+    );
+    
+    my $predictions = $crispr_exp_obj->get_CRISPR_predictions();
+    return show_crispr_results($self,uc($seq_obj->seq()),$predictions);
+}
+
+sub show_crispr_results{
+    my($self,$template,$predictions) = @_;
+    my @out = ();
+    my $pred_nbr = 1;
+    # load the template sirna data
+    for my $p (@$predictions){
+        push(
+            @out,
+            {
+                NBR => $pred_nbr,
+                SPACER => $p->{spacer_sequence},
+                TARGET => $p->{target_sequence},
+                LOCAL_BIN => $p->{localisation_bin},
+                LOCAL_POS => $p->{localisation_pos},
+                INTERNAL_DG => $p->{min_energy},
+                HYBRID_DG => $p->{filters}->{hybrid_dg},
+                OFFTARGETS => generate_offtarget_str($p->{filters}->{OffTargets})
+            }
+        );
+        $pred_nbr++;
+    }
+    
+    
+    # get the criteria list
+    my $tmpl_obj = $self->load_tmpl('design_results_crispy.tmpl', die_on_bad_params => 0);
+    $tmpl_obj->param(
+        CRISPR_LIST => \@out,
+        CRISPR_TAIL => designs::Experiment::CRISPR::Constants::CRISPR_TAIL
+    );
+    my $content = $tmpl_obj->output();
+    return $content;
+}
+
+sub generate_offtarget_str{
+    my($arr) = @_;
+    
+    my @targets;
+    foreach my $o (@$arr){
+        #gi|556503834|ref|NC_000913.3| Escherichia coli str. K-12 substr. MG1655,&nbsp;(17/20)&nbsp;|||||.||.||||||||||.
+        if($o =~ /^gi/){
+            my($id,$align) = $o =~ /^gi\|\d+\|ref\|(.*)\| Escherichia coli str. K-12 substr. MG1655,(.*)$/;
+            push(@targets,"$id: $align");
+        }
+    }
+    
+    my $str = join("<br />",@targets);
+    return $str;
+}
+
+sub show_crisper_detail{
+    my($self) = @_;
+    my $q = $self->query();
+    my $nbr = $q->param("pred_nbr");
+    my $seq1 = $q->param("rna_seq");
+    my $gene_name = $q->param("gene_name");
+    my $iScore = $q->param("5ss_dist");
+    my $iCriteria = $q->param("inhouse_criteria_str");
+    my $offMajor = $q->param("offtarget_major");
+    my $offMinor = $q->param("offtarget_minor");
+    my $utr = $q->param("ess_mapping");
+    my $mapped = $q->param("mapped_seq");
+    my $tmpl_obj = $self->load_tmpl('design_results_toss_detail.tmpl');
+    $tmpl_obj->param(
+        GENE_NAME => $gene_name,
+        NBR => $nbr,
+        SEQUENCE => $seq1,
+        IHSCORE => $iScore,
+        IHCRITERIAS_STR => $iCriteria,
+        OFFTARGETS_MAJOR => $offMajor,
+        OFFTARGETS_MINOR => $offMinor,
+        UTR => $utr,
+        EXPORT_MAPPED_SEQ => $self->sequenceWrapForExport($mapped,80),
+    );
+    my $content = $tmpl_obj->output();
+    return $content;
+}
+
+1;

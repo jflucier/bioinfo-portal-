@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title><TMPL_VAR NAME='home'></title>
+        </script>
+    </head>
+    <body>
+        <h1>SiRNA detail <TMPL_VAR name="GENE_NAME"></h1>
+        <p>
+        <div class="form-item">
+            <b>Prediction Nbr:</b> <TMPL_VAR name=NBR>
+        </div>
+        <div class="form-item">
+            <b>RNA seq:</b> UAUGAUAGGGACUUAGGGUG-<TMPL_VAR name=SEQUENCE>
+        </div>
+        <div class="form-item">
+            <b>inHouse score:</b> <TMPL_VAR name=IHSCORE>
+        </div>
+        <div class="form-item">
+            <b>inHouse criterias:</b> <TMPL_VAR name=IHCRITERIAS_STR>
+        </div>
+        <div class="form-item">
+            <b>Offtargets major:</b> <TMPL_VAR name=OFFTARGETS_MAJOR>
+        </div>
+        <div class="form-item">
+            <b>Offtargets minor:</b> <TMPL_VAR name=OFFTARGETS_MINOR>
+        </div>
+        <div class="form-item">
+            <b>Hits in frequent UTR hexamer:</b> <TMPL_VAR name=UTR>
+        </div>
+        <div class="form-item">
+            <label>Mapped sequence:</label> <font face="courier new"><TMPL_VAR name=EXPORT_MAPPED_SEQ></font>
+        </div>
+        </p>
+        <p>Design toolkit version 1.0</p>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title><TMPL_VAR NAME='home'></title>
+        <style type="text/css" media="all">@import "/toss_designs/design.css";</style>
+    </head>
+    <body >
+        <a name='form'></a>
+        <h1>TOSS (<b>T</b>argeted <b>O</b>ligonucleotide <b>S</b>ilencer of <b>S</b>plicing) design parameters</h1>
+        <p>
+        
+        <div class="tabs">
+            <ul class="tabs primary">
+                <li class="active"><a href="/cgi-bin/designs/index.pl?page=design_param&id=<TMPL_VAR name='GENEID'>&design=toss" class="active">Toss</a></li>
+            </ul>
+        </div>
+        </p>
+        <TMPL_IF name='ERRMSG'>
+            <font color='red'>Error: <TMPL_VAR name = 'ERRMSG'></font>
+        </TMPL_IF>
+        <form name = 'edit' method='post'>
+            <input type='hidden' name='page' value = 'do_design_toss'>
+            <input type='hidden' name='id' value = '<TMPL_VAR name="GENEID">'>
+            <div id='spec'>
+                
+                <fieldset>
+                    <legend><b>A</b>lternatively <b>I</b>ncluded <b>R</b>egion (<b>AIR</b>) information</b></legend>
+                    
+                    <p>
+                    Note: If you need help in identifying proper AIR sequence region, see information below submission form.
+                    </p>
+                    <div id='globalDiv'>
+                        <div id='bspDiv'>
+                        <table id='exon_bsp_tbl' border='0' cellpadding='5'>
+                            <tr>
+                                <td valign='top'>
+                                    <span class="form-required" title="This field is required.">*</span>
+                                    AIR:
+                                </td>
+                                <td>
+                                    <textarea name='seq' rows='2' cols='100'></textarea>
+                                    <div class="description">
+                                    Paste the exact sequence of the AIR. Here is an example sequence for the SYK target gene:<br />
+                                    ACTTGGTCAGCGGGTGGAATAATCTCAAGAATCAAATCATACTCCTTCCCAAAGCCTGGCCACAGAAAG
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="description">Please note that a typical run takes around 30 seconds to complete.</div>
+            <br/>
+               
+                <input type='submit' name='Launch' />
+                <input type='reset' name='Reset' />
+            </div>
+        </form>
+        <br/><br/>
+        <p>
+        The <b>UCS</b> is defined as the upstream constitutive sequence, the 
+        <b>AIR</b> as the alternatively included region and 
+        the <b>DCS</b> is defined as the downstream constitutive region. To
+        identify the AIR sequence, you extract the sequence specific to the long splice 
+        form. In the figure shows the AIR region is identified in gray for different 
+        types of alternative splicing event.
+        <br/><br/>
+        <img src='/toss_designs/help.png' />
+        <br/>
+        Go <a href='#form'>back</a> to top of page.
+        </p>
+    </body>
+</html>

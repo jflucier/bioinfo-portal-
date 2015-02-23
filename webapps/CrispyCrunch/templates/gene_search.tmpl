@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title><TMPL_VAR NAME='home'></title>
+    </head>
+    <body>
+        <h1>TOSS (<b>T</b>argeted <b>O</b>ligonucleotide <b>S</b>ilencer of <b>S</b>plicing) design</h1>
+        <input type='hidden' name='page' value = 'search_gene'>
+        <h2>Search results: pick your target gene from list</h2>
+        <TMPL_IF name='WARNINGMSG'>
+            <font color='red'>WARNING: <TMPL_VAR name = 'WARNINGMSG'></font>
+        </TMPL_IF>
+        <table>
+        
+        <TMPL_LOOP name = 'GENES'>
+            <tr><td>
+            <a href='/cgi-bin/toss_designs/index.pl?page=design_param&annotation=<TMPL_VAR name="ANNOTATION">&id=<TMPL_VAR name="GENEID">'>
+            <TMPL_VAR name="COMMON_SYMBOL">
+            </a>
+            </td></tr>
+        </TMPL_LOOP>
+        
+        </table>
+    </body>
+</html>

@@ -1,0 +1,358 @@
+package designs::Experiment::CRISPR::CRISPRFilters::OffTargets;
+use strict;
+
+use File::Temp 'tempdir';
+use Bio::SearchIO;
+
+use constant BLASTDB => 'NC_000913.fa';
+
+use constant IDENTITY_CUTOFF => 16;
+
+sub new {
+  my ($class) = @_;
+  my $self = ref($class) ? $class : {};
+  bless($self => (ref $class || $class));
+  return $self;
+}
+
+sub getFilterNbr{
+    # taken from dhamacon sidesign site
+    return 1;
+}
+
+sub getName{
+    return 'Offtargets';
+}
+
+sub getBlastPath{
+    my($self) = @_;
+    my $cacheName = "_blast_path";
+    if (!defined($self->{$cacheName})) {
+        $self->{$cacheName} = tempdir(File::Spec->tmpdir()."/offtarget.XXXX", CLEANUP => 1);
+    }
+    return $self->{$cacheName};
+}
+
+sub getBlastOutputFilePath{
+    my($self) = @_;
+    my $cacheName = "_blast_outpath";
+    if (!defined($self->{$cacheName})) {
+        $self->{$cacheName} = $self->getBlastPath() . "/.offtarget.blast.out";
+    }
+    return $self->{$cacheName};
+}
+
+sub getBlastFastaFilePath{
+    my($self) = @_;
+    my $cacheName = "_blast_fastapath";
+    if (!defined($self->{$cacheName})) {
+        $self->{$cacheName} = $self->getBlastPath() . "/.offtarget.fasta.in";
+    }
+    return $self->{$cacheName};
+}
+
+sub executeFilter{
+    my($self,$siRNAList,$blaster) = @_;
+    # since this takes forever, we will split the array and execute filter for 
+    # 50 predictions at a time
+    use Time::HiRes qw(time);
+    my $siRNAMaxFilterElement = 50;
+    my $siRNACounter = 0;
+    while($siRNACounter < scalar(@$siRNAList)){
+        my @siRNAListTmp;
+        # build the temporary filter elements
+        for(my $i=0; $i < $siRNAMaxFilterElement; $i++){
+            if($siRNACounter > (scalar(@$siRNAList) - 1)){
+                last;
+            }
+            
+            push(@siRNAListTmp,$siRNAList->[$siRNACounter]);
+            $siRNACounter++;
+        }
+        
+#         print "exec filter on pred " . scalar(@siRNAListTmp) . "\n";
+        #     print STDERR "generating fasta\n";
+        $self->_generateBlastFasta(\@siRNAListTmp);
+        $self->_executeBlast($blaster);
+        
+        my $blastOutHsh = $self->get_blast_struct();
+        my $hspHsh = $self->get_hsp_identifier_struct();
+        
+        $self->get_offtargets(\@siRNAListTmp,$blastOutHsh,$hspHsh);
+    }
+    File::Temp::cleanup();
+}
+
+sub get_blast_struct{
+    my($self) = @_;
+    my $reportPath = $self->getBlastOutputFilePath();
+    # retrieve th sirna entry result lines
+    my $IDLines=`grep -n 'Query=' $reportPath`;
+    my @lines = split("\n",$IDLines);
+    my $blastOutHsh = {};
+    my $prevLineNbr = -1;
+    my $prevId;
+    foreach my $line (@lines){
+        my ($lineNbr,$id) = $line =~ /^(\d+)\:Query\=\s(.+)/;
+        if($prevLineNbr == -1){
+            # first entry
+            $prevLineNbr = $lineNbr;
+            $prevId = $id;
+            next;
+        }
+        $blastOutHsh->{$prevId}->{'start'} = $prevLineNbr;
+        $blastOutHsh->{$prevId}->{'end'} = $lineNbr - 1;
+        $prevLineNbr = $lineNbr;
+        $prevId = $id;
+    }
+    
+    # record the last entry
+    $blastOutHsh->{$prevId}->{'start'} = $prevLineNbr;
+    $blastOutHsh->{$prevId}->{'end'} = -1;
+    return $blastOutHsh;
+}
+
+# return an hash in this format: lineNbr->hasp name
+sub get_hsp_identifier_struct{
+    my($self) = @_;
+    my $reportPath = $self->getBlastOutputFilePath();
+    # retrieve th sirna entry result lines
+    my $hsp_lines=`grep -n '>' $reportPath`;
+    my @lines = split("\n",$hsp_lines);
+    my $blastOutHsh = {};
+    
+    foreach my $line (@lines){
+        my ($lineNbr,$id) = $line =~ /^(\d+)\:\>(.*)$/;
+        $blastOutHsh->{$lineNbr} = $id;
+    }
+    return $blastOutHsh;
+}
+
+sub get_max_seq_length {
+    my($self,$siRNAList) = @_;
+    my $max_length = 0;
+    foreach my $si (@$siRNAList){
+        my $l = length($si->{'target_sequence'});
+        if($max_length < $l){
+            $max_length = $l;
+        }
+    }
+    return $max_length;
+}
+
+sub get_offtargets {
+    my($self,$siRNAList,$blastOutHsh,$hspHsh) = @_;
+    
+    my $sirnaLength = $self->get_max_seq_length($siRNAList);
+    
+    # \(16\|17\|18\|19\|20\|21\|22\|23\)
+    my $regex = '(16';
+    for(my $i = 17; $i <= $sirnaLength; $i++){
+        $regex .= '|' . $i;
+    }
+    $regex .= ')\/';
+    my $reportPath = $self->getBlastOutputFilePath();
+    # grep all identities with 16 nucl and above
+    my $IdentMatch=`grep -niP 'Identities = $regex' -A 7 -B 4 $reportPath`;
+    my @matches = split("--\n",$IdentMatch);
+    
+    my $siRNAOfftargets = {};
+    foreach my $match (@matches){
+        my @matchLines = split("\n",$match);
+        chomp(@matchLines);
+        # retrieve line number: 1408447->nodaw
+        my ($lineNbr, $hitId) = $matchLines[0] =~ /(\d+)\-\>(.+)/;
+        if(!defined($lineNbr)){
+            #retrieve last line number for synchornisation. This will prevent calling sed many times.
+            ($lineNbr) = $matchLines[0] =~ /(\d+)\-/;
+            
+            if(!defined($lineNbr)){
+                die("There is a problem retriving line number: $match");
+            }
+            
+            $hitId = $self->fetch_hsp($lineNbr,$hspHsh);
+        }
+        
+        # fetch the match related sirna id
+        my $siRNAID = $self->_getIdFromBlastOutLineNbr($lineNbr,$blastOutHsh);
+        # initialise the result hash offtarget structure for the siRNA if not already initialised
+        if(!exists($siRNAOfftargets->{$siRNAID})){
+            # this is the first time wee assign offtarget for this sirna
+            $siRNAOfftargets->{$siRNAID} = [];
+        }
+        
+        # get num identical
+        my ($ident) = $matchLines[4] =~ /Identities = (\d+)\/\d+/;
+        my($align,$gapNbr) = $self->_getAlignStr($matchLines[8],$matchLines[9], $sirnaLength);
+        if((length($align) - $gapNbr) != $sirnaLength){
+           die("The alignement length is wrong: align=--$align-- & gapNbr=$gapNbr. See log for more information.");
+        }
+        
+        # filter oftargets that are not real offtarget du to presence of missmatch
+#         my $off_3p = substr($align,-8);
+#         if($off_3p =~ /\./){
+#             # we have a 3 prime missmatch
+#             next;
+#         }
+        
+        my $major = $siRNAOfftargets->{$siRNAID};
+        # push the current hit in offtarget arrays
+        push(@$major,{
+                        hit => $hitId,
+                        ident => $ident,
+                        align => $align
+                    }
+        );
+    }
+    
+    $self->assignOffTargets($siRNAList,$siRNAOfftargets);
+}
+
+sub _getIdFromBlastOutLineNbr{
+    my($self,$lineNbr,$blastOutHsh) = @_;
+    foreach my $id (keys(%$blastOutHsh)){
+        if($lineNbr >= $blastOutHsh->{$id}->{'start'}
+            and $lineNbr <= $blastOutHsh->{$id}->{'end'}){
+            return $id;
+        }
+        if($lineNbr >= $blastOutHsh->{$id}->{'start'}
+            and $blastOutHsh->{$id}->{'end'} == -1){
+            # we are at the last entry
+            return $id;
+        }
+    }
+}
+
+sub fetch_hsp{
+    my($self,$lNbr,$hspHsh) = @_;
+    my @hsp_lines = keys(%$hspHsh);
+    for(my $i = 0; $i < scalar(@hsp_lines); $i++){
+        my $hsp_id = $hspHsh->{$hsp_lines[$i]};
+        if(($i+1) == scalar(@hsp_lines)){
+            # we have reached last id line number, return last id
+            return $hsp_id;
+        }
+                
+        if($lNbr >= $hsp_lines[$i] and $lNbr < $hsp_lines[$i+1]){
+            return $hsp_id;
+        }
+    }
+    
+    # if we get here something went terribly wrong
+    return undef;
+}
+
+sub _getAlignStr {
+    my($self,$queryStr,$alignStr,$seqLength) = @_;
+    ($queryStr) = $queryStr =~ /^\d+\-(.+)$/;
+    ($alignStr) = $alignStr =~ /^\d+\-(.+)$/;
+    my($qStart) = $queryStr =~ /^Query\:\s(\d+)\s+[gatc\-]+\s\d+$/;
+    my $align = "";
+    my($preStr,$afterStr) = $queryStr =~ /^(Query\:\s\d+\s+)[gatc\-]+(\s\d+)$/;
+    my $currentPos = length($preStr);
+    my $gapNbr = 0;
+    for(my $nuclNbr = 0; $nuclNbr < $seqLength; $nuclNbr++){
+        if(($nuclNbr +1) < $qStart){
+            $align .= ".";
+            next;
+        }
+        elsif($currentPos >= (length($queryStr) - length($afterStr))){
+            $align .= ".";
+            next;
+        }
+        else{
+            my $alignChar = substr($alignStr,$currentPos,1);
+            if($alignChar eq " "){
+                $alignChar = ".";
+            }
+            $align .= $alignChar;
+            my $nuclTmp = substr($queryStr,$currentPos,1);
+            if($nuclTmp eq "-"){
+                # do not increment sirna postion alignment since we are in a gap
+                $nuclNbr--;
+                $gapNbr++;
+            }
+            $currentPos++;
+        }
+    }
+    return ($align,$gapNbr);
+}
+
+sub assignOffTargets {
+    my($self,$siRNAList,$siRNAOfftargets)=@_;
+    
+    foreach my $siRNA (@$siRNAList){ 
+        if(!exists($siRNAOfftargets->{$siRNA->{id}})){
+            $siRNA->{filters}->{'OffTargets'} = [];
+            next;
+        }
+        my $major = $siRNAOfftargets->{$siRNA->{id}};
+        my @majorSorted = sort {$b->{'ident'} <=> $a->{'ident'}} @$major;
+        $siRNA->{filters}->{'OffTargets'} = $self->_generateWEbStr(\@majorSorted);
+    }
+}
+sub _generateWEbStr{
+    my($self,$arr) = @_;
+    my @result = ();
+    foreach my $e (@$arr){
+        my($match,$missmatch) = $self->getMatchAndMissmatchFromAlign($e->{'align'});
+        push(
+            @result,
+            $e->{'hit'} . '&nbsp;(' . $match . '/'.length($e->{'align'}).')&nbsp;' . $e->{'align'}
+        );
+    }
+    return \@result
+}
+
+sub getMatchAndMissmatchFromAlign{
+    my($self,$align) = @_;
+    my @binds = split(//,$align);
+    my $match = 0;
+    my $missmatch = 0;
+    foreach my $b (@binds){
+        if($b eq "|"){
+            $match++;
+        }
+        elsif($b eq "."){
+            $missmatch++;
+        }
+        else{
+            die('unrecongised ident character.');
+        }
+    }
+    return $match,$missmatch;
+}
+
+sub _generateBlastFasta {
+    my($self,$siRNAList) = @_;
+    #create input file
+    my $path = $self->getBlastFastaFilePath();
+    open(FASTA_IN,">$path");
+    my $rendu=1;
+    foreach my $seq (@$siRNAList){
+        #sirnalist has entries containing the following keys:
+        #{
+        #    id => id
+        #    sequence => $putativeSi,
+        #    criteria => $criterias,
+        #    score => $siScore
+        #}
+        print FASTA_IN ">".$seq->{'id'}."\n".$seq->{'target_sequence'}."\n";
+        $rendu++;
+    }
+    close(FASTA_IN);
+    return $path;
+}
+
+sub _executeBlast {
+    my($self,$blaster)=@_;
+    #create input file
+    my $path = $self->getBlastOutputFilePath();
+    my $inputPath = $self->getBlastFastaFilePath();
+    my $blastCommand = $blaster->get_location() . " -p blastn -d " . $blaster->get_database() . " -e 1000 -b 1000 -W 7 -i $inputPath -F F -o $path";
+    print STDERR $blastCommand . "\n";
+    system($blastCommand);
+}
+
+1; 
+

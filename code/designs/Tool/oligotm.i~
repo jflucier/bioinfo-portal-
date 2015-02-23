@@ -1,0 +1,7 @@
+/* example.i */
+%module "ODesign::Tool::OligoTm"
+%{
+#include "oligotm.h"
+%}
+
+%include "oligotm.h"

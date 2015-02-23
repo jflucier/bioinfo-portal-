@@ -1,0 +1,199 @@
+package designs::Tool::WuBlast;
+use strict;
+
+use File::Temp qw/tempfile tempdir/;
+
+use Util::Class::Constr qw/pre_process/;
+use Util::Class::Props
+    (
+     {  
+      name    => 'location',
+      default => sub { '/home/jflucier/wublast.old/blastn'}
+     },
+     {  
+      name    => 'database',
+      default => sub {'aceview_transcripts'}
+     },
+     {
+      name    => 'parameters',
+      default => sub{'-W=6 -nogaps -E=500 -B 50000 -V 50000 -cpus=1 -mmio '}
+     },
+
+
+     {
+      name    => '_hit_fields',
+      default => \&_default_hit_fields,
+     },
+    );
+
+
+# follows position in blast output file
+my @__all_hit_fields =
+(
+ 'qid',
+ 'sid',    
+ 'E',
+ 'N',
+ 'Sprime',
+ 'S',
+ 'alignlen',
+ 'nident',  
+ 'npos',   
+ 'nmism',
+ 'pcident',
+ 'pcpos',
+ 'qgaps',
+ 'qgaplen',
+ 'sgaps', 
+ 'sgaplen', 
+ 'qframe',  
+ 'qstart',
+ 'qend',   
+ 'sframe', 
+ 'sstart',
+ 'send',
+);
+
+
+sub _default_hit_fields
+{
+    my %h; 
+    $h{$_} = 0 foreach @__all_hit_fields; 
+    return \%h;
+}
+
+
+sub pre_process
+{
+    my ($self, @args) = @_;
+    my %args = @args;
+
+    if (exists $args{hit_fields})
+    {
+        $args{_hit_fields} = {};
+        $args{_hit_fields}->{$_} = 0 foreach @{$args{hit_fields}};
+        delete $args{hit_fields}
+    }
+
+    return @args = %args;
+}
+
+
+#returns a list of hash with the following key:values
+#(taken from http://blast.wustl.edu/blast/tabular.html and added qlen)
+#   qid: query sequence identifier
+#   sid: subject (database) sequence identifier
+#   E: the expectation or E-value
+#   N: the number of scores considered jointly in computing E
+#   Sprime: the normalized alignment score, expressed in units of bits
+#   S: the raw alignment score
+#   alignlen: the overall length of the alignment including any gaps
+#   nident: the number of identical letter pairs
+#   npos: the number of letter pairs contributing a positive score
+#   nmism: the number of mismatched letter pairs
+#   pcident: percent identity over the alignment length (as a fraction of alignlen)
+#   pcpos: percent positive letter pairs over the alignment length (as a fraction of alignlen)
+#   qgaps: number of gaps in the query sequence
+#   qgaplen: total length of all gaps in the query sequence
+#   sgaps: number of gaps in the subject sequence
+#   sgaplen: total length of all gaps in the subject sequence
+#   qframe: the reading frame in the query sequence (+0 for protein sequences in BLASTP and TBLASTN searches)
+#   qstart: the starting coordinate of the alignment in the query sequence
+#   qend: the ending coordinate of the alignment in the query sequence
+#   sframe: the reading frame in the subject sequence (+0 for protein sequences in BLASTP and BLASTX searches)
+#   sstart: the starting coordinate of the alignment in the subject sequence
+#   send: the ending coordinate of the alignment in the subject sequence
+#   qlen: the length of the query sequence
+
+
+sub run 
+{
+    my ($self, $sequence) = @_;
+    my $com;
+
+    my $in_fn;
+    {
+        my $fh;
+        ($fh, $in_fn) = tempfile ("blasti.$$.XXXXXX", UNLINK => 0);
+        print $fh ">seq\n$sequence\n";
+        close $fh;
+    }
+
+    my $out_fn;
+    {      
+        my $fh;
+        ($fh, $out_fn) = tempfile ("blasto.$$.XXXXXX", UNLINK => 0);
+        close $fh;
+    }
+
+    my $special_parameters = '-mformat=2'; #output in tabular format
+    $com = sprintf "%s -d %s -i %s %s %s -cpus=1 -mmio -o %s",
+        (
+         $self->get_location,
+         $self->get_database,
+         $in_fn,
+         $self->get_parameters,
+         $special_parameters,
+         $out_fn,
+        );
+#     print STDERR "seq=$sequence\n";
+#     print STDERR "$com\n";
+    system $com;
+    die "[$com] failed with status $?, $!" unless 0 == $?;
+
+
+    # parse results
+
+    my @results;
+
+    $self->get__hit_fields->{$_} = 0 foreach keys %{$self->get__hit_fields};
+    open BLASTOUT, "$out_fn" or die "failed to open '$out_fn': $!";
+
+    while (my $line = <BLASTOUT>) 
+    {
+        chomp $line;
+        my %result;
+        my @values = split(m/\t/, $line);
+        die("Unexpected blast output '$line'") if (@values < @__all_hit_fields);
+
+        for (my $i = 0; $i < @__all_hit_fields; ++$i) 
+        {
+            if (exists $self->get__hit_fields->{$__all_hit_fields[$i]})
+            {
+                $result{$__all_hit_fields[$i]} = $values[$i];
+                $self->get__hit_fields->{$__all_hit_fields[$i]} = 1;
+            }
+
+        }
+
+        $result{qlen} = length($sequence);
+        push(@results, \%result);
+    }
+
+    # debug
+#     require Data::Dump;
+#     open BRES, '>>blastres';
+#     printf BRES "==========\n%s\n", Data::Dump::dump (\@results);
+#     close BRES;
+
+    close BLASTOUT or die "failed to close '$out_fn': $!";;
+
+    # check for missing fields
+    my @missing = grep { $self->get__hit_fields->{$_} == 0 } keys %{$self->get__hit_fields};
+    die sprintf "missing %d fields in %s: %s",
+        (
+         scalar @missing,
+         $out_fn,
+         join (', ', @missing),
+        )
+            if @missing > 0;
+    
+    # destroy temp files
+    unlink ($in_fn);
+    unlink ($out_fn);
+
+    File::Temp::cleanup();
+    return \@results;
+}
+
+1;

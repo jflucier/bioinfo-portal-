@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Crispy CRISPR</title>
+        <style type="text/css" media="all">@import "/CrispyCrunch/design.css";</style>
+        
+    </head>
+    <body>
+        <a name='results'></a>
+        <h1>Crispy CRISPR predictions</h1>
+        <p>
+        Note: If you need help interpreting this result table, see information below prediction table or click <a href='#doc'>here</a>.
+        </p>
+        <TMPL_IF name='CRISPR_LIST'>
+            <form name = 'edit' method='post'>
+                <input type='hidden' name='page' value = 'crispr_details'>
+                <table border=1>
+                    <tr class='header'>
+                        <td>Nbr</td>
+                        <td>Spacer sequence</td>
+                        <td>Target sequence</td>
+                        <td>Localisation bin</td>
+                        <td>Position</td>
+                        <td>Internal DG</td>
+                        <td>Hybridisation DG</td>
+                        <td>Offtargets</td>
+                    </tr>
+                    <TMPL_LOOP name = 'CRISPR_LIST'>
+                        <tr>
+                            <td><TMPL_VAR name="NBR"></td>
+                            <td><TMPL_VAR name="SPACER"></td>
+                            <td><TMPL_VAR name="TARGET"></td>
+                            <td><TMPL_VAR name="LOCAL_BIN"></td>
+                            <td><TMPL_VAR name="LOCAL_POS"></td>
+                            <td><TMPL_VAR name="INTERNAL_DG"></td>
+                            <td><TMPL_VAR name="HYBRID_DG"></td>
+                            <td><TMPL_VAR name="OFFTARGETS"></td>
+                        </tr>
+                    </TMPL_LOOP>
+                </table>
+                <br />
+            </form>
+            <p>
+                <a name='doc'></a>
+                Following is a description of each column presented in the TOSS design table above:
+                <ul>
+                <li class="leaf" >
+                    <b>Nbr:</b> The prediction number. Please note that the designs are sorted by order of preference based on the following 4 criterias listed below:
+                    <ul>
+                        <li>
+                            1. x
+                        </li>
+                        <li>
+                            2. y
+                        </li>
+                        <li>
+                            3. z
+                        </li>
+                        <li>
+                            4. xxx
+                        </li>
+                    </ul>
+                </li>
+                <li class="leaf"  >
+                    <b>Spacer sequence:</b> The spacer sequence is shown 5&prime; to 3&prime;. This sequence must be attached in 3&prime; to the sgRNA sequence 
+                    <TMPL_VAR name="CRISPR_TAIL">
+                </li>
+                <li class="leaf" >
+                    <b>Target sequence:</b> sfsdfesf
+                </li>
+                <li class="leaf" >
+                    <b>Localisation bin:</b> sfsdfesf
+                </li>
+                <li class="leaf" >
+                    <b>Position:</b> sfsdfesf
+                </li>
+                <li class="leaf" >
+                    <b>Internal DG:</b> sfsdfesf
+                </li>
+                <li class="leaf" >
+                    <b>Hybridisation DG:</b> sfsdfesf
+                </li>
+                <li class="leaf" >
+                    <b>In silico offtargets:</b> This column shows possible off-targets with 4 mismatches (".") or less relative to 
+                    the antisense portion of spacer.
+                </li>
+                <br/>
+                Go <a href='#results'>back</a> to result table.
+            </p>
+        <TMPL_ELSE>
+            No valid CRISPR  could be generated using this sequence.
+        </TMPL_IF>
+    </body>
+</html>

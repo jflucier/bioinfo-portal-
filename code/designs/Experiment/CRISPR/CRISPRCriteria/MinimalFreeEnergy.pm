@@ -1,0 +1,61 @@
+package designs::Experiment::CRISPR::CRISPRCriteria::MinimalFreeEnergy;
+use strict;
+
+use designs::Experiment::CRISPR::Constants;
+
+# this parameter was calculated using calculateDgDistribution.pl
+# We used 10000 20mer random sequence with a 5' toss tail. The average dg 
+# returned was -18.03 +/- 1.60. Since we don't want CRISPR with stable 
+# structure, we eliminate the most stable.  
+
+# to check hybridization force... use this command:
+# melt.pl -n DNA -t 30 -C 1 seqa.fa seqb.fa
+
+# the higher the value the less structured it is
+
+use constant DG_CUTOFF => -19.63;
+
+sub new {
+  my ($class) = @_;
+  my $self = ref($class) ? $class : {};
+  bless($self => (ref $class || $class));
+  return $self;
+}
+
+sub getCriteriaNbr{
+    return 1;
+}
+
+sub getName{
+    return 'Minimal free energy must be greater then -19.63 to prevent internally stable structure.';
+}
+
+sub getDebug{
+    return 'MinimalFreeEnergy';
+}
+
+sub getType{
+    return 'Core';
+}
+
+sub is_valid{
+    my($self,$seq) = @_;
+    
+    my $energy = $self->get_energy($seq);
+    if($energy < DG_CUTOFF){
+        return 0;
+    }
+    else{
+        return 1;
+    }
+}
+
+sub get_energy{
+    my($self,$seq) = @_;
+    $seq = $seq . designs::Experiment::CRISPR::Constants::CRISPR_TAIL;
+    my $hybridSSMinOut = `hybrid-ss-min -n DNA -t 30 -T 30 -q $seq`;
+    chomp($hybridSSMinOut);
+    return $hybridSSMinOut;
+}
+
+1; 

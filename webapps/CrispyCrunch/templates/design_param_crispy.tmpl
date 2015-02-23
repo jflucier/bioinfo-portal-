@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Crispy CRISPR</title>
+        <style type="text/css" media="all">@import "/CrispyCrunch/design.css";</style>
+    </head>
+    <body >
+        <a name='form'></a>
+        <h1>Crispy CRISPR design parameters</h1>
+        <p>
+        
+        <div class="tabs">
+            <ul class="tabs primary">
+                <li class="active"><a href="/cgi-bin/CrispyCrunch/index.pl?page=design_param" class="active">Inhibition</a></li>
+            </ul>
+        </div>
+        </p>
+        <TMPL_IF name='ERRMSG'>
+            <font color='red'>Error: <TMPL_VAR name = 'ERRMSG'></font>
+        </TMPL_IF>
+        <form name = 'edit' method='post'>
+            <input type='hidden' name='page' value = 'do_design_crispy'>
+            <div id='spec'>
+                <fieldset>
+                    <div id='globalDiv'>
+                        <div id='bspDiv'>
+                        <table id='exon_bsp_tbl' border='0' cellpadding='5'>
+                            <tr>
+                                <td valign='top'>
+                                    <span class="form-required" title="This field is required.">*</span>
+                                    Target DNA Sequence:
+                                </td>
+                                <td>
+                                    <textarea name='seq' rows='2' cols='100'></textarea>
+                                    <div class="description">
+                                    Paste the exact target sequence that will be used for design. Here is an example sequence to target the GFP gene:<br />
+                                    GAATTCGAGCTCGGTACCCGGGAGATCTGGAACCTCTTACGTGCCGATCAACGTCTCATTTTCGCCAGATATCTTTACA<br/>
+                                    GCTAGCTCAGTCCTAGGTATTATGCTAGCTTTGGAATTCATTAAAGAGGAGAAAGGTACCATGAGCAAAGGAGAAGAAC<br/>
+                                    TTTTCACTGGAGTTGTCCCAATTCTTGTTGAATTAGATGGTGATGTTAATGGGCACAAATTTTCTGTCCGTGGAGAGGG<br/>
+                                    TGAAGGTGATGCTACAAACGGAAAACTCACCCTTAAATTTATTTGCACTACTGGA
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign='top'>
+                                    <span class="form-required" title="This field is required.">*</span>
+                                    Offtarget blast database:
+                                </td>
+                                <td>
+                                    <SELECT NAME="blast_db">
+                                        <OPTION VALUE="ecoli_mg1655.fa">ecoli_mg1655
+									</SELECT>
+                                </td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </fieldset>
+            <br/>
+               
+                <input type='submit' name='Launch' />
+                <input type='reset' name='Reset' />
+            </div>
+        </form>
+    </body>
+</html>

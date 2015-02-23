@@ -1,0 +1,44 @@
+
+Note: These scripts were only tested under linux (Ubuntu and gentoo).
+
+1 - install mysql and perl version 5.8 or above
+
+2 - unzip HTP_bsp_x.x in your favorite path
+
+3 - install the local database using mysql dump file provided at path/to/HTP_bsp_x.x/Database/mysql_annotation_small_db_dump.mysql
+
+4 - download from this url --blast_database_download_url-- and unzip in path/to/HTP_bsp_x.x/designs/Data/BlastDB
+
+5 - go to the path path/to/HTP_bsp_x.x/designs/sequences and run the script get_sequences. Once completed, move the downloaded files to the right build folder (currently build 36). If you want to download different build, make sure to edit script get_sequences to point to the right ftp link.
+
+6 - go to the path path/to/HTP_bsp_x.x/designs/Tool and run the following commands:
+swig -perl5 oligotm.i; gcc -O3 -march=pentium4 -fomit-frame-pointer -pipe -c oligotm.c oligotm_wrap.c `perl -MExtUtils::Embed -e ccopts`; ld -G oligotm.o oligotm_wrap.o -o OligoTm.so
+mv OligoTm.so ../..
+
+7 - install the following cpan modules:
+DBIx::Class::Schema
+Config::Record
+Data::Dump (gentoo: see bug #189865)
+File::Temp
+Storable
+Term::ANSIColor
+Error
+Text::Wrap
+List::Util
+Bio::Tools::Primer3
+use Bio::SearchIO
+
+8 - install the following program:
+primer3 (http://primer3.sourceforge.net/releases.php) so that you can call primer3 on the command line using "primer3"
+blastall (http://www.ncbi.nlm.nih.gov/BLAST/download.shtml)
+
+9 - set the following environment variables by executing the following command (or put in .bashrc file)
+export PERL5LIB='path/to/HTP_bsp_x.x/../'
+export BSPDATADIR='path/to/HTP_bsp_x.x/designs/Data/'
+export FASTA_DB_PATH='path/to/HTP_bsp_x.x/designs/sequences/'
+
+10 - To test software:
+cd path/to/HTP_bsp_x.x/designs/scripts
+perl events_listing.pl genes_csv_path=file_example/test.txt db_host=test.riboclub.org annotation_source=AceView
+
+If you have questions or comments about this program, please send emails to Jean-Francois Lucier at jflucier@hotmail.com
