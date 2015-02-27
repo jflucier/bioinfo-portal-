@@ -1,0 +1,6 @@
+[portal-bio-info-udes]
+192.168.78.29
+
+
+[portal-bio-info-udes:vars]
+isVagrant=True

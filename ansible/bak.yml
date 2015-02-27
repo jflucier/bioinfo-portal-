@@ -1,0 +1,174 @@
+---
+- hosts: portal-bio-info-udes
+  sudo: yes
+  gather_facts: no
+
+  handlers:
+
+    - name: restart mysql
+      action: service name=mysql state=restarted
+
+    #- name: restart nginx
+    #  action: service name=nginx state=restarted
+
+    - name: Restart Apache
+      service: name=apache2 state=restarted
+
+  vars:
+    db_name: drupal
+    db_user: drupal
+    db_password: drupal
+    mysql_root_password: mysql
+
+    drupal_site_name: "portail-bioinfo-udes"
+
+    drupal_admin_user: admin
+    drupal_admin_pw: zepw
+
+  tasks:
+
+  - name: ensure Vagrant is a sudoer
+    copy: content="vagrant ALL=(ALL) NOPASSWD:ALL" dest=/etc/sudoers.d/vagrant owner=root group=root
+    when: isVagrant
+    sudo: yes
+
+  - name: update apt repo
+    action: apt update-cache=yes cache_valid_time=86400
+
+  - name: install python-pycurl
+    apt: pkg=python-pycurl state=latest
+
+  - name: ensure apt cache is up to date
+    apt: update_cache=yes cache_valid_time=86400
+
+  - name: Install MySQL server
+    apt: name=mysql-server state=latest
+
+  - name: Install Apache module for MySQL authentication
+    apt: name=libapache2-mod-auth-mysql state=latest
+
+  - name: Install MySQL module for PHP
+    apt: name=php5-mysql state=latest
+
+
+  - name: Install PHP and associated packages
+    apt: name=php5 state=latest
+
+  - name: Install PHP GD library
+    apt: name=php5-gd state=latest
+    notify:
+      - Restart Apache
+
+  - name: Install Python MySQLdb
+    apt: name=python-mysqldb state=latest
+
+  - name: Ensure MySQL will listen on all ip interfaces (bind to 0.0.0.0)
+    lineinfile: dest=/etc/mysql/my.cnf
+      regexp='bind-address\s*=\s*127\.0\.0\.1\s*'
+      line='bind-address   = 0.0.0.0'
+      state=present
+      insertafter=EOF
+      backrefs=yes
+    notify: restart mysql
+
+#  - name: set mysql root pw
+#    mysql_user: name=root host={{item}} password={{mysql_root_password}} priv=*.*:ALL,GRANT
+#    with_items:
+#      - 127.0.0.1
+#      - ::1
+#      - localhost
+
+
+  - name: Create the Drupal database
+    mysql_db: db={{ db_name }} state=present
+
+  - name: Create the Drupal user
+    mysql_user: name=drupal host={{item}} password={{db_password}} priv={{db_name}}.*:ALL,GRANT
+    with_items:
+      - 127.0.0.1
+      - ::1
+      - localhost
+
+  - name: install Git
+    apt: name=git state=latest
+
+  - name: Clone Drupal
+    git: >
+      repo=http://git.drupal.org/project/drupal.git
+      version=7.34
+      dest=/var/www/html/drupal/
+      update=no
+
+  - name: resolve settings.php
+    template: src=templates/settings.php dest=/var/www/html/drupal/sites/default/settings.php
+
+  #- name: Create services.yml
+  #  command: cp /var/www/html/drupal/sites/default/default.services.yml /var/www/html/drupal/sites/default/services.yml
+
+  - name: Update permissions of settings.php
+    file: path=/var/www/html/drupal/sites/default/settings.php mode=777
+
+  #- name: Update permissions of services.yml
+  #  file: path=/var/www/html/drupal/sites/default/services.yml mode=777
+
+  - name: Update permissions of files directory
+    file: >
+      path=/var/www/html/drupal/sites/default/files
+      mode=777
+      state=directory
+      recurse=yes
+
+  - name: Install Pear
+    apt: name=php-pear state=latest
+
+  - name: "add channel drush NOTE: will barf if already installed, NOT an error"
+    command: pear channel-discover pear.drush.org
+    ignore_errors: yes
+
+  - name: "Install Drush NOTE: will barf if already installed, NOT an error"
+    command: pear install drush/drush
+    ignore_errors: yes
+
+  - name: dump drush version
+    command: drush --version
+    sudo: True
+
+  - name: verify if site was already created
+    command: drush sql-query "select t.table_name from information_schema.tables t where t.table_name='role'" | grep role
+    ignore_errors: yes
+    register: SITE_CREATED_TRACE
+
+
+  - name: initialize drupal schema and site
+    command: cd /var/www/html/drupal && drush site-install minimal --site-name={{drupal_site_name}} --account-name={{drupal_admin_user}} --account-pass={{drupal_admin_pw}} -y
+    sudo: True
+    when: "'No database to operate on.' in SITE_CREATED_TRACE.stderr"
+
+  - name: install modules
+    command: cd /var/www/html/drupal && drush en {{item}} -y
+    sudo: True
+    with_items:
+      - pm
+      - date_all_day
+      - date_popup
+      - date_views
+      - print_pdf
+      - print
+      - print_mail
+      - pmexpense
+      - pminvoice
+      - pmnote
+      - pmorganization
+      - pmperson
+      - pmproject
+      - pmtask
+      - pmteam
+      - pmticket
+      - pmtimetracking
+      - wysiwyg
+      - views_calc
+      - views_ui
+
+
+  - name: Emboss Explorer
+    apt: name=emboss-explorer state=latest

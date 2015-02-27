@@ -1,0 +1,107 @@
+
+---
+- hosts: portal-bio-info-udes
+  sudo: yes
+  gather_facts: no
+
+  handlers:
+
+    #- name: restart nginx
+    #  action: service name=nginx state=restarted
+
+    - name: Restart Apache
+      service: name=apache2 state=restarted
+
+  vars:
+    varDir: /var/bio-info
+    dataDir: "{{varDir}}/data"
+
+  tasks:
+
+  - name: ensure Vagrant is a sudoer
+    copy: content="vagrant ALL=(ALL) NOPASSWD:ALL" dest=/etc/sudoers.d/vagrant owner=root group=root
+    when: isVagrant
+    sudo: yes
+
+  - name: update apt repo
+    action: apt update-cache=yes cache_valid_time=86400
+
+  - name: install python-pycurl
+    apt: pkg=python-pycurl state=latest
+
+  - name: ensure apt cache is up to date
+    apt: update_cache=yes cache_valid_time=86400
+
+  - name: ensure data dir exists
+    file: path={{varDir}} state=directory
+
+  - name: ensure var dir exists
+    file: path={{dataDir}} state=directory
+
+  - name: swig
+    apt: pkg={{item}} state=latest
+    with_items:
+     - swig
+     - cpanminus
+     - libapache2-mod-perl2
+
+
+#2 - go to the path path/to/HTP_bsp_x.x/designs/Tool
+#   run the following commands:
+
+#     swig -perl5 oligotm.i; gcc -O3 -march=pentium4 -fomit-frame-pointer -pipe -c oligotm.c oligotm_wrap.c perl -MExtUtils::Embed -e ccopts; ld -G oligotm.o oligotm_wrap.o -o OligoTm.so
+#     mv OligoTm.so ../..
+
+#  - name: installer les dépendances Perl
+#    cpanm:  name={{item}} notest=True
+#    sudo: yes
+#    with_items:
+#      - DBIx::Class::Schema
+#      - Config::Record
+#      - Data::Dump #(gentoo: see bug #189865)
+#      - File::Temp
+#      - Storable
+#      - Term::ANSIColor
+#      - Error
+#      - Text::Wrap
+#      - List::Util
+#      - Bio::Tools::Primer3
+#      - Bio::SearchIO
+
+#3 - install the following cpan modules: DBIx::Class::Schema Config::Record Data::Dump (gentoo: see bug #189865) File::Temp Storable Term::ANSIColor Error Text::Wrap List::Util Bio::Tools::Primer3 use Bio::SearchIO
+
+#4 - install the following program:
+# Unafold: version 3.8 available in
+#   code/designs/Tool/unafold/ folder.
+#   blastall
+# (http://www.ncbi.nlm.nih.gov/BLAST/download.shtml). Use apt-get.
+
+  - name: install unafold
+    unarchive: src=../code/designs/Tool/unafold/unafold-3.8.tar.gz dest={{varDir}}
+
+  - name: build unafold
+    shell: "cd {{varDir}}/unafold-3.8 && ./configure && make && make install"
+
+
+  - name: Emboss Explorer
+    apt: name=emboss-explorer state=latest
+
+  - name: install blast, etc
+    apt: pkg={{item}} state=latest
+    with_items:
+     - ncbi-blast+
+     - blast2
+
+  - name: fetch les BDs blast
+    get_url: url="http://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?tool=portal&sendto=on&log=seqview&db=nuccore&dopt=fasta&sort=&val=NC_000913.3&from=begin&to=end" dest={{dataDir}}/NC_000913.fa
+
+  - name: formater les BDs blast
+    shell: "cd {{dataDir}} && formatdb -i {{item}} -p F"
+    with_items:
+     - NC_000913.fa
+
+  - name: enable apache mod cgi
+    file: src=/etc/apache2/mods-available/cgi.load dest=/etc/apache2/mods-enabled/cgi.load owner=root group=root state=link
+
+
+http://192.168.78.29/cgi-bin/index.pl
