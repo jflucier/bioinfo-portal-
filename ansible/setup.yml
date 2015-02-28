@@ -6,17 +6,17 @@
 
   handlers:
 
-    #- name: restart nginx
-    #  action: service name=nginx state=restarted
-
-    - name: Restart Apache
+    - name: restart apache
       service: name=apache2 state=restarted
 
   vars:
     varDir: /var/bio-info
     dataDir: "{{varDir}}/data"
+    codeDir: "{{'/vagrant' if isVagrant else '/var/bio-info/code'}}"
 
   tasks:
+
+  - debug: var=codeDir
 
   - name: ensure Vagrant is a sudoer
     copy: content="vagrant ALL=(ALL) NOPASSWD:ALL" dest=/etc/sudoers.d/vagrant owner=root group=root
@@ -25,9 +25,6 @@
 
   - name: update apt repo
     action: apt update-cache=yes cache_valid_time=86400
-
-  - name: install python-pycurl
-    apt: pkg=python-pycurl state=latest
 
   - name: ensure apt cache is up to date
     apt: update_cache=yes cache_valid_time=86400
@@ -38,19 +35,16 @@
   - name: ensure var dir exists
     file: path={{dataDir}} state=directory
 
-  - name: swig
+  - name: install apt packages
     apt: pkg={{item}} state=latest
     with_items:
+     - python-pycurl
      - swig
      - cpanminus
+     - apache2
+     - emboss-explorer
      - libapache2-mod-perl2
 
-
-#2 - go to the path path/to/HTP_bsp_x.x/designs/Tool
-#   run the following commands:
-
-#     swig -perl5 oligotm.i; gcc -O3 -march=pentium4 -fomit-frame-pointer -pipe -c oligotm.c oligotm_wrap.c perl -MExtUtils::Embed -e ccopts; ld -G oligotm.o oligotm_wrap.o -o OligoTm.so
-#     mv OligoTm.so ../..
 
 #  - name: installer les dépendances Perl
 #    cpanm:  name={{item}} notest=True
@@ -68,25 +62,13 @@
 #      - Bio::Tools::Primer3
 #      - Bio::SearchIO
 
-#3 - install the following cpan modules: DBIx::Class::Schema Config::Record Data::Dump (gentoo: see bug #189865) File::Temp Storable Term::ANSIColor Error Text::Wrap List::Util Bio::Tools::Primer3 use Bio::SearchIO
-
-#4 - install the following program:
-# Unafold: version 3.8 available in
-#   code/designs/Tool/unafold/ folder.
-#   blastall
-# (http://www.ncbi.nlm.nih.gov/BLAST/download.shtml). Use apt-get.
-
   - name: install unafold
     unarchive: src=../code/designs/Tool/unafold/unafold-3.8.tar.gz dest={{varDir}}
 
-  - name: build unafold
-    shell: "cd {{varDir}}/unafold-3.8 && ./configure && make && make install"
+  - name: build and install unafold
+    shell: "if [ ! -e {{varDir}}/unafold-3.8/config.status ]; then cd {{varDir}}/unafold-3.8 && ./configure && make && make install; fi"
 
-
-  - name: Emboss Explorer
-    apt: name=emboss-explorer state=latest
-
-  - name: install blast, etc
+  - name: install blast+ blast
     apt: pkg={{item}} state=latest
     with_items:
      - ncbi-blast+
@@ -100,8 +82,16 @@
     with_items:
      - NC_000913.fa
 
+  - name: disable apache default site
+    file: path=/etc/apache2/sites-enabled/000-default.conf state=absent
+
   - name: enable apache mod cgi
     file: src=/etc/apache2/mods-available/cgi.load dest=/etc/apache2/mods-enabled/cgi.load owner=root group=root state=link
 
+  - name: resolve apache conf for this site
+    template: src=templates/apache.conf dest=/etc/apache2/sites-available/udes-bio-info.conf
 
-http://192.168.78.29/cgi-bin/index.pl
+  - name: link this site's conf in sites-enabled
+    file: src=/etc/apache2/sites-available/udes-bio-info.conf dest=/etc/apache2/sites-enabled/udes-bio-info.conf owner=root group=root state=link
+    notify: restart apache
+

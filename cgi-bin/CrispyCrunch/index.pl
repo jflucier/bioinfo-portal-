@@ -2,15 +2,15 @@
 use strict;
 
 use FindBin;
-use lib "$FindBin::Bin/../../webapps/";
-use lib "$FindBin::Bin/../../code/";
+use lib "/vagrant/webapps/";
+use lib "/vagrant/code/";
 
 use CrispyCrunch::DesignsUI;
 use Error qw(:try);
 
-my $webAppRoot = "$FindBin::Bin/../../webapps/CrispyCrunch/";
-my $htmlWebDir = "$FindBin::Bin/../../htdocs/CrispyCrunch/";
-my $blast_db_path = "$FindBin::Bin/../../code/Data/BlastDB/";
+my $webAppRoot = "/vagrant/webapps/CrispyCrunch/";
+my $htmlWebDir = "/vagrant/htdocs/CrispyCrunch/";
+my $blast_db_path = "/vagrant/code/Data/BlastDB/";
 try{
 	my $app = CrispyCrunch::DesignsUI->new(
 			TMPL_PATH => $webAppRoot . 'templates/',
