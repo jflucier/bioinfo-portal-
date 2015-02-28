@@ -46,21 +46,21 @@
      - libapache2-mod-perl2
 
 
-#  - name: installer les dépendances Perl
-#    cpanm:  name={{item}} notest=True
-#    sudo: yes
-#    with_items:
-#      - DBIx::Class::Schema
-#      - Config::Record
-#      - Data::Dump #(gentoo: see bug #189865)
-#      - File::Temp
-#      - Storable
-#      - Term::ANSIColor
-#      - Error
-#      - Text::Wrap
-#      - List::Util
-#      - Bio::Tools::Primer3
-#      - Bio::SearchIO
+  - name: installer les dépendances Perl
+    cpanm:  name={{item}} notest=True
+    sudo: yes
+    with_items:
+      - DBIx::Class::Schema
+      - Config::Record
+      - Data::Dump
+      - File::Temp
+      - Storable
+      - Term::ANSIColor
+      - Error
+      - Text::Wrap
+      - List::Util
+      - Bio::Tools::Primer3
+      - Bio::SearchIO
 
   - name: install unafold
     unarchive: src=../code/designs/Tool/unafold/unafold-3.8.tar.gz dest={{varDir}}
