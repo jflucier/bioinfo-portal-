@@ -16,8 +16,6 @@
 
   tasks:
 
-  - debug: var=codeDir
-
   - name: ensure Vagrant is a sudoer
     copy: content="vagrant ALL=(ALL) NOPASSWD:ALL" dest=/etc/sudoers.d/vagrant owner=root group=root
     when: isVagrant
@@ -84,12 +82,15 @@
 
   - name: disable apache default site
     file: path=/etc/apache2/sites-enabled/000-default.conf state=absent
+    notify: restart apache
 
   - name: enable apache mod cgi
     file: src=/etc/apache2/mods-available/cgi.load dest=/etc/apache2/mods-enabled/cgi.load owner=root group=root state=link
+    notify: restart apache
 
   - name: resolve apache conf for this site
     template: src=templates/apache.conf dest=/etc/apache2/sites-available/udes-bio-info.conf
+    notify: restart apache
 
   - name: link this site's conf in sites-enabled
     file: src=/etc/apache2/sites-available/udes-bio-info.conf dest=/etc/apache2/sites-enabled/udes-bio-info.conf owner=root group=root state=link
