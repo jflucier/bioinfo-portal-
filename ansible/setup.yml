@@ -13,6 +13,8 @@
     varDir: /var/bio-info
     dataDir: "{{varDir}}/data"
     codeDir: "{{'/vagrant' if isVagrant else '/var/bio-info/code'}}"
+    jekyllVersion: 2.5.3
+    staticPortalDir: "{{varDir}}/portal"
 
   tasks:
 
@@ -27,11 +29,13 @@
   - name: ensure apt cache is up to date
     apt: update_cache=yes cache_valid_time=86400
 
-  - name: ensure data dir exists
-    file: path={{varDir}} state=directory
+  - name: ensure directories exists
+    file: path={{item}} state=directory
+    with_items:
+      - "{{varDir}}"
+      - "{{staticPortalDir}}"
+      - "{{dataDir}}"
 
-  - name: ensure var dir exists
-    file: path={{dataDir}} state=directory
 
   - name: install apt packages
     apt: pkg={{item}} state=latest
@@ -96,3 +100,19 @@
     file: src=/etc/apache2/sites-available/udes-bio-info.conf dest=/etc/apache2/sites-enabled/udes-bio-info.conf owner=root group=root state=link
     notify: restart apache
 
+  - name: install ruby
+    apt: pkg={{item}} state=latest
+    with_items:
+      - ruby
+      - ruby-dev
+      - make
+      - gcc
+      - nodejs
+
+#  - name: install jekyll
+#    command: gem install jekyll -v {{jekyllVersion}} --no-rdoc --no-ri
+#    sudo: yes
+
+  - name: install jekyll
+    gem: name=jekyll version={{jekyllVersion}}
+    sudo: yes
