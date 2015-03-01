@@ -61,3 +61,19 @@ vagrant destroy
 ```
 
 
+# Pour Éditer le portail en "local", et voir les changements "live"
+
+
+```
+  vagrant ssh
+  cd /vagrant/portal
+  sudo jekyll build --watch --force_polling
+
+```
+
+jekyll "surveille" les modifs aux fichiers dans ./portal, et regénère le site après chaques modifs
+
+
+# Déployer en prod
+
+doc à venir...
