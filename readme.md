@@ -47,6 +47,9 @@ Créer la VM :
 vagrant up
 ```
 
+Une fois terminé un site devrait apparaître au : http://192.168.78.29
+(une adresse locale définie dans ./Vagrantfile
+
 
 Au besoin exécuter le "playbook" de provisioning :
 
