@@ -111,13 +111,13 @@
       - gcc
       - nodejs
 
-#  - name: install jekyll
-#    command: gem install jekyll -v {{jekyllVersion}} --no-rdoc --no-ri
-#    sudo: yes
-
   - name: install jekyll
-    gem: name=jekyll version={{jekyllVersion}}
+    command: gem install jekyll -v {{jekyllVersion}} --no-rdoc --no-ri
     sudo: yes
+
+#  - name: install jekyll
+#    gem: name=jekyll version={{jekyllVersion}}
+#    sudo: yes
 
   - name: zapper la version actuelle du code
     command: rm -Rf '/var/bio-info/code' # on pourrais prendre {{codeDir}}, mais ce serait plus dangereux...
@@ -126,8 +126,10 @@
   - name: fetcher la derniere version du code
     git: repo=git@{{gitRepoUrl}} dest='/var/bio-info/code' depth=1 accept_hostkey=yes version=master
     when: not isVagrant
+    notify: restart apache
 
 
   - name: regénérer le portail
     command: jekyll build --source {{codeDir}}/portal
     sudo: yes
+    notify: restart apache

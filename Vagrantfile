@@ -3,15 +3,15 @@
 
 Vagrant.configure("2") do |config|
 
-  config.vm.define :central_server do |central_server|
+  config.vm.define :vm-bio-info do |vm-bio-info|
 
-    central_server.vm.box = "UbuntuServer14.04-bento"
-    central_server.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box"
-    central_server.vm.network  :private_network, ip: "192.168.78.29"
-    central_server.vm.host_name = "portal-udes-bioinfo"
-#    central_server.vbguest.auto_update = false
+    vm-bio-info.vm.box = "UbuntuServer14.04-bento"
+    vm-bio-info.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box"
+    vm-bio-info.vm.network  :private_network, ip: "192.168.78.29"
+    vm-bio-info.vm.host_name = "portal-udes-bioinfo"
+#    vm-bio-info.vbguest.auto_update = false
 
-    central_server.vm.provision :ansible do |ansible|
+    vm-bio-info.vm.provision :ansible do |ansible|
       ansible.inventory_path = "./ansible/host-vagrant"
       ansible.playbook = "./ansible/setup.yml"
       ansible.host_key_checking = false
