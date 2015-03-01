@@ -15,6 +15,7 @@
     codeDir: "{{'/vagrant' if isVagrant else '/var/bio-info/code'}}"
     jekyllVersion: 2.5.3
     staticPortalDir: "{{varDir}}/portal"
+    gitRepoUrl: git@bitbucket.org:jflucier/crispycrispr.git
 
   tasks:
 
@@ -40,6 +41,7 @@
   - name: install apt packages
     apt: pkg={{item}} state=latest
     with_items:
+     - git
      - python-pycurl
      - swig
      - cpanminus
@@ -115,4 +117,18 @@
 
   - name: install jekyll
     gem: name=jekyll version={{jekyllVersion}}
+    sudo: yes
+
+#  - name: zapper la version actuelle du code
+#    command: rm -Rf {{codeDir}}
+#    when: not isVagrant
+
+
+  - name: fetcher la derniere version du code
+    git: repo=git@{{gitRepoUrl}} dest={{codeDir}} depth=1 accept_hostkey=yes version=master
+    when: not isVagrant
+
+
+  - name: générer le portail
+    command: cd {{codeDir}}/portal && jekyll build
     sudo: yes

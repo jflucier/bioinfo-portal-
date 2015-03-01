@@ -1,0 +1,24 @@
+# Jekyll configuration
+
+name: Portail Bio-Informatique
+description: Portail Bio-Informatique du Département de Biologie de l'Université de Sherbrooke
+
+
+destination: /var/bio-info/portal
+
+
+baseurl: ''
+
+# Set this to your UA-# value, or '' to disable the block completely
+gaaccount: ''
+
+
+permalink: /:year/:month/:title
+paginate: 3
+
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+exclude: []
