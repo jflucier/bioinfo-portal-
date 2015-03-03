@@ -115,7 +115,7 @@
       - nodejs
 
   - name: install jekyll
-    command: gem install jekyll -v {{jekyllVersion}} --no-rdoc --no-ri
+    shell: "if [ ! -e /usr/local/bin/jekyll ]; then gem install jekyll -v {{jekyllVersion}} --no-rdoc --no-ri; fi"
     sudo: yes
 
 #  - name: install jekyll
