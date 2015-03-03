@@ -1,7 +1,7 @@
 package designs::Experiment::ExperimentDesign;
 use strict; 
 
-use Bio::Annotations::Junctions::Detector;
+#use Bio::Annotations::Junctions::Detector;
 use File::Temp 'tempdir';
 
 
@@ -48,92 +48,92 @@ sub get_transcripts{
     }
 }
 
-sub find_global_junctions {
-    my($self,$transcripts) = @_;
-    
-    if(!defined($transcripts)){
-        $transcripts = $self->get_transcripts();
-    }
-    
-    my $global_junctions = Bio::Annotations::Junctions::Detector::detect_global($transcripts,$self->get_event());
-#     print STDERR "global junctions = ".scalar(@$global_junctions)."\n";
-    # lets filter out junctions that include junctions with AS event
-    $global_junctions = $self->filter_out_isoform_specific_junctions($global_junctions);
-#     print STDERR "global junctions event filtered = ".scalar(@$global_junctions)."\n";
-    my @global_junctions_by_freq_dist = sort _juntions_sort @$global_junctions;
-    
-    return \@global_junctions_by_freq_dist;
-}
+# sub find_global_junctions {
+#     my($self,$transcripts) = @_;
+#     
+#     if(!defined($transcripts)){
+#         $transcripts = $self->get_transcripts();
+#     }
+#     
+#     my $global_junctions = Bio::Annotations::Junctions::Detector::detect_global($transcripts,$self->get_event());
+# #     print STDERR "global junctions = ".scalar(@$global_junctions)."\n";
+#     # lets filter out junctions that include junctions with AS event
+#     $global_junctions = $self->filter_out_isoform_specific_junctions($global_junctions);
+# #     print STDERR "global junctions event filtered = ".scalar(@$global_junctions)."\n";
+#     my @global_junctions_by_freq_dist = sort _juntions_sort @$global_junctions;
+#     
+#     return \@global_junctions_by_freq_dist;
+# }
 
-sub _juntions_sort {
-    return (
-        ($b->frequency <=> $a->frequency)
-        or ($a->calculate_distance_from_event() <=> $b->calculate_distance_from_event())
-    );
-}
-
-sub find_global_exons {
-    my($self,$transcripts) = @_;
-    
-    if(!defined($transcripts)){
-        $transcripts = $self->get_transcripts();
-    }
-    
-    my %exons;
-    foreach my $transcript (@$transcripts){
-        my @exons = @{$transcript->exons};
-        for(my $exonCnt = 0; $exonCnt < scalar(@exons); $exonCnt++){
-            my $key = $exons[$exonCnt]->ezstart() . '_' . $exons[$exonCnt]->ezend();
-            if(!exists($exons{$key})){
-                $exons{$key} = {
-                    'exon' => $exons[$exonCnt],
-                    'freq' => 1
-                }
-            }
-            else{
-                $exons{$key}->{'freq'}++;
-            }
-        }
-    }
-    
-    my $sorted = $self->sort_exons_by_freq(\%exons);
-    
-    return $sorted;
-}
-
-sub sort_exons_by_freq {
-    my($self,$exons) = @_;
-    
-    my @ex_entry;
-    foreach my $k (keys%$exons){
-        push(@ex_entry, $exons->{$k});
-    }
-    
-    my @s = sort {$b->{'freq'} <=> $a->{'freq'} } @ex_entry;
-    
-    return \@s;
-}
-
-sub filter_out_isoform_specific_junctions {
-    my($self,$junctions) = @_;
-    if(!defined($self->get_event())){
-        return $junctions;
-    }
-    
-    my($event_start,$event_end) = $self->get_event()->coordinates();
-    
-    my @valid_junctions;
-    foreach my $j (@$junctions){
-        if(!$j->is_overlapping_event()){
-#             print STDERR "valid junction = ".$j->to_string."\n";
-            push(@valid_junctions,$j);
-        }
-        else{
-#             print STDERR "remove event junction = ".$j->to_string."\n";
-        }
-    }
-    return \@valid_junctions;
-}
+# sub _juntions_sort {
+#     return (
+#         ($b->frequency <=> $a->frequency)
+#         or ($a->calculate_distance_from_event() <=> $b->calculate_distance_from_event())
+#     );
+# }
+# 
+# sub find_global_exons {
+#     my($self,$transcripts) = @_;
+#     
+#     if(!defined($transcripts)){
+#         $transcripts = $self->get_transcripts();
+#     }
+#     
+#     my %exons;
+#     foreach my $transcript (@$transcripts){
+#         my @exons = @{$transcript->exons};
+#         for(my $exonCnt = 0; $exonCnt < scalar(@exons); $exonCnt++){
+#             my $key = $exons[$exonCnt]->ezstart() . '_' . $exons[$exonCnt]->ezend();
+#             if(!exists($exons{$key})){
+#                 $exons{$key} = {
+#                     'exon' => $exons[$exonCnt],
+#                     'freq' => 1
+#                 }
+#             }
+#             else{
+#                 $exons{$key}->{'freq'}++;
+#             }
+#         }
+#     }
+#     
+#     my $sorted = $self->sort_exons_by_freq(\%exons);
+#     
+#     return $sorted;
+# }
+# 
+# sub sort_exons_by_freq {
+#     my($self,$exons) = @_;
+#     
+#     my @ex_entry;
+#     foreach my $k (keys%$exons){
+#         push(@ex_entry, $exons->{$k});
+#     }
+#     
+#     my @s = sort {$b->{'freq'} <=> $a->{'freq'} } @ex_entry;
+#     
+#     return \@s;
+# }
+# 
+# sub filter_out_isoform_specific_junctions {
+#     my($self,$junctions) = @_;
+#     if(!defined($self->get_event())){
+#         return $junctions;
+#     }
+#     
+#     my($event_start,$event_end) = $self->get_event()->coordinates();
+#     
+#     my @valid_junctions;
+#     foreach my $j (@$junctions){
+#         if(!$j->is_overlapping_event()){
+# #             print STDERR "valid junction = ".$j->to_string."\n";
+#             push(@valid_junctions,$j);
+#         }
+#         else{
+# #             print STDERR "remove event junction = ".$j->to_string."\n";
+#         }
+#     }
+#     return \@valid_junctions;
+# }
 
 sub getHitRxAmplifiedExons {
     my($self)=@_;

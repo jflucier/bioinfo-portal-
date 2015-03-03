@@ -19,6 +19,15 @@ use Util::Class::Props (
 );
 
 #### Public Methods ####
+
+sub rc {
+    my ($self,$seq) = @_;
+    $seq = reverse($seq);
+    $seq =~ tr/ACGTUacgtu/TGCAAtgcaa/;
+    return $seq;
+}
+
+
 sub getTmpPath{
     my($self) = @_;
     my $cacheName = "_tmp_path";
