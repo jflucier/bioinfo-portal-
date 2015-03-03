@@ -118,10 +118,6 @@
     shell: "if [ ! -e /usr/local/bin/jekyll ]; then gem install jekyll -v {{jekyllVersion}} --no-rdoc --no-ri; fi"
     sudo: yes
 
-#  - name: install jekyll
-#    gem: name=jekyll version={{jekyllVersion}}
-#    sudo: yes
-
   - name: zapper la version actuelle du code
     command: rm -Rf '/var/bio-info/code' # on pourrais prendre {{codeDir}}, mais ce serait plus dangereux...
     when: not isVagrant
@@ -133,6 +129,6 @@
 
 
   - name: regénérer le portail
-    command: jekyll build --source {{codeDir}}/portal
+    shell: cd {{codeDir}}/portal && jekyll build --source {{codeDir}}/portal
     sudo: yes
     notify: restart apache
