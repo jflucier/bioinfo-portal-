@@ -16,8 +16,14 @@ note: à part ces trois dépendances, tout le reste est installé sur les VM vag
 
 ### 2) Vagrant (latest tested version : 1.5.1)
 
-```
+
 install latest version from here : http://www.vagrantup.com/downloads.html
+
+```
+  dpkg -i <path vers le fichier .deb)
+
+  # ensuite :
+  vagrant plugin install vagrant-vbguest
 ```
 
 ### 3) Ansible (latest tested version : 1.8.2)

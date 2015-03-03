@@ -68,6 +68,7 @@
       - Bio::Tools::Primer3
       - Bio::SearchIO
       - CGI::Application
+      - Regexp::Exhaustive
 
   - name: install unafold
     unarchive: src=../code/designs/Tool/unafold/unafold-3.8.tar.gz dest={{varDir}}
