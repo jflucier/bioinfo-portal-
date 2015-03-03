@@ -16,6 +16,7 @@
     jekyllVersion: 2.5.3
     staticPortalDir: "{{varDir}}/portal"
     gitRepoUrl: git@bitbucket.org:jflucier/crispycrispr.git
+    dataDirBlast: "{{dataDir}}/blast"
 
   tasks:
 
@@ -36,6 +37,7 @@
       - "{{varDir}}"
       - "{{staticPortalDir}}"
       - "{{dataDir}}"
+      - "{{dataDirBlast}}"
 
 
   - name: install apt packages
@@ -65,6 +67,7 @@
       - List::Util
       - Bio::Tools::Primer3
       - Bio::SearchIO
+      - CGI::Application
 
   - name: install unafold
     unarchive: src=../code/designs/Tool/unafold/unafold-3.8.tar.gz dest={{varDir}}
@@ -79,10 +82,10 @@
      - blast2
 
   - name: fetch les BDs blast
-    get_url: url="http://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?tool=portal&sendto=on&log=seqview&db=nuccore&dopt=fasta&sort=&val=NC_000913.3&from=begin&to=end" dest={{dataDir}}/NC_000913.fa
+    get_url: url="http://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?tool=portal&sendto=on&log=seqview&db=nuccore&dopt=fasta&sort=&val=NC_000913.3&from=begin&to=end" dest={{dataDirBlast}}/NC_000913.fa
 
   - name: formater les BDs blast
-    shell: "cd {{dataDir}} && formatdb -i {{item}} -p F"
+    shell: "cd {{dataDirBlast}} && formatdb -i {{item}} -p F"
     with_items:
      - NC_000913.fa
 

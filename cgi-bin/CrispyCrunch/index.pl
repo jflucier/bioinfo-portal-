@@ -1,16 +1,17 @@
 #!/usr/bin/perl -w
 use strict;
 
-use FindBin;
-use lib "/vagrant/webapps/";
-use lib "/vagrant/code/";
+#print "Content-Type: text/html\n\n";
+#print "$htmlWebDir"
 
 use CrispyCrunch::DesignsUI;
 use Error qw(:try);
 
-my $webAppRoot = "/vagrant/webapps/CrispyCrunch/";
-my $htmlWebDir = "/vagrant/htdocs/CrispyCrunch/";
-my $blast_db_path = "/vagrant/code/Data/BlastDB/";
+my $blast_db_path = $ENV{'BLAST_DIR'};
+my $webAppRoot = $ENV{'WEB_APP_DIR'};
+my $htmlWebDir = $ENV{'HTML_WEB_DIR'};
+
+
 try{
 	my $app = CrispyCrunch::DesignsUI->new(
 			TMPL_PATH => $webAppRoot . 'templates/',
