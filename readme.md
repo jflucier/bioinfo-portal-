@@ -20,12 +20,12 @@ note: à part ces trois dépendances, tout le reste est installé sur les VM vag
 install latest version from here : http://www.vagrantup.com/downloads.html
 ```
 
-### 3) Ansible (latest tested version : 1.5.4)
+### 3) Ansible (latest tested version : 1.8.2)
 ```
-  sudo easy_install pip
-  sudo add-apt-repository ppa:rquillo/ansible
-  sudo apt-get update
-  sudo apt-get install ansible
+    $ sudo apt-get install software-properties-common
+    $ sudo apt-add-repository ppa:ansible/ansible
+    $ sudo apt-get update
+    $ sudo apt-get install ansible
 ```
 
 
