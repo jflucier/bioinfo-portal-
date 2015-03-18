@@ -37,7 +37,7 @@ sudo  dpkg -i <path vers le fichier .deb)
 Cloner le repo :
 
 ```
-git clone git@bitbucket.org:jflucier/crispycrispr.git
+git clone <<username>>@bitbucket.org:jflucier/crispycrispr.git
  
 cd crispycrispr
 
