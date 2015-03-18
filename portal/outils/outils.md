@@ -6,7 +6,7 @@ layout: default
 
 ### 1. [CrispyCrunch](/cgi-bin/CrisypyCrunch/index.pl)   
 A specialised Crispr / Cas9 design tool for the inhibition of your favorite target gene.  
-### 2. [Emboss Explorer](/cgi-bin/CrisypyCrunch/index.pl)  
+### 2. [Emboss Explorer](/emboss-explorer/)  
 A graphical user interface to the [EMBOSS](http://emboss.sourceforge.net/) suite of bioinformatics tools. EMBOSS integrates a range of tools for sequence analysis. What can I use EMBOSS for? Within EMBOSS you will find around hundreds of programs (applications) covering areas such as:
 
 * Sequence alignment,
