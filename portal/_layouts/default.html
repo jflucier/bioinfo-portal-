@@ -1,11 +1,40 @@
 {% include header.html %}
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            {{ content }}
+<div id="content" class="sixteen columns clearfix">   
+    <div id="main">
+    
+        <!--<h1 class="title" id="page-title">Bienvenue / Welcome</h1>-->
+            
+        <div class="region region-content">
+            <div id="block-system-main" class="block block-system">
+                <div class="content">
+                
+                    <div id="node-1" class="node node-page node-promoted clearfix" about="/drupal/node/1" typeof="foaf:Document">
+                        <span property="dc:title" content="Bienvenue / Welcome" class="rdf-meta element-hidden"></span>
+        
+                        <div class="content clearfix">
+                            <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                                <div class="field-items">
+                                    <div class="field-item even" property="content:encoded">
+                                        {{ content }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</div><!-- /#content -->
 
+
+<!-- 
+<div id="content" class="sixteen columns clearfix">
+<div id="main">
+<div class="content">
+    {{ content }}
+</div>
+</div>
+</div>
+-->
 {% include footer.html %}
