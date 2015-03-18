@@ -1,6 +1,3 @@
-
-
-
 ## Dépendances à installer sur le poste du dévelopeur
 
 note: à part ces trois dépendances, tout le reste est installé sur les VM vagrant/virtualbox
@@ -20,7 +17,7 @@ note: à part ces trois dépendances, tout le reste est installé sur les VM vag
 install latest version from here : http://www.vagrantup.com/downloads.html
 
 ```
-  dpkg -i <path vers le fichier .deb)
+sudo  dpkg -i <path vers le fichier .deb)
 
   # ensuite :
   vagrant plugin install vagrant-vbguest
