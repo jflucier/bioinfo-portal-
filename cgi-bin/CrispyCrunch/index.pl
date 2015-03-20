@@ -7,7 +7,7 @@ use strict;
 use CrispyCrunch::DesignsUI;
 use Error qw(:try);
 
-my $blast_db_path = $ENV{'BLAST_DIR'};
+my $blast_db_path = $ENV{'BLASTDB '};
 my $webAppRoot = $ENV{'WEB_APP_DIR'};
 my $htmlWebDir = $ENV{'HTML_WEB_DIR'};
 
