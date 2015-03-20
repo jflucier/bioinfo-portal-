@@ -3,6 +3,7 @@
 name: Portail Bio-Informatique
 description: Portail Bio-Informatique du Département de Biologie de l'Université de Sherbrooke
 
+encoding: utf-8
 
 destination: /var/bio-info/portal
 
