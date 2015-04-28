@@ -4,7 +4,9 @@ layout: default
 
 ## Olympus FV300
 
-![Olympus FV300](/images/olympus_fv300.jpg)
+![Olympus FV300](/images/olympus_fv300.jpg)  
+
+Emplacement : D8-2037
 
 ### Généralités
 
@@ -12,9 +14,9 @@ layout: default
 * Champ clair, DIC
 * Épifluorescence
 * Confocal (balayage au laser)
-* Caméra monochrome de 1 mégapixels (12 bits)
+* Caméra monochrome de 1,4 mégapixels (12 bits)
 * Deux PMT pour confocal de 12 bits
-* Mode d'acquisition en confocal:
+* Mode d'acquisition en confocal :
     * Multicanaux
     * Plans multiples(Z-stack)
 
@@ -27,7 +29,7 @@ layout: default
 | 20x  |       0.4      |    Air    |        6.9 mm       |  X |  - |  DP20 |  X | LCPlanFl |
 | 60x  |       0.7      |    Air    |        1.7 mm       |  X |  - |  DP60 |  X | LCPlanFl |
 | 60x  |       1.4      |    Oil    |        0.1 mm       |  X |  - |   -   |  X | PlanApo  |
-| 100x |    0.5-1.35    |    Oil    |        0.1 mm       |  X |    | DP100 |  X | UPlanApo |
+| 100x |    0.5-1.35    |    Oil    |        0.1 mm       |  X |  - | DP100 |  X | UPlanApo |
 * BF : Champ clair (Brightfield)  
 * PH : Contraste de phase  
 * DIC : Contraste interférentiel  
@@ -41,7 +43,7 @@ layout: default
 | GFP, AlexaFluor 488, FITC          |   480/20   |     505    |  530/40  |
 | Cy3, PI, Rhodamine, AlexaFluor 546 |   535/30   |     565    |   580LP  |
 | Cy5, AlexaFluor 647, APC           |   620/60   |     660    |  700/75  |
-* *Un maximum de 3 cubes de filtres peuvent être utilisés simultanément*
+* *Un maximum de 4 emplacements pour les cubes de filtres peuvent être utilisés simultanément (incluant le champ claire).*
 <br>
 <br>
 
@@ -51,5 +53,5 @@ layout: default
 | GFP, AlexaFluor 488, FITC          |   488      |            |  520/20  |
 | Cy3, PI, Rhodamine, AlexaFluor 546 |   543      |     570    |  605/45  |
 | Cy5, AlexaFluor 647, APC           |   633      |     630    |  660LP   |
-* *Un maximum de deux canaux peuvent être utilisés simultanément.*
+* *Un maximum de deux canaux peuvent être utilisés simultanément en plus du champ claire.*
  

@@ -5,6 +5,7 @@ layout: default
 ## Zeiss Axio Observer Z1
 
 Propriétaire : Pascale Beauregard  
+Local :  D8-2039
 
 ### Généralités
 
@@ -14,18 +15,18 @@ Propriétaire : Pascale Beauregard
 * Apotome (augmente la résolution axiale)
 * Chambre à température contrôlée
 * Caméra monochrome de 5 mégapixels à large champ (14 bits)
-* Automatisé:
+* Automatisation :
     * Platine (X, Y)
     * Hauteur de l'objectif (Z)
     * Position des filtres de fluorescence
     * Autofocus
     * Changement des objectifs
     * Condensateur (champ claire, DIC, contraste de phase)
-* Mode d'acquisition:
+* Mode d'acquisition :
     * Multicanaux
     * Plans multiples(Z-stack)
     * Temps multiples (time lapse)
-    * Multipositions
+    * Multi-position
 
 ### Objectifs
 | Grossissement| Ouverture num.| Immersion | Distance de travail | BF |  PH |   DIC   | FL |

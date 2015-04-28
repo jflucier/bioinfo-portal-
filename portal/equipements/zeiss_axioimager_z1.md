@@ -4,7 +4,7 @@ layout: default
 
 ## Zeiss Axio Imager Z1
 
-Propriétaires : Nathalie Beaudoin et Viktor Steimle
+Propriétaires : Nathalie Beaudoin et Viktor Steimle  
 Local : D8-2037
 
 ![Zeiss Axio Imager Z1](\images\zeiss_axioimager_z1.jpg)
@@ -16,12 +16,12 @@ Local : D8-2037
 * Épifluorescence
 * Apotome (augmente la résolution axiale)
 * Caméra monochrome de 1.4 mégapixels (12 bits)
-* Automatisé:
+* Automatisation :
     * Hauteur de l'objectif (Z)
     * Position des filtres de fluorescence
     * Changement des objectifs
     <br>
-* Mode d'acquisition:
+* Mode d'acquisition :
     * Multicanaux
     * Plans multiples(Z-stack)
 
@@ -42,7 +42,7 @@ Local : D8-2037
 * FL : Fluorescence
 <br>
 
-###Échelles de taille sur la caméra pour les différents objectifs
+###Échelles pour les différents objectifs
 | Objectifs | Taille d’un pixel (nm) | Nombre de px/µm |
 |-----------|-----------------------:|----------------:|
 | 5x        |                   1340 |            0,75 |
@@ -51,7 +51,7 @@ Local : D8-2037
 | 40x       |                    168 |            5,97 |
 | 63X       |                    106 |            9,40 |
 | 100x      |                     67 |           14,93 |
-* pour binning 1x1 
+* binning 1x1 
 <br>
 
 ### Filtres pour fluorescence
