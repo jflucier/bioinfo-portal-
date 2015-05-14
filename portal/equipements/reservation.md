@@ -8,7 +8,7 @@ La réservation des instruments suivant se fait via un calendrier Google.
 
 * BD Pathway
 * Olympus FV300
-* Zeiss AxioImager M1
+* Zeiss AxioImager M1 
 * Zeiss AxioImager Z1
 * Zeiss AxioObserver Z1
 
