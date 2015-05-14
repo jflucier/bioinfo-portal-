@@ -10,7 +10,7 @@ OMERO permet de stocker toutes vos images à un seul endroit et ce, de façon s�
 
 [Site officiel (en anglais)](http://www.openmicroscopy.org/site/products/omero)
 
-Vous pouvez utiliser [OMERO.web](http://omero.ccs.usherbrooke.ca/) ou le client [OMERO.insight](http://downloads.openmicroscopy.org/latest/omero5) afin de voir, organiser et partager vos données. Si vous avez besoin d'aide avec le serveur OMERO ou si vous désirer avoir votre compte sur le serveur OMERO, contactez [Daniel Garneau](mailto:Daniel.Garneau@USherbrooke.ca)
+Vous pouvez utiliser [OMERO.web](http://omero.ccs.usherbrooke.ca/) ou le client [OMERO.insight](http://downloads.openmicroscopy.org/latest/omero5) afin de voir, organiser et partager vos données. Si vous avez besoin d'aide avec le serveur OMERO ou si vous désirer avoir votre compte sur le serveur OMERO, contactez [Daniel Garneau](mailto:Daniel.Garneau@USherbrooke.ca).
 
 
 ### Aide pour le serveur OMERO :

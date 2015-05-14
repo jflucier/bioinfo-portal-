@@ -7,7 +7,7 @@ layout: default
 Propriétaires : Nathalie Beaudoin et Viktor Steimle  
 Local : D8-2037
 
-![Zeiss Axio Imager Z1](\images\zeiss_axioimager_z1.jpg)
+![Zeiss Axio Imager Z1](/images/zeiss_axioimager_z1.jpg)
 
 ### Généralités
 
