@@ -2,7 +2,10 @@
 layout: default
 ---
 
-## Services de microscopie
+## Services de microscopie  
 
-will come soon
- 
+
+Détails des expertises:
+
+- Imagerie à fluorescence haut-débit.
+- Analyse d'images 
