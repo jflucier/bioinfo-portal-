@@ -54,4 +54,3 @@ Emplacement : D8-2037
 | Cy3, PI, Rhodamine, AlexaFluor 546 |   543      |     570    |  605/45  |
 | Cy5, AlexaFluor 647, APC           |   633      |     630    |  660LP   |
 * *Un maximum de deux canaux peuvent être utilisés simultanément en plus du champ claire.*
- 

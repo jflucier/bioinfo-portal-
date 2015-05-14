@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Microscopes 
+## Microscopes
 
 * [Olympus FV-300](/equipements/olympus_fv300.html)
     * Microscope inversé
@@ -24,7 +24,7 @@ layout: default
     <br>
     <br>
 * [Zeiss Axio Observer Z1 (Pascale Beauregard)](/equipements/zeiss_axioobserver_z1.html)
-    * Microscope inversé 
+    * Microscope inversé
     * Champ claire (DIC et contraste de phase)
     * Fluorescence (épifluorescence et Apotome)
     * Chambre à température controlée

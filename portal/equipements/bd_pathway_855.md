@@ -26,7 +26,7 @@ Local : D8-2039
     * Temps multiples (time lapse)
     * Multi-position
 
-###Objectifs (Olympus)
+### Objectifs (Olympus)
 | Grossissement | Ouverture num. | Immersion | Distance de travail | BF | PH |         DIC        | FL |
 |---------------|:--------------:|:---------:|:-------------------:|:--:|:--:|:------------------:|:--:|
 | 4x            | 0.13           | Air       | 17 mm               |  X |  - |          -         |  X |
@@ -38,4 +38,3 @@ Local : D8-2039
 * DIC : Contraste interférentiel  
 * FL : Fluorescence  
 <br>
-

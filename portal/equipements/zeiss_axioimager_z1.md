@@ -51,7 +51,7 @@ Local : D8-2037
 | 40x       |                    168 |            5,97 |
 | 63X       |                    106 |            9,40 |
 | 100x      |                     67 |           14,93 |
-* binning 1x1 
+* binning 1x1
 <br>
 
 ### Filtres pour fluorescence

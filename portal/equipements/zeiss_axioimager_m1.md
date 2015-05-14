@@ -39,7 +39,7 @@ Local : D8-2037
 * FL : Fluorescence
 <br>
 
-###Échelles pour les différents objectifs
+### Échelles pour les différents objectifs
 | Objectifs | Taille d'un pixel (nm) | Nombre de px/um |
 |-----------|:----------------------:|:---------------:|
 | 5x        |          1340          |       0,75      |
@@ -48,7 +48,7 @@ Local : D8-2037
 | 40x       |           168          |       6,0      |
 | 63X       |           106          |       9,4      |
 | 100x      |           67           |      14,9      |
-* binning 1x1 
+* binning 1x1
 <br>
 
 ### Filtres pour fluorescence
