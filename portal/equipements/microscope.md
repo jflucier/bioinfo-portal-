@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Microscopes
+## Microscopes 
 
 * [Olympus FV-300](/equipements/olympus_fv300.html)
     * Microscope inversé
