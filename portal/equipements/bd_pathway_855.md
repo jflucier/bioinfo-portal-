@@ -8,19 +8,19 @@ layout: default
 
 Local : D8-2039
 
-### Généralités
+### GÃ©nÃ©ralitÃ©s
 
-* Microscope inversé
+* Microscope inversÃ©
 * Champ clair
-* Épifluorescence
+* Ã‰pifluorescence
 * Confocal (spinning disk)
-* Caméra monochrome de 1.4 mégapixels (12 bits)
+* CamÃ©ra monochrome de 1.4 mÃ©gapixels (12 bits)
 * Automatisation :
-    * Déplacement de l'objectif (X, Y, Z)
+    * DÃ©placement de l'objectif (X, Y, Z)
     * Position des filtres de fluorescence
     * Autofocus
 * Modes d'acquisition :
-    * Spécialisé pour l'acquisition de plaques 96 et 384 puits
+    * SpÃ©cialisÃ© pour l'acquisition de plaques 96 et 384 puits
     * Multicanaux
     * Plans multiples (Z-stack)
     * Temps multiples (time lapse)
@@ -35,7 +35,7 @@ Local : D8-2039
 | 40x           | 0.9            | Air       | 0.2 mm              |  X |  - |          -         |  X |
 * BF : Champ clair (Brightfield)  
 * PH : Contraste de phase  
-* DIC : Contraste interférentiel  
+* DIC : Contraste interfÃ©rentiel  
 * FL : Fluorescence  
 <br>
 

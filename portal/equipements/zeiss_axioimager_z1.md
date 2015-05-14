@@ -4,18 +4,18 @@ layout: default
 
 ## Zeiss Axio Imager Z1
 
-Propriétaires : Nathalie Beaudoin et Viktor Steimle  
+PropriÃ©taires : Nathalie Beaudoin et Viktor Steimle  
 Local : D8-2037
 
 ![Zeiss Axio Imager Z1](\images\zeiss_axioimager_z1.jpg)
 
-### Généralités
+### GÃ©nÃ©ralitÃ©s
 
 * Microscope droit
 * Champs clair, DIC
-* Épifluorescence
-* Apotome (augmente la résolution axiale)
-* Caméra monochrome de 1.4 mégapixels (12 bits)
+* Ã‰pifluorescence
+* Apotome (augmente la rÃ©solution axiale)
+* CamÃ©ra monochrome de 1.4 mÃ©gapixels (12 bits)
 * Automatisation :
     * Hauteur de l'objectif (Z)
     * Position des filtres de fluorescence
@@ -38,12 +38,12 @@ Local : D8-2037
 
 * BF : Champ clair (Brightfield)  
 * PH : Contraste de phase  
-* DIC : Contraste interférentiel  
+* DIC : Contraste interfÃ©rentiel  
 * FL : Fluorescence
 <br>
 
-###Échelles pour les différents objectifs
-| Objectifs | Taille d’un pixel (nm) | Nombre de px/µm |
+###Ã‰chelles pour les diffÃ©rents objectifs
+| Objectifs | Taille d'un pixel (nm) | Nombre de px/um |
 |-----------|-----------------------:|----------------:|
 | 5x        |                   1340 |            0,75 |
 | 10x       |                    670 |            1,49 |
@@ -55,7 +55,7 @@ Local : D8-2037
 <br>
 
 ### Filtres pour fluorescence
-| Fluorophores                       | Excitation | Dichroïque | Émission |
+| Fluorophores                       | Excitation | Dichroique | Ã‰mission |
 |------------------------------------|:----------:|:----------:|:--------:|
 | DAPI, Hoechst, AlexaFluor 350, BFP |   335-383  |     395    |  420-470 |
 | GFP, AlexaFluor 488, FITC          |   450-490  |     510    |  515-565 |
