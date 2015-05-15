@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Microscopes
+## Instruments
 
 * [Olympus FV-300](/equipements/olympus_fv300.html)
     * Microscope inversé
@@ -35,3 +35,8 @@ layout: default
     * Champ claire
     * Fluorescence (épifluorescence)
     * Chambre à température et CO2 controlés.
+    <br>
+    <br>
+* [BD FACSCalibur (Viktor Steimle)](/equipements/bd_facscalibur.html)
+  * Cytomètre
+  * 2 lasers et 4 couleurs

@@ -55,7 +55,7 @@ Local : D8-2037
 <br>
 
 ### Filtres pour fluorescence
-| Fluorophores                       | Excitation | Dichroique | Émission |
+| Fluorophores                       | Excitation | Dichroïque | Émission |
 |------------------------------------|:----------:|:----------:|:--------:|
 | DAPI, Hoechst, AlexaFluor 350, BFP |   335-383  |     395    |  420-470 |
 | GFP, AlexaFluor 488, FITC          |   450-490  |     510    |  515-565 |
