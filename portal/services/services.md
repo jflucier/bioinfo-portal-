@@ -4,19 +4,26 @@ layout: default
 
 ## Services
 
-### 1. [Bio-informatique](/services/bioinformatique.html)   
+<table >
+<tbody>
+<tr style="background-color:#FFFFFF">
+<td width='300px' valign='top'><a href='/services/bioinformatique.html'><img src='/images/bioinfo/bioinfo_service_main_300.png' /></a></td>
+<td>
+<h2>Bio-informatique</h2><br/>
 Avec notre équipe de bio-informaticiens experts, vous serez en mesure d'optimiser les analyses bio-informatiques requises par votre 
-laboratoire ou entreprise. Nous savons établir une solution de façon rapide, efficace et professionnelle à tous vos besoins bio-informatiques.
-
-
-### 2. [Microscopie](/services/microscopie.html)  
+laboratoire ou entreprise. Vous pouvez d'ailleur voir quelques-unes de nos réalisations en consultant notre <a href='/portefolio/bioinformatique.html'>portefolio</a>. 
+L'expertise bio-informatique acquises au fils des dernieres annees, nous permet d'établir une solution de façon rapide, efficace et 
+professionnelle à tous vos besoins bio-informatiques. Pour de plus de détail, consulter ce <a href='/services/bioinformatique.html'>lien</a>.
+</td>
+</tr>
+<tr  style="background-color:#FFFFFF">
+<td width='300px' valign='top'><a href='/services/microscopie.html'><img src='/images/montage_cells_staining.png' /></a></td>
+<td>
+<h2>Microscopie</h2><br/>
 La platforme de phenotypage est une nouvelle platformes disponible a l'ensemble des laboraoires et entreprises desirant caracteriser de 
-facon phenotypique leur biomarqueur d'interet. Au cours des dernieres annees, notre equipe a developpe de multiples essaies qui peuvent etre multiplexe et qui sont offert a 
-faible cout a la communaute scientifique. Voici une liste sommaire des services offerts:
-
-- Criblage d'essai phénotypique à haut débit
-- Analyse d'images a haut contenu pour microscopie (HCS)
-- Détection de colonnies (bactéries, levures) en pétri
-- Analyse d'images provenant de divers echantillons tel que cellules humaines, souris, insectes, plantes, bacteries, etc.
-- Developpement de script et plugin ImageJ / Fiji pour automatisation de transformation d'images ou d'analyse.  
-- Pour plus de details, consulter ce [lien](/services/microscopie.html)
+facon phenotypique leur biomarqueur d'interet. Au cours des dernieres annees, notre equipe a developpe de multiples essaies, qui peuvent etre multiplexe, qui sont offert a 
+faible cout a la communaute scientifique. Pour plus de details concernant ces essaies, SVP consulter ce <a href='/services/microscopie.html'>lien</a>.
+</td>
+</tr>
+</tbody>
+</table>

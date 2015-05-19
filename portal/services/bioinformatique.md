@@ -27,5 +27,5 @@ En bref, voici le détail de notre expertise:
     * Quantification de diverses données provenant de la segmentation reliées à la taille, la forme ou l'intensité.
     * Plusieurs essais déjà développé (quantification d'apoptose/viabilité, cycle cellulaire, migration cellulaire, etc.).
 
-   
-Pour plus de détails sur notre expertise, contacter [Jean-Francois Lucier](/contact.html).
+Pour le détails de nos realisations, svp consulter notre [portefolio](/portefolio/bioinformatique.html). Pour plus de détails sur notre expertise ou pour 
+soumettre  un projet, contactez [Jean-Francois Lucier](/contact.html).
