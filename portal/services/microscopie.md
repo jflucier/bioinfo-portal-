@@ -4,7 +4,9 @@ layout: default
 
 ## Services de microscopie et d'instrumentation
 
-Notre service d'instrumentation vous offre la possibilité de faire vos criblages phénotypiques en microscopie à haut débit afin de récolter rapidement une grande quantité d'information. D'analyser vos images afin d'extraire le plus d'information possible de vos images. Ou encore d'automatiser votre pipetage afin de préparer vos échantillons efficacement et sans erreur.
+Notre service d'instrumentation vous offre la possibilité de faire vos criblages phénotypiques en microscopie à haut débit afin de récolter 
+rapidement une grande quantité d'information. D'analyser vos images afin d'extraire le plus d'information possible de vos images. 
+Ou encore d'automatiser votre pipetage afin de préparer vos échantillons efficacement et sans erreur.
 
 ### Criblage d'essai phénotypique à haut débit
   - Apoptose
