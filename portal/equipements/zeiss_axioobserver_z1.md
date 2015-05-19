@@ -5,7 +5,9 @@ layout: default
 ## Zeiss Axio Observer Z1
 
 Propriétaire : Pascale Beauregard  
-Local :  D8-2039
+Local : D8-2039
+
+![Zeiss Axio Observer Z1](/images/zeiss_axioobserver_Z1.jpg)
 
 ### Généralités
 

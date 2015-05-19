@@ -4,7 +4,9 @@ layout: default
 
 ## Services de microscopie et d'instrumentation
 
-### Criblage d'essai phénotypique à haut débit**
+Notre service d'instrumentation vous offre la possibilité de faire vos criblages phénotypiques en microscopie à haut débit afin de récolter rapidement une grande quantité d'information. D'analyser vos images afin d'extraire le plus d'information possible de vos images. Ou encore d'automatiser votre pipetage afin de préparer vos échantillons efficacement et sans erreur.
+
+### Criblage d'essai phénotypique à haut débit
   - Apoptose
   - Viabilité cellulaire
   - Compte cellulaire
@@ -20,16 +22,16 @@ layout: default
     - Microtubules (Tubuline)
     - Marqueurs épithélial et mésenchymal (E-Cadherine, Vimentine)
     - Marqueur d'activation de fibroblastes (SMA)
-    - Autres marquages possible avec mise au point
+    - Autres marquages possibles avec mise au point
 
-\* *Plusieurs techniques peuvent être multiplexées.*
+\* *Plusieurs marqueurs peuvent être multiplexés.*
 <br>
 
 ### Microscopie générale
  - Épifluorescence
  - Confocal
  - Champ claire (contraste de phase et contraste interférentiel (DIC))
- - Grossissement de 4X à 100X
+ - Grossissement de 40X à 1000X
  - Divers fluorophores:
   - DAPI, hoechst
   - CFP
@@ -67,4 +69,4 @@ layout: default
     - Mesures de morphologie et d'intensité
 
 ### Robotique (liquid handler)
-  - Préparation de plaques 96 puits
+  - Préparation automatisée de plaques 96 puits

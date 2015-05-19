@@ -57,6 +57,6 @@ Local : D8-2037
 ### Filtres pour fluorescence
 | Fluorophores                       | Excitation | Dichroïque | Émission |
 |------------------------------------|:----------:|:----------:|:--------:|
-| DAPI, Hoechst, AlexaFluor 350, BFP |   335-383  |     395    |  420-470 |
-| GFP, AlexaFluor 488, FITC          |   450-490  |     510    |  515-565 |
-| Cy3, PI, Rhodamine, AlexaFluor 546 |   540-552  |     580    |   590LP  |
+| [DAPI, Hoechst, AlexaFluor 350, BFP](/images/Filter cube DAPI set 49) |   365/100  |     395    |  445/50 |
+| [GFP, AlexaFluor 488, FITC](/images/Filter cube GFP set 10.gif)          |   470/40  |     510    |  540/50 |
+| [Cy3, PI, Rhodamine, AlexaFluor 546](/images/Filter cube Cy3 set 15.gif) |   546/12  |     580    |   590LP  |

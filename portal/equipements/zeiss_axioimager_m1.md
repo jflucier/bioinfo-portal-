@@ -40,20 +40,19 @@ Local : D8-2037
 <br>
 
 ### Échelles pour les différents objectifs
-| Objectifs | Taille d'un pixel (nm) | Nombre de px/um |
-|-----------|:----------------------:|:---------------:|
-| 5x        |          1340          |       0,75      |
-| 10x       |           670          |       1,5      |
-| 20x       |           335          |       3,0      |
-| 40x       |           168          |       6,0      |
-| 63X       |           106          |       9,4      |
-| 100x      |           67           |      14,9      |
+| Objectifs | Taille d’un pixel (nm)* | Nombre de px/µm* |
+|-----------|------------------------:|-----------------:|
+| 5x        |                    2127 |             0,47 |
+| 10x       |                    1063 |             0,94 |
+| 20x       |                     532 |             1,88 |
+| 40x       |                     266 |             3,76 |
+| 100x      |                     106 |             9,40 |
 * binning 1x1
 <br>
 
 ### Filtres pour fluorescence
 | Fluorophores                       | Excitation | Dichroïque | Émission |
 |------------------------------------|:----------:|:----------:|:--------:|
-| DAPI, Hoechst, AlexaFluor 350, BFP |   335-383  |     395    |  420-470 |
-| GFP, AlexaFluor 488, FITC          |   450-490  |     510    |  515-565 |
-| Cy3, PI, Rhodamine, AlexaFluor 546 |   540-552  |     580    |   590LP  |
+| [DAPI, Hoechst, AlexaFluor 350, BFP](/images/Filter cube DAPI set 49) |   365/100  |     395    |  445/50 |
+| [GFP, AlexaFluor 488, FITC](/images/Filter cube GFP set 10.gif)          |   470/40  |     510    |  540/50 |
+| [Cy3, PI, Rhodamine, AlexaFluor 546](/images/Filter cube Cy3 set 15.gif) |   546/12  |     580    |   590LP  |
