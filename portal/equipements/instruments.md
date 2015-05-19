@@ -38,5 +38,13 @@ layout: default
     <br>
     <br>
 * [BD FACSCalibur (Viktor Steimle)](/equipements/bd_facscalibur.html)
-  * Cytomètre
+  * Cytomètre analyseur
   * 2 lasers et 4 couleurs
+  <br>
+  <br>
+* [Eppendorf epMotion 5075 (Sébastien Rodrigue)](/equipements/eppendorf_epmotion.html)
+  * Robot pipeteur.
+  * Pour transfert de liquide automoatisé, préparation de plaques 96 puits.
+* [BioTek FL600 (Sébastien Rodrigue)](/equipements/bio-tek_fl600.html)
+  * Lecteur de plaques
+  * Fluorescence et absorbance

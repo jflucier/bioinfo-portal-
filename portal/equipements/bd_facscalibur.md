@@ -7,7 +7,7 @@ layout: default
 Propriétaire : Viktor Steimle  
 Local : D8-3050
 
-![BD FACSCalibur](/images/facscalibur.jpg)
+![BD FACSCalibur](/images/bd_facscalibur.jpg)
 
 Généralités :
 - 2 lasers
