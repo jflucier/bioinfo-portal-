@@ -4,9 +4,6 @@ layout: default
 
 ## BD FACSCalibur
 
-Propriétaire : Viktor Steimle  
-Local : D8-3050
-
 ![BD FACSCalibur](/images/bd_facscalibur.jpg)
 
 Généralités :
