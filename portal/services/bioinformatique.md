@@ -2,27 +2,64 @@
 layout: default
 ---
 
-## Services Bio-informatique
+
+<h2>Services bio-informatique</h2>
+<table >
+<tbody>
+<tr style="background-color:#FFFFFF">
+<td width='300px' ><img src='/images/bioinfo/bd_pathway_855_crop.png' width='300px' /></td>
+<td >
+<h4><b>L'explosion de données biologiques</b></h4>
+<p>L'avancement technologique durant la derniere decennie a contribuer a la croissance des données liée à la biologie. La creation d'outil tel que
+les séquenceurs de nouvelle génération et microscope à haut débit ont grandement contribuer à cette hausse. De nos jours, la plupart des laboratoires et entreprises 
+privées, petites ou grosses, ont recours à ces technologies pour tester une multitudes d'hypothèses liées à leurs programmes de recherches. Par 
+conséquent, le besoin de personnes qualifiées et spécialisées dans le traitement de ces données est donc devenu une nécessité pour l'avancement de vos recherches. 
+</td>
+</tr>
+</tbody>
+</table>
 
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-<td>
-<p>Avec notre équipe de consultants bio-informatiques experts, vous serez en mesure d'optimiser les analyses bio-informatiques requises par votre 
-laboratoire ou entreprise. Nous savons établir une solution de façon rapide, efficace et professionnelle à tous vos besoins bio-informatiques.</p>
+<td >
+<h4><b>L'Équipe</b></h4>
+<p>Avec notre équipe de bio-informaticiens experts, vous serez en mesure d'obtenir les analyses bio-informatiques requises par votre 
+laboratoire ou entreprise de façon rapide, efficace et professionnelle. Notre equipe est composée de programmeurs et bioinformaticiens seniors ayant 
+une formation en biologie et en informatique. Notre expertise nous permet de bien comprendre vos hypothèses et nous permettent d'élaborer des solutions 
+repondant à tous vos besoins bio-informatiques. Le service bio-informatique du département de Biologie travail étroitement avec l'équipe du Centre de Calcul Scientifiques 
+de l'Université de Sherbrooke (<a href='https://www.usherbrooke.ca/sti/internes/ccs/'>CCS</a>), sous la gouverne de 
+<a href='http://www.calculquebec.ca/fr/'>Calcul Québec</a> et <a href='http://www.computecanada.ca/?lang=fr'>Calcul Canada</a>. L'équipe de programmeurs et 
+d'administrateurs systèmes de ce centre sont responsable du bon fonctionnement du super-ordinateur Mammouth (> 39 000 processeurs). Nous avons 
+donc un un accès privilégiés à cette super ressource informatique qui nous permet d'analyser vos resultats de manière rapide et efficace.
+</p>
+</td>
+<td width='200px' >
+    <a href='http://www.calculquebec.ca/fr/'><img src='/images/bioinfo/calculquebec_logo_medium.png' width='200px' /></a>
+    <br /><br />
+    <a href='http://www.computecanada.ca/?lang=fr'><img src='/images/bioinfo/ComputeCanada_logo_0.png' width='200px'/></a>
+</td>
+</td>
+</tr>
+</tbody>
+</table>
 
-<p>Quels que soient vos besoins en bio-informatique, notre service bio-informatique situé à l'Université de Sherbrooke est structuré de façon 
-à effectuer les analyses nécessaires pour trouver des solutions efficaces à vos problèmes, et ce, à un coût très concurrentiel. Nous travaillons 
-de pair avec nos clients pour bien comprendre le domaine de recherche ainsi que la problématique lié aux besoins et ainsi identifier les éléments 
-qui devront être corrigés ou implantés pour assurer une analyse adéquate aux besoins de votre laboratoire ou entreprise.</p>
-
-<p>Vu l'explosion des données en génomique liées aux techniques de séquençage de nouvelle génération, nous avons développés au cours des 
-dernières années une expertise dans l'analyse de données et l'interprétation de données issue de séquenceurs de nouvelle génération. 
-De plus, nous avons aussi participée à l'élaboration de protocoles expérimentaux ainsi qu'à différent pipelines d'analyse d'images associés 
-au criblage à haut débit par microscopie. Pour plus d'information, consulter la section sur le [service de microscopie](/services/microscopie.html).</p>
-
+<table >
+<tbody>
+<tr style="background-color:#FFFFFF">
+<td width='300px' >
+    <img src='/images/bioinfo/1_analysis.png' width='300px'/>
+    <br /><br />
+    <img src='/images/bioinfo/2_solution.png' width='300px'/>
+</td>
+<td >
+<h4><b>Une solution bio-informatique pour vos besoins</b></h4>
+<p>Quels que soient vos besoins en bio-informatique, notre service bio-informatique est structuré d'une façon qui permet  
+de solutionner efficacement vos problèmes d'analyse, et ce, à un coût très concurrentiel. Nous travaillons 
+de pair avec nos clients afin de bien comprendre leur domaine de recherche et la problématique lié à l'analyse de leur donnéees. Ceci permet d'identifier 
+les éléments qui devront être corrigés ou implantés pour assurer une analyse juste des données qui repondent aux besoins de votre laboratoire ou entreprise.</p>
 <p>
-En bref, voici le détail de notre expertise:
+<h4><b>En bref, voici le détail de notre expertise:</b></h4>
 <ul>
 <li>Analyse de vos besoins et estimation de coût.</li>
 <li>Analyse de données de séquençage à haut débit (DNA-seq, RNA-seq, Chip-seq, etc.).</li>
@@ -31,12 +68,10 @@ En bref, voici le détail de notre expertise:
 </ul>
 </p>
 <p>
-Pour le détails de nos realisations, svp consulter notre [portefolio](/portefolio/bioinformatique.html). Pour plus de détails sur notre expertise ou pour 
-soumettre  un projet, contactez [Jean-Francois Lucier](/contact.html).
+Pour le détails de nos réalisations, svp consulter notre <a href='/portefolio/portefolio.html'>portefolio</a>. Pour plus de détails sur notre expertise ou pour nous
+soumettre un projet, contactez <a href='mailto:jean-francois.lucier@usherbrooke.ca'>jean-francois[at]usherbrooke.ca
 </p>
 </td>
-<td width='300px' valign='top'><img src='/images/bioinfo/montage123.png' /></td>
-
 </tr>
 </tbody>
 </table>

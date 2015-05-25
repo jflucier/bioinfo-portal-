@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Services de microscopie
+## Services de phénotypage
 
 Notre service d'instrumentation vous offre la possibilité de faire vos criblages phénotypiques en microscopie à haut débit afin de récolter 
 rapidement une grande quantité d'information. D'analyser vos images afin d'extraire le plus d'information possible de vos images. 

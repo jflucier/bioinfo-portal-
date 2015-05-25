@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Portail Bio-Informatique</title>
-    <link href="{{ site.baseurl }}/css/buttons.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/css/layout.css" rel="stylesheet">
+    <title>Portail bio-informatique et phénotypique</title>
     <link href="{{ site.baseurl }}/css/skeleton.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/bootstrap_overide.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
             <div class="inner">
                 <div id="name-and-slogan">
                     <div id="site-name">
-                        <a href="/drupal/" title="Accueil" rel="home">Portail Bio-Informatique</a>
+                        <a href="/drupal/" title="Accueil" rel="home">Portail bio-informatique et phénotypique</a>
                     </div>
 
                     <div id="site-slogan">
@@ -35,28 +35,30 @@
                             <a href="/services/services.html">Services</a>
                             <ul class="menu">
                                 <li class="expanded"><a href="/services/bioinformatique.html">Bio-informatique</a></li>
-                                <li class="last leaf"><a href="/services/microscopie.html">Microscopie</a></li>
+                                <li class="last leaf"><a href="/services/microscopie.html">Phénotypage</a></li>
+                                <li class="last leaf"><a href="/services/portefolio.html">Portefolio</a></li>
                             </ul>
                         </li>
                         <li class="expanded">
-                            <a href="/equipements/equipments.html">Équipements</a>
+                            <a name='1' id='1'>Bio-informatique</a>
+                            <ul class="menu">
+                                <li class="expanded"><a href="/outils/outils.html">Outils</a></li>
+                            </ul>
+                        </li>
+                        <li class="expanded">
+                            <a name='1' id='1'>Microscopie</a>
                             <ul class="menu">
                                 <li class="expanded"><a href="/equipements/instruments.html">Instruments</a></li>
                                 <li class="last leaf"><a href="/equipements/reservation.html">Reservation</a></li>
+                                <li class="last leaf"><a href="http://omero.ccs.usherbrooke.ca/" title="Client web OMERO">OMERO.web</a></li>
                             </ul>
                         </li>
-                        <li class="expanded"><a href="/drupal/node/85" title="">Aide</a>
+                        <li class="expanded"><a name='1' id='1'>Support</a>
                             <ul class="menu">
                                 <li class="first last expanded"><a href="/aide/omero.html">OMERO server</a></li>
                             </ul>
                         </li>
-                        <li class="expanded"><a href="/outils/outils.html">Outils</a>
-                            <ul class="menu">
-                                <li class="first leaf"><a href="/cgi-bin/CrisypyCrunch/index.pl" title="">CrispyCrunch</a></li>
-                                <li class="first leaf"><a href="/emboss-explorer" title="">EMBOSS Explorer</a></li>
-                                <li class="last leaf"><a href="http://omero.ccs.usherbrooke.ca/" title="Client web OMERO">OMERO.web</a></li>
-                            </ul>
-                        </li>
+                        
                         <li class="leaf"><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>

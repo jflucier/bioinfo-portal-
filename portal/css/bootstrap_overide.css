@@ -1,0 +1,10 @@
+ol.carousel-indicators {
+  bottom:0px;
+  left: 90%;
+}
+
+.borderless table, .borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+    border: none;
+    background-color:#FFFFFF;
+}
+

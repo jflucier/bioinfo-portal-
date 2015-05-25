@@ -1,18 +1,23 @@
 
-# Bienvenue / Welcome
 
-Bienvenue sur le portail bio-informatique de l'université de Sherbrooke. Ce portail se veut une porte d'entrée pour les chercheurs ainsi que pour les étudiants du département de biologie de l'Université de Sherbrooke. Sur ce portail, il vous sera possible:
 
-1. Consulter l'horaire du service bio-informatique offert a tous les chercheurs du département.
-2. Réserver des plages horaires pour l'utilisation de divers equipement commun au département, tel que les microscopes.
-3. Accéder aux différents outils bio-informatique publiques et privées développés pour le departement. Voir section Outils.
- 
-***
+<br/>
+Bienvenue sur le portail bio-informatique et phenotypique du Département de l'Université de Sherbrooke.
+Ce portail se veut une porte d'entrée pour tous les chercheurs oeuvrant au sein d'institution académique, organisme sans but lucratif ou entreprise privée.
+Vous trouverez sur ce portail une multitude d'information en lien avec les differents services et ressources offerts par le département. 
 
-Welcome to the bioinformatic web portal of the Sherbrooke University. This web portal will act as an entry point for researchers and students of the Biology department. On this portal, you will be able to:
+## Bio-informatique
+Vu l'explosion des données en génomique, les besoins d'analyses bio-informatique sont en forte croissance depuis la derniere decennie. 
+Le service bio-informatique a pour mission d'offrir aux chercheurs provenant du domaine académique et privée la possibilité de valider 
+leurs hypothèses à l'aide de solution bio-informatique spécifiquement développé pour leurs besoins. 
 
-1. See the bioinformatic schedule associated to the biology department.
-2. Reserve and plan your usage of the diverse equipment common to the department like microscopes.
-3. Provide access to the different public and private bioinformatic tools developped the department. See section Outils.
+## Phénotypage
+Il est devenu primordial de demontrer l'effet fonctionnel des biomarqueurs et / ou drogues que vous avez identifie.
+Depuis quelques années, il est possible d'effetuer des cribblage fonctionnel afin d'identifier des biomarqueurs importants 
+pour la fonction cellulaire que vous etudiez. Le service de phenotypage est desormais disponible a tous chercheurs provenant du domaine académique et privée 
+necessitant un cribblage fonctionnel ou une caracterisation fontionnelle de leurs biomarqueurs. 
+
+
+<h3>Pour plus d'information, consulter la section <a href='/services/services.html'>services</a>.</h3>
 
 
