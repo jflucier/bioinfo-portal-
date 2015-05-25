@@ -6,8 +6,6 @@ layout: default
 
 ![Olympus FV300](/images/olympus_fv300.jpg)  
 
-Emplacement : D8-2037
-
 ### Généralités
 
 * Microscope inversé

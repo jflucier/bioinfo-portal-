@@ -6,8 +6,6 @@ layout: default
 
 ![BD Pathway 855](/images/bd_pathway_855.jpg)  
 
-Local : D8-2039
-
 ### Généralités
 
 * Microscope inversé

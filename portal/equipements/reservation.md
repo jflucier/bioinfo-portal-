@@ -6,12 +6,12 @@ layout: default
 
 La réservation des instruments suivant se fait via un calendrier Google.
 
-* BD Pathway
-* Olympus FV300 (confocal)
-* Zeiss AxioImager M1 (Kamal)
-* Zeiss AxioImager Z1 (Nathalie et Viktor)
-* Zeiss AxioObserver Z1 (Pascale)
-* BD FACSCalibur (Viktor)
+* [BD Pathway 855](/equipements/bd_pathway_855.html)
+* [Olympus FV-300](/equipements/olympus_fv300.html)
+* [Zeiss Axio Imager M1](/equipements/zeiss_axioimager_m1.html)
+* [Zeiss Axio Imager Z1](/equipements/zeiss_axioimager_z1.html)
+* [Zeiss Axio Observer Z1](/equipements/zeiss_axioobserver_z1.html)
+* [BD FACSCalibur](/equipements/bd_facscalibur.html)
 
 Rendez-vous sur [Google Calendar](www.google.com/calendar). Réservez la plage horaire qui vous convient en inscrivant : Prénom Nom (laboratoire). Choisissez le calendrier correspondant à l'appareil.
 

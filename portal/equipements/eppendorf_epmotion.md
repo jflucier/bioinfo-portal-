@@ -4,9 +4,6 @@ layout: default
 
 ## Eppendorf epMotion 5075
 
-Propriétaire : Sébastien Rodrigue  
-Local : D8-3041
-
 ![Eppendorf epMotion](/images/eppendorf_epmotion.jpg)
 
 Généralités :

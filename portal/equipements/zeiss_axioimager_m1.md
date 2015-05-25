@@ -4,9 +4,6 @@ layout: default
 
 ## Zeiss Axio Imager M1
 
-Propriétaires : Kamal Bouarab  
-Local : D8-2037
-
 ![Zeiss Axio Imager M1](/images/zeiss_axioimager_z1.jpg)
 
 ### Généralités
