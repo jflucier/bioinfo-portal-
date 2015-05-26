@@ -43,6 +43,7 @@
   - name: install apt packages
     apt: pkg={{item}} state=latest
     with_items:
+     - build-essential
      - python-pycurl
      - git
      - python-pycurl
@@ -51,7 +52,6 @@
      - apache2
      - emboss-explorer
      - libapache2-mod-perl2
-     - gcc
 
 
   - name: installer les dépendances Perl
