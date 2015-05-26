@@ -13,7 +13,7 @@ layout: default
 <p>L'avancement technologique durant la derniere decennie a contribuer a la croissance des données liée à la biologie. La creation d'outil tel que
 les séquenceurs de nouvelle génération et microscope à haut débit ont grandement contribuer à cette hausse. De nos jours, la plupart des laboratoires et entreprises 
 privées, petites ou grosses, ont recours à ces technologies pour tester une multitudes d'hypothèses liées à leurs programmes de recherches. Par 
-conséquent, le besoin de personnes qualifiées et spécialisées dans le traitement de ces données est donc devenu une nécessité pour l'avancement de vos recherches. 
+conséquent, le besoin de personnes qualifiées et spécialisées dans le traitement de ces données est donc devenu une nécessité pour l'avancement de vos recherches. </p>
 </td>
 </tr>
 </tbody>
@@ -39,7 +39,6 @@ donc un un accès privilégiés à cette super ressource informatique qui nous p
     <br /><br />
     <a href='http://www.computecanada.ca/?lang=fr'><img src='/images/bioinfo/ComputeCanada_logo_0.png' width='200px'/></a>
 </td>
-</td>
 </tr>
 </tbody>
 </table>
@@ -47,10 +46,10 @@ donc un un accès privilégiés à cette super ressource informatique qui nous p
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-<td width='300px' >
-    <img src='/images/bioinfo/1_analysis.png' width='300px'/>
+<td align="center" width='300px' >
+    <img src='/images/bioinfo/1_analysis.png' width='250px'/>
     <br /><br />
-    <img src='/images/bioinfo/2_solution.png' width='300px'/>
+    <img src='/images/bioinfo/2_solution.png' width='250px'/>
 </td>
 <td >
 <h4><b>Une solution bio-informatique pour vos besoins</b></h4>
@@ -68,7 +67,7 @@ les éléments qui devront être corrigés ou implantés pour assurer une analys
 </ul>
 </p>
 <p>
-Pour le détails de nos réalisations, svp consulter notre <a href='/portefolio/portefolio.html'>portefolio</a>. Pour plus de détails sur notre expertise ou pour nous
+Pour le détails de nos réalisations, svp consulter notre <a href='/services/portefolio.html'>portefolio</a>. Pour plus de détails sur notre expertise ou pour nous
 soumettre un projet, contactez <a href='mailto:jean-francois.lucier@usherbrooke.ca'>jean-francois[at]usherbrooke.ca
 </p>
 </td>
