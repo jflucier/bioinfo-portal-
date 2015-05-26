@@ -15,7 +15,7 @@
     codeDir: "{{'/vagrant' if isVagrant else '/var/bio-info/code'}}"
     jekyllVersion: 2.5.3
     staticPortalDir: "{{varDir}}/portal"
-    gitRepoUrl: git@bitbucket.org:jflucier/crispycrispr.git
+    gitRepoUrl: git@bitbucket.org:jflucier/bioinfo-portal.git
     dataDirBlast: "{{dataDir}}/blast"
 
   tasks:
@@ -43,6 +43,7 @@
   - name: install apt packages
     apt: pkg={{item}} state=latest
     with_items:
+     - python-pycurl
      - git
      - python-pycurl
      - swig
@@ -50,13 +51,13 @@
      - apache2
      - emboss-explorer
      - libapache2-mod-perl2
+     - gcc
 
 
   - name: installer les dépendances Perl
     cpanm:  name={{item}} notest=True
     sudo: yes
     with_items:
-      - DBIx::Class::Schema
       - Config::Record
       - Data::Dump
       - File::Temp
