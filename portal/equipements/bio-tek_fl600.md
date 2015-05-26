@@ -15,4 +15,4 @@ Généralités :
 - Prend en charge les plaques 6 à 384 puits
 - Température controlée
 - Agitation
-- lecture simple ou cinétique
+- Lecture simple ou cinétique
