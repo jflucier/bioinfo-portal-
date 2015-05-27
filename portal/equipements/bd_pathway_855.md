@@ -33,104 +33,104 @@ layout: default
 </tbody>
 </table>
 
+<h3>Informations</h3>
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-    <td width='40%'>
-        <h4><b>Spécifications</b></h4>
-        <br/>
+    <td width='33%'>
+        <b>Généralités</b>
         <ul>
             <li>Microscope inversé</li>
             <li>Champ clair</li>
             <li>Épifluorescence</li>
             <li>Confocal (spinning disk)</li>
             <li>Caméra monochrome de 1.4 mégapixels (12 bits)</li>
-            <li>Automatisation :
-                <ul>
-                    <li>Déplacement de l'objectif (X, Y, Z)</li>
-                    <li>Position des filtres de fluorescence</li>
-                    <li>Autofocus</li>
-                </ul>
-            </li>
-            <li>Modes d'acquisition :
-                <ul>
-                    <li>Spécialisé pour l'acquisition de plaques 6-384 puits</li>
-                    <li>Multicanaux</li>
-                    <li>Plans multiples (Z-stack)</li>
-                    <li>Temps multiples (time lapse)</li>
-                    <li>Multi-position</li>
-                </ul>
-            </li>
+            
+            
         </ul>
 
     </td>
-    <td  >
-        <h4><b>Objectifs</b></h4>
-        <br/>
-        <table width='100%'>
-            <thead>
-                <tr>
-                    <td>Grossissement</td>
-                    <td>Ouverture num.</td>
-                    <td>Immersion</td>
-                    <td>Distance de travail</td>
-                    <td>BF</td>
-                    <td>PH</td>
-                    <td>DIC</td>
-                    <td>FL</td>
-                </tr>
-            </thead>
-            <tfoot>
-                <tr >
-                    <td colspan='8'>BF : Champ clair (Brightfield), PH : Contraste de phase, DIC : Contraste interférentiel, FL : Fluorescence</td>
-                </tr>
-            </tfoot>
-            <tbody>
-                <tr>
-                    <td>4X</td>
-                    <td>0.13</td>
-                    <td>Air</td>
-                    <td>17 mm</td>
-                    <td>X</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>10X</td>
-                    <td>0.3</td>
-                    <td>Air</td>
-                    <td>10 mm</td>
-                    <td>X</td>
-                    <td>-</td>
-                    <td>X (non disponible)</td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>20X</td>
-                    <td>0.75</td>
-                    <td>Air</td>
-                    <td>0.55 mm</td>
-                    <td>X</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>40X</td>
-                    <td>0.9</td>
-                    <td>Air</td>
-                    <td>0.2 mm</td>
-                    <td>X</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>X</td>
-                </tr>
-            </tbody>
-        </table>
+    <td width='33%' >
+        <b>Automatisation :</b>
+        <ul>
+            <li>Déplacement de l'objectif (X, Y, Z)</li>
+            <li>Position des filtres de fluorescence</li>
+            <li>Autofocus</li>
+        </ul>
+    </td>
+    <td width='33%' >
+        <b>Modes d'acquisition :</b>
+        <ul>
+            <li>Spécialisé pour l'acquisition de plaques 6-384 puits</li>
+            <li>Multicanaux</li>
+            <li>Plans multiples (Z-stack)</li>
+            <li>Temps multiples (time lapse)</li>
+            <li>Multi-position</li>
+        </ul>
     </td>
 </tr>
 </tbody>
 </table>
 
-
+<h3>Objectifs</h3>
+<table width='100%'>
+    <thead>
+        <tr>
+            <td><b>Grossissement</b></td>
+            <td><b>Ouverture num.</b></td>
+            <td><b>Immersion</b></td>
+            <td><b>Distance de travail</b></td>
+            <td><b>BF</b></td>
+            <td><b>PH</b></td>
+            <td><b>DIC</b></td>
+            <td><b>FL</b></td>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr >
+            <td colspan='8'>BF : Champ clair (Brightfield), PH : Contraste de phase, DIC : Contraste interférentiel, FL : Fluorescence</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>4X</td>
+            <td>0.13</td>
+            <td>Air</td>
+            <td>17 mm</td>
+            <td>X</td>
+            <td>-</td>
+            <td>-</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>10X</td>
+            <td>0.3</td>
+            <td>Air</td>
+            <td>10 mm</td>
+            <td>X</td>
+            <td>-</td>
+            <td>X (non disponible)</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>20X</td>
+            <td>0.75</td>
+            <td>Air</td>
+            <td>0.55 mm</td>
+            <td>X</td>
+            <td>-</td>
+            <td>-</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>40X</td>
+            <td>0.9</td>
+            <td>Air</td>
+            <td>0.2 mm</td>
+            <td>X</td>
+            <td>-</td>
+            <td>-</td>
+            <td>X</td>
+        </tr>
+    </tbody>
+</table>

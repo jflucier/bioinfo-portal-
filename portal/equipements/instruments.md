@@ -13,9 +13,9 @@ layout: default
     </td>
 </tr>
 <tr style="background-color:#FFFFFF">
-    <td rowspan='2' width='40%'>
+    <td rowspan='2' width='30%'>
         <p align='center'>
-            <a href='/equipements/bd_pathway_855.html'><img src='/images/bd_pathway_855.jpg' width='400px' /> </a>
+            <a href='/equipements/bd_pathway_855.html'><img src='/images/bd_pathway_855.jpg' width='200px' /> </a>
             <br/>
             <b><a href='/equipements/bd_pathway_855.html'>BD Pathway 855</a></b>
         </p>
@@ -29,7 +29,7 @@ layout: default
             </ul>
         </p>
     </td>
-    <td width='30%' >
+    <td width='35%' >
         <p align='center'>
             <a href='/equipements/olympus_fv300.html'><img src='/images/olympus_fv300.jpg' width='100px' /> </a>
             <br/>
@@ -43,7 +43,7 @@ layout: default
             </ul>
         </p>
     </td>
-    <td width='30%'>
+    <td width='35%'>
         <p align='center'>
             <a href='/equipements/zeiss_axioimager_m1.html'><img src='/images/zeiss_axioimager_z1.jpg' width='100px' /> </a>
             <br/>
@@ -138,7 +138,7 @@ layout: default
                 <li>Supporte des plaques de 6-384 puits</li>
                 <li>Supporte des tubes de 0.2 mL à 50 mL</li>
                 <li>Precision de 1 à 1000 ul</li>
-                <li>Automatisation de transfection et préparation de plaque PCR, QPCR, etc.</li>
+                <li>Automatisation de préparation de plaque PCR, QPCR, etc.</li>
             </ul>
         </p>
     </td>

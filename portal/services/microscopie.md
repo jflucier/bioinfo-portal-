@@ -109,9 +109,7 @@ efficace et a faible cout.
 </p>
 </td>
 <td width='300px' >
-    <img src='/images/omero-logo-200.png' width='300px'/>
-    <br /><br />
-    <img src='/images/omero_combo-header_crop.png' width='300px'/>
+    <img src='/images/montage_cell_seg.png' width='300px'/>
 </td>
 </tr>
 </tbody>
