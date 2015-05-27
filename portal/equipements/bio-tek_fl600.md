@@ -9,22 +9,18 @@ layout: default
 <tr style="background-color:#FFFFFF">
     <td width='350px'>
         <img src='/images/bio-tek_fl600.jpg' width='325px' />
-    </td>                                       
+    </td>
     <td  >
         <h4><b>The Automated, Multicolor Flow Cytometry System</b></h4>
         <p>
-             The FL600 is a powerful
-             fluorescence and absorbance measurement system which measures
-             through the use of a photomultiplier tube housed inside of a lightimpermeable
-             detection compartment. The FL600 is capable of quantifying
-             both soluble and cell-associated fluorescence. 
+             Le FL600 est un appereil permettant de mesurer la fluorescence et l'absorbance par l'utilisation d'un tube photomultiplicateur. Le FL600 permet de quantifier autant la fluorescence de composés solubilisés que la fluorescence provenant de cellules.
         </p>
         <p>
-        <b>Typicals applications for this system are:</b>
+        <b>Application typique pour cet appareil :</b>
         <ul>
             <li>Quantification d'ADN, ARN et proteines</li>
-            <li>Dosage de quantité protéines taggée</li>
-            <li>Courbe standard...</li>
+            <li>Dosage de quantité protéines conjuguées</li>
+            <li>Dosage de fluorophores en cellules</li>
         </ul>
         </p>
     </td>
@@ -57,5 +53,3 @@ layout: default
 </tr>
 </tbody>
 </table>
-
-
