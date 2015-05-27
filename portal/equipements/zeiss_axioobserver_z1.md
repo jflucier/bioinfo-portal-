@@ -156,7 +156,7 @@ layout: default
 
 
 
-<h3>Filtres pour fluorescence</h3>
+<h3>Filtres pour Épifluorescence</h3>
 <table width='100%'>
     <thead>
         <tr>

@@ -4,6 +4,27 @@ layout: default
 
 <h2>Services de phénotypage et d'instrumentation</h2>
 
+<table >
+<tbody>
+<tr style="background-color:#FFFFFF">
+<td >
+<p>
+<h4><b>Notre expertise</b></h4>
+<ul>
+<li>Analyse de vos besoins et estimation de coûts.</li>
+<li>Criblage phénotypique à haut débit.</li>
+<li>Microscopie en épifluorescence, confocal, champ claire, contraste de phase et contraste interférentiel.</li>
+<li>Analyse d'images et écriture de modules ImageJ/Fiji.</li>
+</ul>
+</p>
+<p>
+Pour plus de détails ou pour nous
+soumettre un projet, contactez <a href='/contact.html'>Daniel Garneau</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table >
 <tbody>
@@ -34,7 +55,7 @@ efficace et à faible coût.
 De multiples essais furent mis au point au cours des dernières années afin de détecter et quantifier un large éventail de phénotypes. L'utilisation de plaques multi-puits vous permettra d'évaluer ces phénotypes rapidement et dans une multitude de conditions. Nos techniques permettent d'évaluer différents phéntoypes tel que l'apoptose, le cycle cellulaire, la morphologie en utilisant différentes colorations (annexin-V, BrdU, actine, tubuline, etc.). plusieurs de ces essais peuvent être multiplexés afin d'augmenter l'efficacitée.
 </p>
 </td>
-<td width='300px' ><img src='/images/bd_pathway_855.jpg' width='300px' /></td>
+<td width='200px' ><img src='/images/bd_pathway_855.jpg' width='200px' /></td>
 </tr>
 </tbody>
 </table>
@@ -42,7 +63,7 @@ De multiples essais furent mis au point au cours des dernières années afin de 
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-<td width='200px' ><img src='/images/zeiss_axioimager_z1.jpg' width='200px' /></td>
+<td width='150px' ><img src='/images/zeiss_axioimager_z1.jpg' width='150px' /></td>
 <td >
 <h4><b>Microscopie</b></h4>
 <p>
@@ -62,31 +83,11 @@ Notre service vous offre la possibilité de prendre vos images via divers techni
 Le traitement et l’analyse de vos images vous permet d’extraire rapidement et de façon quantitative le maximum d’information de vos images. Les images provenant de divers échantillons peuvent être analysées : cellules eucaryotes, bactéries, boîte de Petri, plantes, environnement, buvardages, etc. Le développement de l’analyse se fait selon vos besoin afin d’extraire les caractéristiques qui vous intéressent (information sur l’intensité ou la localisation d’un fluorophore, le décompte, la classification et la morphologie d’objet, etc.). Notre service vous offre aussi la possibilité d’écrire des modules ImageJ/Fiji afin d’automatiser des opérations répétitives sur des images vous demandant beaucoup de temps.
 </p>
 </td>
-<td width='300px' >
-    <img src='/images/montage_cell_seg.png' width='300px'/>
+<td width='200px' >
+    <img src='/images/montage_cell_seg.png' width='200px'/>
 </td>
 </tr>
 </tbody>
 </table>
 
-<table >
-<tbody>
-<tr style="background-color:#FFFFFF">
-<td >
-<p>
-<h4><b>En bref, voici le détail de notre expertise:</b></h4>
-<ul>
-<li>Analyse de vos besoins et estimation de coûts.</li>
-<li>Criblage phénotypique à haut débit.</li>
-<li>Microscopie en épifluorescence, confocal, champ claire, contraste de phase et contraste interférentiel.</li>
-<li>Analyse d'images et écriture de modules ImageJ/Fiji.</li>
-</ul>
-</p>
-<p>
-Pour plus de détails sur notre expertise ou pour nous
-soumettre un projet, contactez <a href='mailto:daniel.garneau@usherbrooke.ca'>Daniel.Garneau[at]usherbrooke.ca
-</p>
-</td>
-</tr>
-</tbody>
-</table>
+
