@@ -12,12 +12,18 @@ layout: default
     <td  >
         <h4><b>LE microscope confocal</b></h4>
         <p>
-            input here!!!!
+            The Olympus FluoViewTM 300 is a point-scanning, point-detection, confocal laser scanning microscope 
+            designed for biology research applications. Excellent resolution, efficiency of excitation, intuitive 
+            user interface and affordability are key characteristics of the Olympus FluoView 300. 
+
+            The FluoView 300 configured permits simultaneous collection of up to 3 detection channels. The FV300 
+            may be configured on either the IX2 inverted research microscope platform or the BX2 upright research 
+            microscope platform.
         </p>
         <p>
         <b>Typicals applications for this system are:</b>
         <ul>
-            <li>...</li>
+            <li>Observation of live cell kinetics</li>
             <li>...</li>
             <li>...</li>
         </ul>
@@ -48,6 +54,7 @@ layout: default
         <ul>
             <li>Multicanaux</li>
             <li>Plans multiples(Z-stack)</li>
+            <li>Temps multiples (time lapse)</li>
         </ul>
     </td>
 </tr>

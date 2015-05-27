@@ -4,6 +4,30 @@ layout: default
 
 
 <h2>Service bio-informatique</h2>
+
+<table >
+<tbody>
+<tr style="background-color:#FFFFFF">
+<td >
+<p>
+<h4><b>Notre expertise en bref</b></h4>
+<ul>
+<li>Analyse de vos besoins et estimation de coûts</li>
+<li>Analyse de données de séquençage à haut débit (DNA-seq, RNA-seq, Chip-seq, etc.)</li>
+<li>Développement de scripts d'analyses et d'outils bioinformatiques "sur mesure"</li>
+<li>Optimisation et la parallélisation d'algorithme</li>
+<li>Analyse bio-statistiques diverses (clustering, heatmap, PCA, etc)</li>
+</ul>
+</p>
+<p>
+Pour le détails de nos réalisations, svp vous référez à notre <a href='/services/portefolio.html'>portefolio</a>. Pour vous renseignez sur notre expertise ou pour nous
+soumettre un projet, contactez <a href='/contact.html'>Jean-François Lucier</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
@@ -48,8 +72,6 @@ donc un un accès privilégié à cette super ressource informatique qui nous pe
 <tr style="background-color:#FFFFFF">
 <td align="center" width='300px' >
     <img src='/images/bioinfo/1_analysis.png' width='250px'/>
-    <br /><br />
-    <img src='/images/bioinfo/2_solution.png' width='250px'/>
 </td>
 <td >
 <h4><b>Une solution bio-informatique pour vos besoins</b></h4>
@@ -58,18 +80,6 @@ de solutionner efficacement vos problèmes d'analyse, et ce, à un coût très c
 de pair avec nos clients afin de bien comprendre leur domaine de recherche et la problématique liée à l'analyse de leur données. Ceci permet d'identifier
 les éléments qui devront être corrigés ou implantés pour assurer une analyse juste des données qui répond aux besoins de votre laboratoire ou entreprise.</p>
 <p>
-<h4><b>En bref, voici le détail de notre expertise:</b></h4>
-<ul>
-<li>Analyse de vos besoins et estimation de coûts.</li>
-<li>Analyse de données de séquençage à haut débit (DNA-seq, RNA-seq, Chip-seq, etc.).</li>
-<li>Analyse bio-statistiques diverses.</li>
-<li>Analyse d'images de microscopie provenant d'un criblage afin de caractériser divers phénotypes.</li>
-</ul>
-</p>
-<p>
-Pour le détails de nos réalisations, svp consulter notre <a href='/services/portefolio.html'>portefolio</a>. Pour plus de détails sur notre expertise ou pour nous
-soumettre un projet, contactez <a href='mailto:jean-francois.lucier@usherbrooke.ca'>jean-francois[at]usherbrooke.ca
-</p>
 </td>
 </tr>
 </tbody>

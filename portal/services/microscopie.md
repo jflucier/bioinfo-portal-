@@ -9,7 +9,7 @@ layout: default
 <tr style="background-color:#FFFFFF">
 <td >
 <p>
-<h4><b>Notre expertise</b></h4>
+<h4><b>Notre expertise en bref</b></h4>
 <ul>
 <li>Analyse de vos besoins et estimation de coûts.</li>
 <li>Criblage phénotypique à haut débit.</li>
