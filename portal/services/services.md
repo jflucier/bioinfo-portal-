@@ -32,7 +32,7 @@ layout: default
                 <h2>Microscopie</h2><br/>
                 <p>
                 La platforme de phénotypage est une nouvelle platforme disponible à l'ensemble des laboraoires et entreprises desirant caractériser de
-                façon phénotypique leur biomarqueur d'interet. Au cours des dernières années, notre équipe a développé de multiples essais, pouvant être multiplexés, offert à faible coût à la communauté scientifique. Pour plus de détails concernant ces essais, SVP consulter ce <a href='/services/microscopie.html'>lien</a>.
+                façon phénotypique leur biomarqueur d'interet. Au cours des dernières années, notre équipe a développé de multiples essais, pouvant être multiplexés, offert à faible coût à la communauté scientifique. Pour plus de détails concernant ces essais, SVP consulter ce <a href='/services/microscopie.html'>lien</a>.
                 </p>
             </td>
         </tr>
