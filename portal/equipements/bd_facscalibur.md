@@ -8,24 +8,18 @@ layout: default
 <tr style="background-color:#FFFFFF">
     <td width='300px'>
         <img src='/images/bd_facscalibur.jpg' width='275px' />
-    </td>                                       
+    </td>
     <td  >
         <h4><b>The Automated, Multicolor Flow Cytometry System</b></h4>
         <p>
-            The BD FACSCalibur™ system is an automated benchtop flow
-            cytometry system that offers four-color capability.
-            Designed specifically to support a wide range of applications,
-            the BD FACSCalibur system offers easy to use software, multisample
-            loading options, and intuitive instrument and fluidics control, to improve laboratory productivity. The
-            BD FACSCalibur system is fully modular so it can be upgraded
-            to meet future needs. 
+            Le BD FACSCalibur™ est un cytomètre de flux ayant une capacité de 4 couleurs. Conçu pour supporté un large éventail d'applications, le BD FACSCalibur offre un logiciel simple d'utilisation et un contrôle intuitif de l'instrument et de la fluidique afin d'améliorer la productivité.
+
         </p>
         <p>
-        <b>Typicals applications for this system are:</b>
+        <b>Applications typiques pour cet appareil :</b>
         <ul>
-            <li>Immunophenotyping</li>
-            <li>Absolute Counts</li>
-            <li>Multicolor Analysis</li>
+            <li>Immunophénotypage</li>
+            <li>Analyse multi-couleurs</li>
         </ul>
         </p>
     </td>
@@ -42,8 +36,6 @@ layout: default
         <ul>
             <li>2 lasers</li>
             <li>4 couleurs</li>
-            <li>removable 40-tube carousels</li>
-            <li>on-board mixing</li>
         </ul>
 
     </td>
@@ -72,8 +64,6 @@ layout: default
     <tbody >
         <tr >
             <td align='center'>
-                <a href='/images/bidon.png'><img src='/images/bidon.png' width='150px' /></a>
-                <br />
                 GFP, AlexaFluor 488, FITC, YFP
             </td>
             <td >FL1</td>
@@ -83,8 +73,7 @@ layout: default
         </tr>
         <tr >
             <td align='center'>
-                <a href='/images/bidon.png'><img src='/images/bidon.png' width='150px' /></a>
-                <br />
+
                 Cy3, DsRed, PE, PI
             </td>
             <td >FL2</td>
@@ -94,29 +83,23 @@ layout: default
         </tr>
         <tr >
             <td align='center'>
-                <a href='/images/bidon.png'><img src='/images/bidon.png' width='150px' /></a>
-                <br />
+
                 PE-Cy5, 7-AAD, PerCP
             </td>
             <td >FL3</td>
             <td >488</td>
-            <td >Half-miror</td>
+            <td >Demi-miror</td>
             <td >670LP</td>
         </tr>
         <tr >
             <td align='center'>
-                <a href='/images/bidon.png'><img src='/images/bidon.png' width='150px' /></a>
-                <br />
+
                 AlexaFluor 647, Cy5, APC
             </td>
             <td >FL4</td>
             <td >635</td>
-            <td >Half-miror</td>
+            <td >Demi-miror</td>
             <td >661/16</td>
         </tr>
     </tbody>
 </table>
-
-
-
-

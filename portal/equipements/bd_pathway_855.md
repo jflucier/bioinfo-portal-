@@ -10,22 +10,15 @@ layout: default
         <img src='/images/bd_pathway_855.jpg' width='300px' />
     </td>
     <td  >
-        <h4><b>Un microscope à haut débit pour cribblage à haut contenu</b></h4>
+        <h4><b>Un microscope à haut débit pour criblage à haut contenu</b></h4>
         <p>
-            This multiwell (96 and 384) plate reader confocal microscope system has stationary stage with movable optics. The system is equipped with 
-            environmental control chamber (37ºC, 5% CO2) and liquid handling system. Light from two mercury lamps provides 
-            illumination from 360 nm to 700 nm. Also, this Bioimager provides the ability to capture bright-field images that 
-            can be overlaid onto fluorescent images. The laser-based autofocus capability of the BD Pathway systems enables rapid 
-            acquisition of high-quality images. Four objectives (4X, 10X, 20X and 40X) are available to capture images in an ample 
-            variety of montages (contiguous frames and confocal Z stack acquisition mode). The system can perform a wide range of fluorescence-based
-            kinetic and endpoint biological assays. 
-        </p>
+            Ce microscope conçu pour imager des plaques multi-puits est muni d'une chambre à environnement controlé (température et CO2) ainsi que de système de manipulation de liquides. Les deux lampes aux halogénure de métal procure une illumination de 360 à 700 nm. Ce microscope permet de prendre des images en champ claire pouvant être jumelé aux images en fluorescence. L'autofocus au laser permet une acquisition rapide d'images de haute-qualitées. Le système permet de prendre des images en cinétiques ou en point unique.
         <p>
         <b>Typicals applications for this system are:</b>
         <ul>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
+            <li>Acquisition d'images en plaque multi-puits</li>
+            <li>Acquisition d'images de cellules vivantes</li>
+            <li>Acquisition automatisée</li>
         </ul>
         </p>
     </td>
@@ -45,8 +38,8 @@ layout: default
             <li>Épifluorescence</li>
             <li>Confocal (spinning disk)</li>
             <li>Caméra monochrome de 1.4 mégapixels (12 bits)</li>
-            
-            
+
+
         </ul>
 
     </td>
@@ -56,6 +49,7 @@ layout: default
             <li>Déplacement de l'objectif (X, Y, Z)</li>
             <li>Position des filtres de fluorescence</li>
             <li>Autofocus</li>
+            <li>Manipulation de liquide</li>
         </ul>
     </td>
     <td width='33%' >
@@ -65,7 +59,7 @@ layout: default
             <li>Multicanaux</li>
             <li>Plans multiples (Z-stack)</li>
             <li>Temps multiples (time lapse)</li>
-            <li>Multi-position</li>
+            <li>Multi-positions</li>
         </ul>
     </td>
 </tr>
