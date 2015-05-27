@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h2>Services de phénotypage</h2>
+<h2>Services de phénotypage et d'instrumentation</h2>
 
 
 <table >
@@ -12,13 +12,12 @@ layout: default
 <td >
 <h4><b>Notre service</b></h4>
 <p>
-Notre service de phénotypage vous offre la possibilité de faire vos criblages phénotypiques vous permettant d'identifier rapidement 
-vos biomarqueurs et / ou drogues dans vos modèle cellulaire d'interets. Le service est structuré dèune façon qui permet de s'ajuster 
-à vos besoins de recherches. Par exemple, le service peut prendre a charge toutes les étapes dèun cribblage ou seulement developper 
-des "pipelines" d'analyse pour vos images. Ceci vous permettra d'extraire un maximum d'information de vos images ce qui vous permttera 
-de bien caractériser le phenotype associé à vos biomarqueurs et / ou drogues d'intérêts. Grace à notre expertise en developpement d'essai,
-notre équipe sera en mesure de vous developpez des essaies sur mesure qui permettront de teste votre phenotype d'intérêt de maniere rapide, 
-efficace et a faible cout.
+Notre service de phénotypage et d'instrumentation vous offre la possibilité de faire vos criblages phénotypiques vous permettant d'identifier rapidement
+vos biomarqueurs ou composés dans vos modèles cellulaires d'intérêts. Le service est structuré de façon à permettre de s'ajuster
+à vos besoins de recherches. Par exemple, le service peut prendre en charge toutes les étapes d'un criblage ou seulement développer
+des l'analyse de vos images. Ceci vous permettra d'extraire un maximum d'information de vos images afin
+de bien caractériser les phénotypes d'intérêts. Grace à notre expertise en développement d'essai, notre équipe sera en mesure de développer des essaies sur mesure qui permettront de tester votre phénotype d'intérêt de maniere rapide,
+efficace et à faible coût.
 </p>
 </td>
 </tr>
@@ -32,30 +31,8 @@ efficace et a faible cout.
 <td >
 <h4><b>Microscopie à haut débit</b></h4>
 <p>
-    <ul>
-      <li>Apoptose</li>
-      <li>Viabilité cellulaire</li>
-      <li>Compte cellulaire</li>
-      <li>Niveau d'expression, localisation de protéines fluorescentes</li>
-      <li>Morphologie cellulaire</li>
-      <li>Détection de cholestérol</li>
-      <li>Immunofluorescence:
-        <ul>
-            <li>Cycle cellulaire (BrdU)</li>
-            <li>Marqueur de prolifération (Ki67)</li>
-            <li>Marqueur de mitose (phospho-histone H3)</li>
-            <li>Réponse aux dommages à l'ADN (gamma-H2AX, phospho-ATM)</li>
-            <li>Cytosquelette (Actine)</li>
-            <li>Microtubules (Tubuline)</li>
-            <li>Marqueurs épithélial et mésenchymal (E-Cadherine, Vimentine)</li>
-            <li>Marqueur d'activation de fibroblastes (SMA)</li>
-            <li>Autres marquages possibles avec mise au point</li>
-        </ul>
-      </li>
-    </ul>
+De multiples essais furent mis au point au cours des dernières années afin de détecter et quantifier un large éventail de phénotypes. L'utilisation de plaques multi-puits vous permettra d'évaluer ces phénotypes rapidement et dans une multitude de conditions. Nos techniques permettent d'évaluer différents phéntoypes tel que l'apoptose, le cycle cellulaire, la morphologie en utilisant différentes colorations (annexin-V, BrdU, actine, tubuline, etc.). plusieurs de ces essais peuvent être multiplexés afin d'augmenter l'efficacitée.
 </p>
-
-<i>Note: Plusieurs marqueurs peuvent être multiplexés.</i>
 </td>
 <td width='300px' ><img src='/images/bd_pathway_855.jpg' width='300px' /></td>
 </tr>
@@ -67,24 +44,9 @@ efficace et a faible cout.
 <tr style="background-color:#FFFFFF">
 <td width='200px' ><img src='/images/zeiss_axioimager_z1.jpg' width='200px' /></td>
 <td >
-<h4><b>Microscopie générale</b></h4>
+<h4><b>Microscopie</b></h4>
 <p>
-    <ul>
-        <li>Épifluorescence</li>
-        <li>Confocal</li>
-        <li>Champ claire (contraste de phase et contraste interférentiel (DIC))</li>
-        <li>Grossissement de 40X à 1000X</li>
-        <li>Divers fluorophores:
-            <ul>
-                <li>DAPI, hoechst</li>
-                <li>CFP</li>
-                <li>GFP, FITC, AlexaFluor 488</li>
-                <li>YFP</li>
-                <li>Cy3, AlexaFluor 546, Texas Red</li>
-                <li>Cy5, AlexaFluor 647</li>
-            </ul>
-        </li>
-    </ul>
+Notre service vous offre la possibilité de prendre vos images via divers techniques de microscopie. Vos échantillons peuvent être imager via une grande variété de technique : épifluorescence, confocal, champ claire, contraste de phase et contraste interférentiel (DIC) et ce en plusieurs dimensions : multi-canaux, multi-plans (Z-stack), plusieurs temps (time lapse) et multi-positions. Le tout peut aussi souvent être jumelé à un rendement haut débit.
 </p>
 </td>
 </tr>
@@ -97,15 +59,7 @@ efficace et a faible cout.
 <td >
 <h4><b>Analyse d'images</b></h4>
 <p>
-    <ul>
-        <li>Détection et décompte d'objets (noyaux, cellules, foyers, etc.)</li>
-        <li>Quantification de l'intensité de fluorescence et colocalisation</li>
-        <li>Analyse de changement de morphologie</li>
-        <li>Classification d'objets </li>
-        <li>Détection de colonnies (bactéries, levures) en pétri</li>
-        <li>Analyse d'images de divers types d'échantillons (plantes, environnements, western blots, etc)</li>
-        <li>Écriture de scriptes (plugins) ImageJ / Fiji pour automatisation de transformation ou d'analyse d'images</li>
-    </ul>
+Le traitement et l’analyse de vos images vous permet d’extraire rapidement et de façon quantitative le maximum d’information de vos images. Les images provenant de divers échantillons peuvent être analysées : cellules eucaryotes, bactéries, boîte de Petri, plantes, environnement, buvardages, etc. Le développement de l’analyse se fait selon vos besoin afin d’extraire les caractéristiques qui vous intéressent (information sur l’intensité ou la localisation d’un fluorophore, le décompte, la classification et la morphologie d’objet, etc.). Notre service vous offre aussi la possibilité d’écrire des modules ImageJ/Fiji afin d’automatiser des opérations répétitives sur des images vous demandant beaucoup de temps.
 </p>
 </td>
 <td width='300px' >
@@ -120,21 +74,19 @@ efficace et a faible cout.
 <tr style="background-color:#FFFFFF">
 <td >
 <p>
-<h4><b>En bref, voici le détail de notre expertise:</b> (Vas y mon Dan!!!!)</h4>
+<h4><b>En bref, voici le détail de notre expertise:</b></h4>
 <ul>
-<li>Analyse de vos besoins et estimation de coût.</li>
-<li>Analyse de données de séquençage à haut débit (DNA-seq, RNA-seq, Chip-seq, etc.).</li>
-<li>Analyse bio-statistiques diverses.</li>
-<li>Analyse de d'images de microscopie provenant d'un criblage afin de caractériser divers phénotypes.</li>
+<li>Analyse de vos besoins et estimation de coûts.</li>
+<li>Criblage phénotypique à haut débit.</li>
+<li>Microscopie en épifluorescence, confocal, champ claire, contraste de phase et contraste interférentiel.</li>
+<li>Analyse d'images et écriture de modules ImageJ/Fiji.</li>
 </ul>
 </p>
 <p>
-Pour le détails de nos réalisations, svp consulter notre <a href='/portefolio/portefolio.html'>portefolio</a>. Pour plus de détails sur notre expertise ou pour nous
-soumettre un projet, contactez <a href='mailto:jean-francois.lucier@usherbrooke.ca'>jean-francois[at]usherbrooke.ca
+Pour plus de détails sur notre expertise ou pour nous
+soumettre un projet, contactez <a href='mailto:daniel.garneau@usherbrooke.ca'>Daniel.Garneau[at]usherbrooke.ca
 </p>
 </td>
 </tr>
 </tbody>
 </table>
-
-
