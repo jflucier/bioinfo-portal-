@@ -12,7 +12,6 @@ layout: default
     <td  >
         <h4><b>LE microscope confocal</b></h4>
         <p>
-
             Le Olympus FluoView 300 est un microscope confocal à balayage au laser conçu pour la recherche en biologie. Il permet l'acquisition d'images de bonne résolution en confocal, en épifluorescence et en champ claire.
         </p>
         <p>

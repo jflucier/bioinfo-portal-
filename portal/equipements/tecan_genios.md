@@ -37,7 +37,7 @@ layout: default
     <td width='350px'>
         <b>Généralités</b>
         <ul>
-            <li>Absorbance</li>
+            <li>Absorbance à 340, 485, 492, 535 et 612 nm</li>
             <li>Luminescence</li>
             <li>Lecture par le dessus</li>
             <li>Prend en charge les plaques 6 à 384 puits</li>

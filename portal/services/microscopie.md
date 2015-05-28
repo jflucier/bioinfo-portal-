@@ -29,7 +29,7 @@ soumettre un projet, contactez <a href='/contact.html'>Daniel Garneau</a>
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-<td width='300px' ><img src='/images/bioinfo/requirements.png' width='300px' /></td>
+<td width='300px' ><img src='/images/multiwell_plate_green.jpg' width='300px' /></td>
 <td >
 <h4><b>Notre service</b></h4>
 <p>
@@ -63,7 +63,7 @@ De multiples essais furent mis au point au cours des dernières années afin de 
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-<td width='150px' ><img src='/images/zeiss_axioimager_z1.jpg' width='150px' /></td>
+<td width='150px' ><img src='/images/bino.png' width='150px' /></td>
 <td >
 <h4><b>Microscopie</b></h4>
 <p>
@@ -89,5 +89,3 @@ Le traitement et l’analyse de vos images vous permet d’extraire rapidement e
 </tr>
 </tbody>
 </table>
-
-
