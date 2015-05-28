@@ -189,7 +189,7 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
         <p align='center'>
             <a href='/equipements/bio-tek_synergy_ht.html'><img src='/images/bio-tek_synergy_ht.jpg' width='200px' /> </a>
             <br/>
-            <b><a href='/equipements/bio-tek_fl600.html'>BioTek Synergy HT</a></b>
+            <b><a href='/equipements/bio-tek_synergy_ht.html'>BioTek Synergy HT</a></b>
         </p>
         <p>
             <ul>
