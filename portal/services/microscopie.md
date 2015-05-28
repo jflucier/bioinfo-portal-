@@ -67,7 +67,7 @@ l'efficacitée et la quantité d'information pouvant être analysée suite au cr
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-<td width='150px' ><img src='/images/bino.png' width='150px' /></td>
+<td width='200px' ><img src='/images/bino.png' width='200px' /></td>
 <td >
 <h4><b>Microscopie</b></h4>
 <p>
