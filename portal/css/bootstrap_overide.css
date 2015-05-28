@@ -3,6 +3,12 @@ ol.carousel-indicators {
   left: 90%;
 }
 
+div.carousel-caption {
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+  background:rgba(0,0,0,0.3);
+}
+
+
 .borderless table, .borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
     border: none;
     background-color:#FFFFFF;
