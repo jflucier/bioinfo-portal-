@@ -12,20 +12,14 @@ layout: default
     <td  >
         <h4><b>LE microscope confocal</b></h4>
         <p>
-            The Olympus FluoViewTM 300 is a point-scanning, point-detection, confocal laser scanning microscope 
-            designed for biology research applications. Excellent resolution, efficiency of excitation, intuitive 
-            user interface and affordability are key characteristics of the Olympus FluoView 300. 
 
-            The FluoView 300 configured permits simultaneous collection of up to 3 detection channels. The FV300 
-            may be configured on either the IX2 inverted research microscope platform or the BX2 upright research 
-            microscope platform.
+            Le Olympus FluoView 300 est un microscope confocal à balayage au laser conçu pour la recherche en biologie. Il permet l'acquisition d'images de bonne résolution en confocal, en épifluorescence et en champ claire.
         </p>
         <p>
-        <b>Typicals applications for this system are:</b>
+        <b>Applications typique pour cette appareil :</b>
         <ul>
-            <li>Observation of live cell kinetics</li>
-            <li>...</li>
-            <li>...</li>
+            <li>Observation de tissues animaux ou végétaux</li>
+            <li>Essais de colocalisation</li>
         </ul>
         </p>
     </td>
@@ -175,17 +169,15 @@ layout: default
     <tbody >
         <tr >
             <td align='center'>
-                <a href='/images/bidon.png'><img src='/images/bidon.png' width='150px' /></a>
-                <br />
                 DAPI, Hoechst, AlexaFluor 350, BFP
             </td>
-            <td >365/100</td>
+            <td >365/10</td>
             <td >400</td>
             <td >440/40</td>
         </tr>
         <tr >
             <td align='center'>
-                <a href='/images/bidon.png'><img src='/images/bidon.png' width='150px' /></a>
+                <a href='/images/Filter Olympus U-MNIBA2_cr.png'><img src='/images/Filter Olympus U-MNIBA2_cr.png' width='150px' /></a>
                 <br />
                 GFP, AlexaFluor 488, FITC
             </td>
@@ -195,7 +187,7 @@ layout: default
         </tr>
         <tr >
             <td align='center'>
-                <a href='/images/bidon.gif'><img src='/images/bidon.png' width='150px' /></a>
+                <a href='/images/Filter Olympus U-MWIG2_cr.png'><img src='/images/Filter Olympus U-MWIG2_cr.png' width='150px' /></a>
                 <br />
                 Cy3, PI, Rhodamine, AlexaFluor 546
             </td>
@@ -205,7 +197,7 @@ layout: default
         </tr>
         <tr >
             <td align='center'>
-                <a href='/images/bidon.gif'><img src='/images/bidon.png' width='150px' /></a>
+                <a href='/images/Filter Olympus U-N41008_cr.png'><img src='/images/Filter Olympus U-N41008_cr.png' width='150px' /></a>
                 <br />
                 Cy5, AlexaFluor 647, APC
             </td>
@@ -238,8 +230,6 @@ layout: default
     <tbody >
         <tr >
             <td align='center'>
-                <a href='/images/bidon.png'><img src='/images/bidon.png' width='150px' /></a>
-                <br />
                 GFP, AlexaFluor 488, FITC
             </td>
             <td >488</td>
@@ -248,8 +238,7 @@ layout: default
         </tr>
         <tr >
             <td align='center'>
-                <a href='/images/bidon.gif'><img src='/images/bidon.png' width='150px' /></a>
-                <br />
+
                 Cy3, PI, Rhodamine, AlexaFluor 546
             </td>
             <td >543</td>
@@ -258,8 +247,7 @@ layout: default
         </tr>
         <tr >
             <td align='center'>
-                <a href='/images/bidon.gif'><img src='/images/bidon.png' width='150px' /></a>
-                <br />
+
                 Cy5, AlexaFluor 647, APC
             </td>
             <td >633</td>
@@ -268,5 +256,3 @@ layout: default
         </tr>
     </tbody>
 </table>
-
-

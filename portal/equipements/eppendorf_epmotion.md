@@ -12,12 +12,7 @@ layout: default
     <td  >
         <h4><b>Le pipettage automatisé</b></h4>
         <p>
-            With the new Eppendorf epMotion® family of automated pipetting systems, you will see things 
-            in a new light. All your routine pipetting tasks, whether small or large, will be automated 
-            with more accuracy and reproducibility than you might have experienced with manual pipetting. 
-            Learn how simple it is to switch from manual work to automation.
-            Discover new possibilities: Save reagent costs in real-time PCR, enjoy the choices in nucleic acid preparation, 
-            get more performance out of your cell culture work, and experience more reliability in clinical research.
+            Pour automatiser tout pipettage de routine avec une meilleure reproductibilité et un plus grande précision. Prise en main facile et rapide et interface simple d'utilisation. Permet de sauver du temps en automatisant les tâches simples et répétitive.
         </p>
     </td>
 </tr>
@@ -39,14 +34,12 @@ layout: default
 
     </td>
     <td  >
-        <b>Protocols :</b>
+        <b>Applications typiques:</b>
         <ul>
-            <li>....</li>
-            <li>....</li>
+            <li>Préparation de plaque PCR, qPCR</li>
+            <li>Préparation d'acide nucléiques</li>
         </ul>
     </td>
 </tr>
 </tbody>
 </table>
-
-

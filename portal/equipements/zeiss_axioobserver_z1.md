@@ -11,18 +11,16 @@ layout: default
         <img src='/images/zeiss_axioobserver_Z1.jpg' width='300px' />
     </td>
     <td  >
-        <h4><b>Un microscope à haut débit pour cribblage à haut contenu</b></h4>
+        <h4><b>Microscope entièrement automatisé</b></h4>
         <p>
-            Gain accurate and reliable knowledge about living cells with your Axio Observer. According to the cell biology 
-            experiments you run, choose the degree of motorization and automation out of 3 different stands. Simply 
-            stay focused on your scientific experiments.
+            Microscope inversé entièrement automatisé idéal pour plaques multi-puits ou lames en fluorescence ou en champ claire. Ce microscope vous permet de prendre automatiquement des images multi-canal, multi-plans (Z-Stack), multi-positions et à différents temps (time lapse). La chambre environnementale permet l'acquisition d'image d'organismes vivants sans causer de stress. Les objectifs à haute ouverture numérique procure une grande sensibilité et une très bonne résolution et la caméra à large champ de 5 mégapixels permet de couvrir une surface plus grande et ce, avec une excellente résolution. De plus, l'utilisation de l'Apotome permet d'imager des sections optiques fines grâce à l'augmentation de la résolution axiale.
         </p>
         <p>
-        <b>Typicals applications for this system are:</b>
+        <b>Applications typique pour cet appareil:</b>
         <ul>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
+            <li>Prise d'images en plusieurs dimensions</li>
+            <li>Prise d'images d'organismes vivants</li>
+            <li>Prise d'images à haut débit</li>
         </ul>
         </p>
     </td>
@@ -239,5 +237,3 @@ layout: default
         </tr>
     </tbody>
 </table>
-
-

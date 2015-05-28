@@ -16,9 +16,9 @@ layout: default
         <p>
         <b>Typicals applications for this system are:</b>
         <ul>
-            <li>Acquisition d'images en plaque multi-puits</li>
+            <li>Acquisition automatisé d'images en plaque multi-puits</li>
             <li>Acquisition d'images de cellules vivantes</li>
-            <li>Acquisition automatisée</li>
+            <li>Acquisition avec pipettage</li>
         </ul>
         </p>
     </td>

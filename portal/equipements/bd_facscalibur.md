@@ -10,7 +10,7 @@ layout: default
         <img src='/images/bd_facscalibur.jpg' width='275px' />
     </td>
     <td  >
-        <h4><b>The Automated, Multicolor Flow Cytometry System</b></h4>
+        <h4><b>Cytomètre analyseur multi-couleur</b></h4>
         <p>
             Le BD FACSCalibur™ est un cytomètre de flux ayant une capacité de 4 couleurs. Conçu pour supporté un large éventail d'applications, le BD FACSCalibur offre un logiciel simple d'utilisation et un contrôle intuitif de l'instrument et de la fluidique afin d'améliorer la productivité.
 

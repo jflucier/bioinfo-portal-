@@ -10,16 +10,9 @@ layout: default
         <img src='/images/zeiss_axioimager_z1.jpg' width='300px' />
     </td>
     <td  >
-        <h4><b>Un microscope à tout faire!!!</b></h4>
+        <h4><b>Microscope idéal pour les échantillons environnementaux</b></h4>
         <p>
-            Important: specifier difference avec Z1. The Axio Imager / Axio Imager MAT microscopes have been designed as universal microscopes for
-            applications in biology and medicine for the examination of blood and/or tissue specimens from the
-            human body, as well as for materials examinations.
-            They may also be used as true reflected-light microscopes or, if equipped with a transmitted-light
-            equipment, as combined reflected-light/transmitted-light microscopes. 
-            With the advanced pyramid and modular design, the Axio Imager microscope incorporates time-tested
-            principles in microscope construction, thus ideally combining modern requirements made on design,
-            ergonomics, operating convenience and function with technical performance.
+        Ce microscope droit conçu pour la biologie permet de faire des observations en lumière transmise (champ claire) ou en fluorescence et est idéal pour le travail sur lames. Il est entièrement équipé d'objectifs permettant la visualisation en contraste de phase et ça caméra couleur est idéale pour l'observation d'échantillons environnementaux. La prise d'images dans plusieurs canaux et dans plusieurs plans (Z-stack) se fait de façon automatique.
         </p>
         <p>
         <b>Typicals applications for this system are:</b>
@@ -196,4 +189,3 @@ layout: default
 * binning 1x1
 <br>
 -->
-

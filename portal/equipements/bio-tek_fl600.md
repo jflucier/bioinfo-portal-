@@ -11,7 +11,7 @@ layout: default
         <img src='/images/bio-tek_fl600.jpg' width='325px' />
     </td>
     <td  >
-        <h4><b>The Automated, Multicolor Flow Cytometry System</b></h4>
+        <h4><b>Lecteur de plaque multi-couleurs</b></h4>
         <p>
              Le FL600 est un appereil permettant de mesurer la fluorescence et l'absorbance par l'utilisation d'un tube photomultiplicateur. Le FL600 permet de quantifier autant la fluorescence de composés solubilisés que la fluorescence provenant de cellules.
         </p>
@@ -20,7 +20,7 @@ layout: default
         <ul>
             <li>Quantification d'ADN, ARN et proteines</li>
             <li>Dosage de quantité protéines conjuguées</li>
-            <li>Dosage de fluorophores en cellules</li>
+            <li>Densité optique de cultures en plaques</li>
         </ul>
         </p>
     </td>
