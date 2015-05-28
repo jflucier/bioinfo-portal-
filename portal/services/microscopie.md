@@ -29,16 +29,16 @@ soumettre un projet, contactez <a href='/contact.html'>Daniel Garneau</a>
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-<td width='300px' ><img src='/images/bioinfo/requirements.png' width='300px' /></td>
+<td width='300px' ><img src='/images/multiwell_plate_green.jpg' width='300px' /></td>
 <td >
 <h4><b>Notre service</b></h4>
 <p>
 Notre service de phénotypage et d'instrumentation vous offre la possibilité de faire vos criblages phénotypiques vous permettant d'identifier rapidement
 vos biomarqueurs ou composés dans vos modèles cellulaires d'intérêts. Le service est structuré de façon à permettre de s'ajuster
 à vos besoins de recherches. Par exemple, le service peut prendre en charge toutes les étapes d'un criblage ou seulement développer
-des l'analyse de vos images. Ceci vous permettra d'extraire un maximum d'information de vos images afin
-de bien caractériser les phénotypes d'intérêts. Grace à notre expertise en développement d'essai, notre équipe sera en mesure de développer des essaies sur mesure qui permettront de tester votre phénotype d'intérêt de maniere rapide,
-efficace et à faible coût.
+des modules d'analyse spécifiques à votre essai. Ceci vous permettra d'extraire un maximum d'information de vos images afin
+de bien caractériser les phénotypes d'intérêts. Grâce à notre expertise, notre équipe sera en mesure de développer des essaies sur mesure qui permettront 
+de tester votre phénotype d'intérêt de maniere rapide, efficace et à faible coût.
 </p>
 </td>
 </tr>
@@ -52,7 +52,11 @@ efficace et à faible coût.
 <td >
 <h4><b>Microscopie à haut débit</b></h4>
 <p>
-De multiples essais furent mis au point au cours des dernières années afin de détecter et quantifier un large éventail de phénotypes. L'utilisation de plaques multi-puits vous permettra d'évaluer ces phénotypes rapidement et dans une multitude de conditions. Nos techniques permettent d'évaluer différents phéntoypes tel que l'apoptose, le cycle cellulaire, la morphologie en utilisant différentes colorations (annexin-V, BrdU, actine, tubuline, etc.). plusieurs de ces essais peuvent être multiplexés afin d'augmenter l'efficacitée.
+De multiples essais furent mis au point au cours des dernières années afin de détecter et quantifier un large éventail de phénotypes. 
+L'utilisation de plaques multi-puits vous permettra d'évaluer ces phénotypes rapidement et dans une multitude de conditions. 
+Nos techniques permettent d'évaluer différents phéntoypes tel que l'apoptose, le cycle cellulaire, la morphologie en utilisant 
+différentes colorations tel annexin-V, BrdU, actine, tubuline, etc. Plusieurs de ces essais peuvent aussi être multiplexés afin d'augmenter 
+l'efficacitée et la quantité d'information pouvant être analysée suite au cribblage.
 </p>
 </td>
 <td width='200px' ><img src='/images/bd_pathway_855.jpg' width='200px' /></td>
@@ -67,7 +71,10 @@ De multiples essais furent mis au point au cours des dernières années afin de 
 <td >
 <h4><b>Microscopie</b></h4>
 <p>
-Notre service vous offre la possibilité de prendre vos images via divers techniques de microscopie. Vos échantillons peuvent être imager via une grande variété de technique : épifluorescence, confocal, champ claire, contraste de phase et contraste interférentiel (DIC) et ce en plusieurs dimensions : multi-canaux, multi-plans (Z-stack), plusieurs temps (time lapse) et multi-positions. Le tout peut aussi souvent être jumelé à un rendement haut débit.
+Notre service vous offre la possibilité de prendre vos images via divers techniques de microscopie. Vos échantillons peuvent être 
+imagés via une grande variété de technique : épifluorescence, confocal, champ claire, contraste de phase et contraste interférentiel (DIC) 
+et ce en plusieurs dimensions : multi-canaux, multi-plans (Z-stack), plusieurs temps (time lapse) et multi-positions. De plus, il est possible 
+de jumelé ces techniques à un rendement haut débit.
 </p>
 </td>
 </tr>
@@ -80,7 +87,13 @@ Notre service vous offre la possibilité de prendre vos images via divers techni
 <td >
 <h4><b>Analyse d'images</b></h4>
 <p>
-Le traitement et l’analyse de vos images vous permet d’extraire rapidement et de façon quantitative le maximum d’information de vos images. Les images provenant de divers échantillons peuvent être analysées : cellules eucaryotes, bactéries, boîte de Petri, plantes, environnement, buvardages, etc. Le développement de l’analyse se fait selon vos besoin afin d’extraire les caractéristiques qui vous intéressent (information sur l’intensité ou la localisation d’un fluorophore, le décompte, la classification et la morphologie d’objet, etc.). Notre service vous offre aussi la possibilité d’écrire des modules ImageJ/Fiji afin d’automatiser des opérations répétitives sur des images vous demandant beaucoup de temps.
+Le traitement et l’analyse de vos images vous permet d’extraire rapidement et de façon quantitative un maximum d’information sur votre essaie. 
+Les images provenant de divers échantillons peuvent être analysées comme par exemple cellules eucaryotes, bactéries, boîte de Petri, plantes, 
+environnement, buvardages, etc. L’analyse se fait selon vos besoin afin d’extraire le maximum d'informations qui vous 
+intéressent (information sur l’intensité ou la localisation d’un fluorophore, le décompte, la classification et la morphologie d’objet, 
+etc.). On offre aussi la possibilité de vous écrire des modules 
+<a href='http://imagej.nih.gov/ij/features.html'>ImageJ</a> / <a href='http://fiji.sc/Fiji'>Fiji</a> réutilisable pour automatiser des opérations répétitives 
+nécessaire à l'analyse de vos images. 
 </p>
 </td>
 <td width='200px' >
