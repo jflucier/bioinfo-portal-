@@ -15,11 +15,10 @@ layout: default
         Ce microscope droit conçu pour la biologie permet de faire des observations en lumière transmise (champ claire) ou en fluorescence et est idéal pour le travail sur lames. Il est entièrement équipé d'objectifs permettant la visualisation en contraste de phase et ça caméra couleur est idéale pour l'observation d'échantillons environnementaux. La prise d'images dans plusieurs canaux et dans plusieurs plans (Z-stack) se fait de façon automatique.
         </p>
         <p>
-        <b>Typicals applications for this system are:</b>
+        <b>Applications typiques pour cet appareils</b>
         <ul>
-            <li>Medical examinations in laboratories (research), clinics and medical practices </li>
-            <li>Science and research (colleges, universities) in the fields of medicine and biology </li>
-            <li>Industrial applications (pharmacology, food technology) </li>
+            <li>Échantillons demandant des photos couleurs </li>
+            <li>Échantillons peut contrastés (contraste de phase)</li>
         </ul>
         </p>
     </td>

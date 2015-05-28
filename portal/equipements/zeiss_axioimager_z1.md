@@ -15,11 +15,10 @@ layout: default
             Ce microscope droit conçu pour la biologie permet de faire des observations en lumière transmise (champ claire) ou en fluorescence et est idéal pour le travail sur lames. Il est équipé d'objectifs à haute ouverture numérique pour une meilleur sensibilité et résolution en fluorescence. Ces objectifs (de 10 à 100X) vous permettent aussi d'observervos échantillons en contraste interférentiel (DIC). L'utilisation de l'Apotome rend possible la prise de sections optiques plus minces en augmentant la résolution axiale des images. La prise d'images dans plusieurs canaux et dans plusieurs plans (Z-stack) se fait de façon automatique.
         </p>
         <p>
-        <b>Typicals applications for this system are:</b>
+        <b>Applications typiques pour cet appareil</b>
         <ul>
-            <li>Medical examinations in laboratories (research), clinics and medical practices </li>
-            <li>Science and research (colleges, universities) in the fields of medicine and biology </li>
-            <li>Industrial applications (pharmacology, food technology) </li>
+            <li>Échantillons sur lame marqués de plusieurs fluorophores</li>
+            <li>Échantillons en champs claire avec contraste interférentiel</li>
         </ul>
         </p>
     </td>
