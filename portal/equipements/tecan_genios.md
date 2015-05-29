@@ -11,14 +11,17 @@ layout: default
         <img src='/images/tecan_genios.jpg' width='325px' />
     </td>
     <td  >
-        <h4><b>Lecteur de plaque automatisé</b></h4>
+        <h4><b>Lecteur multi-plaques automatisé</b></h4>
         <p>
-             Le Tecan Genios Pro est un lecteur de microplaques permettant de mesurer la fluorescence, la luminescence et l'absorbance à de multiples longueurs d'onde. Il permet d'agiter entre les lectures et sa chambre environnementale permet de tenir une température constante pendant les lectures en cinétique d'organismes vivants ou de réactions enzymatiques. Le      module Connect associé au lecteur de plaque permet de lire automatiquement plusieurs plaques une à la suite de l'autre.
+             Le Tecan Genios Pro est un lecteur de microplaques permettant de mesurer la fluorescence, la luminescence 
+             et l'absorbance à de multiples longueurs d'onde. Il permet d'agiter entre les lectures et sa chambre environnementale 
+             permet de tenir une température constante pendant les lectures en cinétique d'organismes vivants ou de réactions 
+             enzymatiques. Le module Connect ("plate stacker") associé au lecteur de plaque permet de lire automatiquement plusieurs plaques en série.
         </p>
         <p>
         <b>Application typique pour cet appareil :</b>
         <ul>
-            <li>Quantification d'ADN, ARN et proteines</li>
+            <li>Quantification d'ADN, ARN et protéines</li>
             <li>Dosage de protéines conjuguées</li>
             <li>Densité optique de cultures en plaques</li>
             <li>Essais luciférases</li>

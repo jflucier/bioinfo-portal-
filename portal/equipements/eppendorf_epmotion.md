@@ -12,7 +12,9 @@ layout: default
     <td  >
         <h4><b>Le pipettage automatisé</b></h4>
         <p>
-            Pour automatiser tout pipettage de routine avec une meilleure reproductibilité et un plus grande précision. Prise en main facile et rapide et interface simple d'utilisation. Permet de sauver du temps en automatisant les tâches simples et répétitive.
+            Pour automatiser tout pipettage de routine avec une meilleure reproductibilité et un plus grande 
+            précision. Prise en main facile et rapide et interface simple d'utilisation. Permet de sauver du 
+            temps en automatisant les tâches simples et répétitive tels le montage de plaque multi-puits PCR et QPCR.
         </p>
     </td>
 </tr>
@@ -28,7 +30,7 @@ layout: default
         <ul>
             <li>2 pipettes simple canal (1-50 ul et 40-1000 ul)</li>
             <li>2 pipettes 8 canaux (1-50 ul et 40-1000 ul)</li>
-            <li>12 emlacements pour plaques 96 puits ou boites d'embouts</li>
+            <li>12 emlacements pour plaques multi-puits ou boites d'embouts</li>
             <li>Adaptateurs pour tubes 0.5, 1.5, 15 et 50 ml</li>
         </ul>
 
@@ -36,7 +38,7 @@ layout: default
     <td  >
         <b>Applications typiques:</b>
         <ul>
-            <li>Préparation de plaque PCR, qPCR</li>
+            <li>Préparation de plaque PCR et qPCR</li>
             <li>Préparation d'acide nucléiques</li>
         </ul>
     </td>

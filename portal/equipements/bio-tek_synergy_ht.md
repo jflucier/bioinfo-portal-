@@ -13,7 +13,10 @@ layout: default
     <td  >
         <h4><b>Lecteur de plaque multi-couleurs</b></h4>
         <p>
-             Le Synergy HT est un lecteur de microplaques permettant de mesurer la fluorescence, la luminescence et l'absorbance à de multiples longueurs d'onde. Il permet d'agiter entre les lectures et sa chambre environnementale permet de tenir une température constante pendant les lectures en cinétique d'organismes vivants ou de réactions enzymatiques.
+             Le Synergy HT est un lecteur de microplaques permettant de mesurer la fluorescence, la luminescence 
+             et l'absorbance à de multiples longueurs d'onde. Il permet d'agiter entre les lectures et sa chambre 
+             environnementale permet de tenir une température constante pendant les lectures en cinétique d'organismes 
+             vivants ou de réactions enzymatiques.
         </p>
         <p>
         <b>Application typique pour cet appareil :</b>
