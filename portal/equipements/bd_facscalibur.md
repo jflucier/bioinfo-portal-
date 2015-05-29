@@ -19,7 +19,7 @@ layout: default
         <b>Applications typiques pour cet appareil :</b>
         <ul>
             <li>Immunophénotypage</li>
-            <li>Analyse multi-couleurs</li>
+            <li>Analyse de cycle cellulaire</li>
         </ul>
         </p>
     </td>

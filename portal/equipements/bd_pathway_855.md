@@ -128,3 +128,147 @@ layout: default
         </tr>
     </tbody>
 </table>
+
+<h3>Filtres pour Épifluorescence</h3>
+<table width='100%'>
+    <thead>
+        <tr>
+            <td align='center'><b>Fluorophores</b></td>
+            <td><b>Excitation</b></td>
+            <td><b>Dichroïque</b></td>
+            <td><b>Émission</b></td>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr >
+            <td colspan='4'>
+            <ul>
+                <li><i>Les filtres d'excitation sont découplés des filtres dichroïque et d'émission afin de pouvoir faire de multiples combinaisons.</i></li>
+            </ul>
+            </td>
+        </tr>
+    </tfoot>
+    <tbody >
+        <tr >
+            <td align='center'>
+
+                DAPI, Hoechst, AlexaFluor 350, BFP
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Ex 360-10.jpg'><img src='/images/pathway_filters/Ex 360-10.jpg' width='150px' /></a>
+              <br />
+              360/10
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Em dc 400DCLP.jpg'><img src='/images/pathway_filters/Em dc 400DCLP.jpg' width='150px' /></a>
+              <br />
+              400LP
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Em 435LP.jpg'><img src='/images/pathway_filters/Em 435LP.jpg' width='150px' /></a>
+              <br />
+              435LP
+            </td>
+        </tr>
+        <tr >
+            <td align='center'>
+                CFP
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Ex 440-10.jpg.jpg'><img src='/images/pathway_filters/Ex 440-10.jpg' width='150px' /></a>
+              <br />
+              440/10
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Em dc 500LP_FITC.jpg'><img src='/images/pathway_filters/Em dc 500LP_FITC.jpg' width='150px' /></a>
+              <br />
+              500LP
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Em FURA-TRITC.jpg'><img src='/images/pathway_filters/Em FURA-TRITC.jpg' width='150px' /></a>
+              <br />
+              505/30 + 600/60
+            </td>
+        </tr>
+        <tr >
+            <td align='center'>
+                GFP, AlexaFluor 488, FITC
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Ex 488-10.jpg'><img src='/images/pathway_filters/Ex 488-10.jpg' width='150px' /></a>
+              <br />
+              488/10
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Em dc 500LP_FITC.jpg'><img src='/images/pathway_filters/Em dc 500LP_FITC.jpg' width='150px' /></a>
+              <br />
+              500LP
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Em 540-50_FITC.jpg'><img src='/images/pathway_filters/Em 540-50_FITC.jpg' width='150px' /></a>
+              <br />
+              540/50
+            </td>
+        </tr>
+        <tr >
+            <td align='center'>
+                YFP
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Ex 470-40.jpg'><img src='/images/pathway_filters/Ex 470-40.jpg' width='150px' /></a>
+              <br />
+              470/40
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Em dc 500LP_FITC.jpg'><img src='/images/pathway_filters/Em dc 500LP_FITC.jpg' width='150px' /></a>
+              <br />
+              500LP
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Em 515LP.jpg'><img src='/images/pathway_filters/Em 515LP.jpg' width='150px' /></a>
+              <br />
+              515LP
+            </td>
+        </tr>
+        <tr >
+            <td align='center'>
+                Cy3, PI, Rhodamine, AlexaFluor 546
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Ex 548-20.jpg'><img src='/images/pathway_filters/Ex 548-20.jpg' width='150px' /></a>
+              <br />
+              548/20
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Em dc FURA-TRITC.jpg'><img src='/images/pathway_filters/Em dc FURA-TRITC.jpg' width='150px' /></a>
+              <br />
+              425/50 + 500/30 + 570LP
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Em 570LP.jpg'><img src='/images/pathway_filters/Em 570LP.jpg' width='150px' /></a>
+              <br />
+            570LP
+            </td>
+        </tr>
+        <tr >
+            <td align='center'>
+                Cy5, AlexaFluor 647, APC
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Ex 635-20.jpg'><img src='/images/pathway_filters/Ex 635-20.jpg' width='150px' /></a>
+              <br />
+              635/20
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Em dc 84000.jpg'><img src='/images/pathway_filters/Em dc 84000.jpg' width='150px' /></a>
+              <br />
+              450/70 + 525/50 + 565LP
+            </td>
+            <td >
+              <a href='/images/pathway_filters/Em 84101.jpg'><img src='/images/pathway_filters/Em 84101.jpg' width='150px' /></a>
+              <br />
+              430/10 + 460/20 + 525/20 + 600/30 + 695/70
+            </td>
+        </tr>
+    </tbody>
+</table>

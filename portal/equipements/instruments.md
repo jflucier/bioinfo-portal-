@@ -140,8 +140,9 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
         </p>
         <p >
             <ul>
-                <li>2 lasers et 4 couleurs</li>
-                <li>etc...</li>
+                <li>Cytomètre de flux analyseur</li>
+                <li>Deux lasers d'excitation</li>
+                <li>Détection de 4 couleurs</li>
             </ul>
         </p>
     </td>
@@ -164,7 +165,7 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
 <tr style="background-color:#FFFFFF">
     <td align='center' colspan='3'>
         <p align='center'>
-            <a name="spectro"></a><h3><b>Spectrophotomètre</b></h3>
+            <a name="spectro"></a><h3><b>Spectrophotomètres</b></h3>
         </p>
     </td>
 </tr>
