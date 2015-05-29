@@ -46,7 +46,6 @@
      - build-essential
      - python-pycurl
      - git
-     - python-pycurl
      - swig
      - cpanminus
      - apache2
@@ -125,7 +124,7 @@
     when: not isVagrant
 
   - name: fetcher la derniere version du code
-    git: repo=git@{{gitRepoUrl}} dest='/var/bio-info/code' depth=1 accept_hostkey=yes version=master
+    git: repo={{gitRepoUrl}} dest='/var/bio-info/code' depth=1 accept_hostkey=yes version=master
     when: not isVagrant
     notify: restart apache
 
