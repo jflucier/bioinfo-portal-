@@ -6,13 +6,18 @@ layout: default
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-    <td width='40%'>
-        <img src='/images/zeiss_axioimager_z1.jpg' width='300px' />
+    <td width='350px' align="center">
+        <img src='/images/zeiss_axioimager_z1.jpg' width='275px' />
     </td>
     <td  >
-        <h4><b>Microscope idéale pour la fluorescence</b></h4>
+        <h4><b>Microscope idéale pour le travail sur lame en fluorescence</b></h4>
         <p>
-            Ce microscope droit conçu pour la biologie permet de faire des observations en lumière transmise (champ claire) ou en fluorescence et est idéal pour le travail sur lames. Il est équipé d'objectifs à haute ouverture numérique pour une meilleur sensibilité et résolution en fluorescence. Ces objectifs (de 10 à 100X) vous permettent aussi d'observervos échantillons en contraste interférentiel (DIC). L'utilisation de l'Apotome rend possible la prise de sections optiques plus minces en augmentant la résolution axiale des images. La prise d'images dans plusieurs canaux et dans plusieurs plans (Z-stack) se fait de façon automatique.
+            Ce microscope droit conçu pour la recherche permet de faire des observations en lumière transmise (champ claire) 
+            ou en fluorescence ce qui le rend idéal pour le travail sur lames. Il est équipé d'objectifs à haute ouverture numérique pour 
+            une meilleur sensibilité et résolution en fluorescence. Ces objectifs (de 10 à 100X) vous permettent aussi d'observer vos 
+            échantillons en contraste interférentiel (DIC). L'utilisation de l'Apotome rend possible la prise de sections optiques plus 
+            minces en augmentant la résolution axiale des images. La prise d'images dans plusieurs canaux et dans plusieurs plans (Z-stack) 
+            se fait de façon automatique.
         </p>
         <p>
         <b>Applications typiques pour cet appareil</b>
@@ -30,18 +35,18 @@ layout: default
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-    <td width='33%'>
+    <td width='350px'>
         <b>Généralités</b>
         <ul>
             <li>Microscope droit</li>
             <li>Champs clair, DIC</li>
             <li>Épifluorescence</li>
             <li>Apotome (augmente la résolution axiale)</li>
-            <li>Caméra monochrome de 1.4 mégapixels (12 bits)</li>
+            <li>Caméra monochrome 1.4 mégapixels (12 bits)</li>
         </ul>
 
     </td>
-    <td width='33%' >
+    <td  >
         <b>Automatisation :</b>
         <ul>
             <li>Hauteur de l'objectif (Z)</li>
@@ -49,7 +54,7 @@ layout: default
             <li>Changement des objectifs</li>
         </ul>
     </td>
-    <td width='33%' >
+    <td   >
         <b>Modes d'acquisition :</b>
         <ul>
             <li>Multicanaux</li>

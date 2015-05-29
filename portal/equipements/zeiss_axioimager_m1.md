@@ -6,18 +6,22 @@ layout: default
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-    <td width='40%'>
-        <img src='/images/zeiss_axioimager_z1.jpg' width='300px' />
+    <td width='350px' align="center">
+        <img src='/images/zeiss_axioimager_z1.jpg' width='275px' />
     </td>
     <td  >
         <h4><b>Microscope idéal pour les échantillons environnementaux</b></h4>
         <p>
-        Ce microscope droit conçu pour la biologie permet de faire des observations en lumière transmise (champ claire) ou en fluorescence et est idéal pour le travail sur lames. Il est entièrement équipé d'objectifs permettant la visualisation en contraste de phase et ça caméra couleur est idéale pour l'observation d'échantillons environnementaux. La prise d'images dans plusieurs canaux et dans plusieurs plans (Z-stack) se fait de façon automatique.
+        Ce microscope droit conçu pour la recherche permet de faire des observations en lumière 
+        transmise (champ claire) ou en fluorescence ce qui le rend idéal pour le travail sur lames. Il est entièrement 
+        équipé d'objectifs permettant la visualisation en contraste de phase et sa caméra couleur est idéale pour 
+        l'observation d'échantillons environnementaux. La prise d'images dans plusieurs canaux et dans plusieurs plans (Z-stack) 
+        se fait de façon automatique.
         </p>
         <p>
         <b>Applications typiques pour cet appareils</b>
         <ul>
-            <li>Échantillons demandant des photos couleurs </li>
+            <li>Échantillons demandant des photos couleurs</li>
             <li>Échantillons peut contrastés (contraste de phase)</li>
         </ul>
         </p>
@@ -30,7 +34,7 @@ layout: default
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-    <td width='33%'>
+    <td width='350px'>
         <b>Généralités</b>
         <ul>
             <li>Microscope droit</li>
@@ -40,14 +44,14 @@ layout: default
         </ul>
 
     </td>
-    <td width='33%' >
+    <td  >
         <b>Automatisation :</b>
         <ul>
             <li>Hauteur de l'objectif (Z)</li>
             <li>Position des filtres de fluorescence</li>
         </ul>
     </td>
-    <td width='33%' >
+    <td  >
         <b>Modes d'acquisition :</b>
         <ul>
             <li>Multicanaux</li>

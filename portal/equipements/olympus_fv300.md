@@ -6,19 +6,20 @@ layout: default
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-    <td width='40%'>
-        <img src='/images/olympus_fv300.jpg' width='300px' />
+    <td width='300px'>
+        <img src='/images/olympus_fv300_crop.jpg' width='275px' />
     </td>
     <td  >
-        <h4><b>LE microscope confocal</b></h4>
+        <h4><b>Microscope confocal</b></h4>
         <p>
-            Le Olympus FluoView 300 est un microscope confocal à balayage au laser conçu pour la recherche en biologie. Il permet l'acquisition d'images de bonne résolution en confocal, en épifluorescence et en champ claire.
+            Le Olympus FluoView 300 est un microscope confocal à balayage au laser conçu pour la recherche. 
+            Il permet l'acquisition d'images de bonne résolution en confocal, en épifluorescence et en champ claire.
         </p>
         <p>
         <b>Applications typique pour cette appareil :</b>
         <ul>
             <li>Observation de tissues animaux ou végétaux</li>
-            <li>Essais de colocalisation</li>
+            <li>Essais de localisation et colocalisation</li>
         </ul>
         </p>
     </td>
@@ -30,7 +31,7 @@ layout: default
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-    <td width='50%'>
+    <td width='300px'>
         <b>Généralités</b>
         <ul>
             <li>Microscope inversé</li>
@@ -46,7 +47,7 @@ layout: default
         <b>Mode d'acquisition en confocal :</b>
         <ul>
             <li>Multicanaux</li>
-            <li>Plans multiples(Z-stack)</li>
+            <li>Plans multiples (Z-stack)</li>
             <li>Temps multiples (time lapse)</li>
         </ul>
     </td>
