@@ -11,16 +11,22 @@ layout: default
         <img src='/images/zeiss_axioobserver_Z1.jpg' width='300px' />
     </td>
     <td  >
-        <h4><b>Microscope entièrement automatisé</b></h4>
+        <h4><b>Microscope entièrement automatisé à haut débit</b></h4>
         <p>
-            Microscope inversé entièrement automatisé idéal pour plaques multi-puits ou lames en fluorescence ou en champ claire. Ce microscope vous permet de prendre automatiquement des images multi-canal, multi-plans (Z-Stack), multi-positions et à différents temps (time lapse). La chambre environnementale permet l'acquisition d'image d'organismes vivants sans causer de stress. Les objectifs à haute ouverture numérique procure une grande sensibilité et une très bonne résolution et la caméra à large champ de 5 mégapixels permet de couvrir une surface plus grande et ce, avec une excellente résolution. De plus, l'utilisation de l'Apotome permet d'imager des sections optiques fines grâce à l'augmentation de la résolution axiale.
+            Microscope inversé entièrement automatisé idéal pour plaques multi-puits et lames en fluorescence ou en champ claire. 
+            Ce microscope vous permet de prendre automatiquement des images multi-canal, multi-plans (Z-Stack), multi-positions et 
+            à différents temps (time lapse). La chambre environnementale permet l'acquisition d'image provenant d'organismes vivants sans 
+            altération de l'environnement de croissance optimal asssocié à votre modèle. Les objectifs à grande ouverture numérique et la caméra 
+            à large champ de 5 mégapixels permet de couvrir une surface plus grande, procurent une 
+            très grande sensibilité et une excellente résolution. De plus, 
+            l'utilisation de l'Apotome vous permet d'imager des sections optiques fines grâce à l'augmentation de la résolution axiale.
         </p>
         <p>
         <b>Applications typique pour cet appareil:</b>
         <ul>
-            <li>Prise d'images en plusieurs dimensions</li>
-            <li>Prise d'images d'organismes vivants</li>
-            <li>Prise d'images à haut débit</li>
+            <li>Prise d'images multi-canal, multi-plans, multi-positions ou à différents temps</li>
+            <li>Permet l'acquisition d'organismes vivants sans stress environnemental</li>
+            <li>Cribblage à haut débit</li>
         </ul>
         </p>
     </td>

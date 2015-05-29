@@ -40,7 +40,7 @@ layout: default
     <td  >
         <h4><a href="/cgi-bin/CrisypyCrunch/index.pl"><b>Crispy CRISPR</b></a></h4>
         <p>
-            Un logiciel de prédiction pour l'inhibition de votre gene d'intérêt a l'aide de la technologie Crispr / Cas9.  
+            Un logiciel de prédiction pour l'inhibition de votre gene d'intérêt à l'aide de la technologie Crispr / Cas9.  
         </p>
     </td>
 </tr>
