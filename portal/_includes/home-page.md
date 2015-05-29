@@ -18,4 +18,4 @@ pour la fonction cellulaire que vous étudiez. Nous offrons un service de phéno
 à tous chercheurs provenant du domaine académique et privée afin de les aider à identifier des biomarqueurs d'intérêts de façon rapide, efficace et à faible coût.  
 
 <br/>
-<h4><b>Pour plus d'information, consulter la section <a href='/services/services.html'>services</a>.</b></h3>
+<h4><b>Pour plus d'information, consultez la section <a href='/services/services.html'>services</a>.</b></h3>

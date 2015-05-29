@@ -12,10 +12,10 @@ layout: default
     <td  >
         <h4><b>Un microscope à haut débit pour criblage à haut contenu</b></h4>
         <p>
-            Ce microscope a été conçu pour l'acquisition des plaques multi-puits. Il est muni d'une chambre à environnement controlé 
-            (température et CO2) ainsi que d'un système de manipulation de liquides. Les deux lampes aux halogénures de 
-            métal procurent une illumination de 360 à 700 nm. Ce microscope permet aussi la prise d'images en champ claire 
-            pouvant être jumelé aux images en fluorescence. L'autofocus au laser permet une acquisition rapide 
+            Ce microscope a été conçu pour l'acquisition des plaques multi-puits. Il est muni d'une chambre à environnement controlé
+            (température et CO2) ainsi que d'un système de manipulation de liquides. Les deux lampes aux halogénures de
+            métal procurent une illumination de 360 à 700 nm. Ce microscope permet aussi la prise d'images en champ claire
+            pouvant être jumelé aux images en fluorescence. L'autofocus au laser permet une acquisition rapide
             de haute qualitée (4 images/sec) . Le système permet des études cinétiques ou en point unique.
         <p>
         <b>Applications typique pour cet appareil:</b>
@@ -48,7 +48,7 @@ layout: default
 
     </td>
     <td  >
-        <b>Automatisation :</b>
+        <b>Automatisation</b>
         <ul>
             <li>Déplacement de l'objectif (X, Y, Z)</li>
             <li>Position des filtres de fluorescence</li>
@@ -57,7 +57,7 @@ layout: default
         </ul>
     </td>
     <td  >
-        <b>Modes d'acquisition :</b>
+        <b>Modes d'acquisition</b>
         <ul>
             <li>Spécialisé pour l'acquisition de plaques 6-384 puits</li>
             <li>Multicanaux</li>
