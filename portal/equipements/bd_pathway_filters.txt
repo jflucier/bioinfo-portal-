@@ -1,0 +1,41 @@
+Pathway excitation filter
+
+340/26
+360/11
+387/11
+387/11ND
+440/10
+460/10
+470/40
+488/10
+548/20
+555/28
+560/55
+635/20
+
+Emission
+
+430/10 + 460/20 + 525/20 + 600/30 + 695/70 (84101)
+435LP
+505/30 + 600/60 (FURA/TRITC)
+515LP
+540/50 (FURA/FITC)
+570LP
+645/75
+
+Emission Dichroic
+
+400LP
+425/50 + 500/30 + 570LP (FURA/TRITC)
+450/70 + 525/50 + 565LP (84000)
+500LP (FURA/FITC)
+595LP
+
+
+Excitation Dichroic
+
+Mirror (for 100% lamp B)
+Open (for 100% lamp A)
+50% lamp A / 10% lamp B
+10% lamp A / 40% lamp B
+370LP
