@@ -18,7 +18,7 @@ layout: default
         <p>
         <b>Application typique pour cet appareil :</b>
         <ul>
-            <li>Quantification d'ADN, ARN et proteines</li>
+            <li>Quantification d'ADN, ARN et protéines</li>
             <li>Dosage de quantité protéines conjuguées</li>
             <li>Densité optique de cultures en plaques</li>
         </ul>

@@ -7,8 +7,8 @@ layout: default
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-    <td width='40%'>
-        <img src='/images/zeiss_axioobserver_Z1.jpg' width='300px' />
+    <td width='300px' align="center">
+        <img src='/images/zeiss_axioobserver_Z1.jpg' width='275px' />
     </td>
     <td  >
         <h4><b>Microscope entièrement automatisé à haut débit</b></h4>
@@ -38,7 +38,7 @@ layout: default
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-    <td width='33%'>
+    <td width='300px'>
         <b>Généralités</b>
         <ul>
             <li>Microscope inversé</li>
@@ -50,7 +50,7 @@ layout: default
         </ul>
 
     </td>
-    <td width='33%' >
+    <td  >
         <b>Automatisation :</b>
         <ul>
             <li>Platine (X, Y)</li>
@@ -61,7 +61,7 @@ layout: default
             <li>Condensateur (champ claire, DIC, contraste de phase)</li>
         </ul>
     </td>
-    <td width='33%' >
+    <td  >
         <b>Modes d'acquisition :</b>
         <ul>
             <li>Supporte l'acquisition de plaques multipuits, slide et petri</li>
