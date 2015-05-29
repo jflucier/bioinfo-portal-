@@ -12,8 +12,8 @@ layout: default
     <td  >
         <h4><b>Cytomètre analyseur multi-couleur</b></h4>
         <p>
-            Le BD FACSCalibur™ est un cytomètre de flux ayant une capacité de 4 couleurs. Conçu pour supporté 
-            un large éventail d'applications, le BD FACSCalibur offre un contrôle 
+            Le BD FACSCalibur est un cytomètre de flux ayant une capacité de 4 couleurs. Conçu pour supporté
+            un large éventail d'applications, cet appareil offre un contrôle
             intuitif de l'instrument et de la fluidique afin d'améliorer la productivité.
 
         </p>
@@ -36,16 +36,17 @@ layout: default
     <td width='300px'>
         <b>Généralités</b>
         <ul>
-            <li>2 lasers</li>
-            <li>4 couleurs</li>
+            <li>Deux lasers pour excitation</li>
+            <li>Détection de 4 couleurs</li>
+
         </ul>
 
     </td>
     <td  >
-        <b>Protocols :</b>
+        <b>Fluidique :</b>
         <ul>
-            <li>....</li>
-            <li>....</li>
+        <li>Trois vitesses d'acquisition (12, 35 et 60 µl/sec)</li>
+        <li>Prend des suspension cellulaire de 1 x 10<sup>5</sup> à 2 x 10<sup>7</sup> particules/ml</li>
         </ul>
     </td>
 </tr>
@@ -90,7 +91,7 @@ layout: default
             </td>
             <td >FL3</td>
             <td >488</td>
-            <td >Demi-miror</td>
+            <td >Demi-miroir</td>
             <td >670LP</td>
         </tr>
         <tr >
@@ -100,7 +101,7 @@ layout: default
             </td>
             <td >FL4</td>
             <td >635</td>
-            <td >Demi-miror</td>
+            <td >Demi-miroir</td>
             <td >661/16</td>
         </tr>
     </tbody>
