@@ -12,11 +12,11 @@ layout: default
 <p>
 <h4><b>Notre expertise en bref</b></h4>
 <ul>
-<li>Analyse de vos besoins et estimation de coûts</li>
+<li>Analyse de vos besoins et estimations de coûts</li>
 <li>Analyse de données de séquençage à haut débit (DNA-seq, RNA-seq, Chip-seq, etc.)</li>
 <li>Développement de scripts d'analyses et d'outils bioinformatiques "sur mesure"</li>
 <li>Optimisation et parallélisation d'algorithme</li>
-<li>Analyse bio-statistiques diverses de vos resultats (clustering, heatmap, PCA, etc)</li>
+<li>Analyse bio-statistiques diverses de vos résultats (clustering, heatmap, PCA, etc)</li>
 </ul>
 </p>
 <p>
@@ -35,7 +35,7 @@ soumettre un projet, contactez <a href='/contact.html'>Jean-François Lucier</a>
 <td >
 <h4><b>L'explosion de données biologiques</b></h4>
 <p>L'avancement technologique durant la dernière décennie a contribué à la croissance des données liées à la biologie. La création d'outils tel que
-les séquenceurs de nouvelle génération et microscope à haut débit ont grandement contribué à cette hausse. De nos jours, la plupart des laboratoires et entreprises
+les séquenceurs de nouvelle génération et microscopes à haut débit ont grandement contribué à cette hausse. De nos jours, la plupart des laboratoires et entreprises
 privées, petites ou grosses, ont recours à ces technologies pour tester une multitudes d'hypothèses liées à leurs programmes de recherche. Par
 conséquent, le besoin de personnes qualifiées et spécialisées dans le traitement de ces données est donc devenu une nécessité pour l'avancement de vos recherches. </p>
 </td>
@@ -49,13 +49,13 @@ conséquent, le besoin de personnes qualifiées et spécialisées dans le traite
 <td >
 <h4><b>L'Équipe</b></h4>
 <p>Avec notre équipe de bio-informaticiens experts, vous serez en mesure d'obtenir les analyses bio-informatiques requises par votre
-laboratoire ou entreprise de façon rapide, efficace et professionnelle. Notre équipe est composé de bioinformaticiens seniors, programmeurs et administreurs systèmes ayant
+laboratoire ou entreprise de façon rapide, efficace et professionnelle. Notre équipe est composée de bioinformaticiens seniors, programmeurs et administreurs systèmes ayant
 pour la plupart une formation en biologie et en informatique. Notre expertise nous permet de bien comprendre vos hypothèses et d'élaborer des solutions
-répondant à tous vos besoins bio-informatiques. Le service bio-informatique du département de Biologie travail étroitement avec l'équipe du Centre de Calcul Scientifiques
+répondant à tous vos besoins bio-informatiques. Le service bio-informatique du département de Biologie travaille étroitement avec l'équipe du Centre de Calcul Scientifiques
 de l'Université de Sherbrooke (<a href='https://www.usherbrooke.ca/sti/internes/ccs/'>CCS</a>), sous la gouverne de
 <a href='http://www.calculquebec.ca/fr/'>Calcul Québec</a> et <a href='http://www.computecanada.ca/?lang=fr'>Calcul Canada</a>. L'équipe de programmeurs et
-d'administrateurs systèmes de ce centre sont responsable du bon fonctionnement du super-ordinateur Mammouth (> 39 000 processeurs). Nous avons
-donc un un accès privilégié à cette super ressource informatique qui nous permet d'analyser vos resultats de manière rapide et efficace.
+d'administrateurs systèmes de ce centre sont responsables du bon fonctionnement du super-ordinateur Mammouth (> 39 000 processeurs). Nous avons
+donc un un accès privilégié à cette super ressource informatique ce qui nous permet d'analyser vos resultats de manière rapide et efficace.
 </p>
 </td>
 <td width='200px' >
