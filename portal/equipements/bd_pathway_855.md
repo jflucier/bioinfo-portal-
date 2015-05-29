@@ -6,15 +6,19 @@ layout: default
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-    <td width='40%'>
-        <img src='/images/bd_pathway_855.jpg' width='300px' />
+    <td width='300px'>
+        <img src='/images/bd_pathway_855.jpg' width='275px' />
     </td>
     <td  >
         <h4><b>Un microscope à haut débit pour criblage à haut contenu</b></h4>
         <p>
-            Ce microscope conçu pour imager des plaques multi-puits est muni d'une chambre à environnement controlé (température et CO2) ainsi que de système de manipulation de liquides. Les deux lampes aux halogénure de métal procure une illumination de 360 à 700 nm. Ce microscope permet de prendre des images en champ claire pouvant être jumelé aux images en fluorescence. L'autofocus au laser permet une acquisition rapide d'images de haute-qualitées. Le système permet de prendre des images en cinétiques ou en point unique.
+            Ce microscope a été conçu pour l'acquisition des plaques multi-puits. Il est muni d'une chambre à environnement controlé 
+            (température et CO2) ainsi que d'un système de manipulation de liquides. Les deux lampes aux halogénures de 
+            métal procurent une illumination de 360 à 700 nm. Ce microscope permet aussi la prise d'images en champ claire 
+            pouvant être jumelé aux images en fluorescence. L'autofocus au laser permet une acquisition rapide 
+            de haute qualitée (4 images/sec) . Le système permet des études cinétiques ou en point unique.
         <p>
-        <b>Typicals applications for this system are:</b>
+        <b>Applications typique pour cet appareil:</b>
         <ul>
             <li>Acquisition automatisé d'images en plaque multi-puits</li>
             <li>Acquisition d'images de cellules vivantes</li>
@@ -30,7 +34,7 @@ layout: default
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
-    <td width='33%'>
+    <td width='300px'>
         <b>Généralités</b>
         <ul>
             <li>Microscope inversé</li>
@@ -43,7 +47,7 @@ layout: default
         </ul>
 
     </td>
-    <td width='33%' >
+    <td  >
         <b>Automatisation :</b>
         <ul>
             <li>Déplacement de l'objectif (X, Y, Z)</li>
@@ -52,7 +56,7 @@ layout: default
             <li>Manipulation de liquide</li>
         </ul>
     </td>
-    <td width='33%' >
+    <td  >
         <b>Modes d'acquisition :</b>
         <ul>
             <li>Spécialisé pour l'acquisition de plaques 6-384 puits</li>
