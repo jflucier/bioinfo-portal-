@@ -18,7 +18,7 @@ layout: default
 
         </p>
         <p>
-        <b>Applications typiques pour cet appareil :</b>
+        <b>Applications typiques pour cet appareil</b>
         <ul>
             <li>Immunophénotypage</li>
             <li>Analyse de cycle cellulaire</li>
@@ -43,7 +43,7 @@ layout: default
 
     </td>
     <td  >
-        <b>Fluidique :</b>
+        <b>Fluidique</b>
         <ul>
         <li>Trois vitesses d'acquisition (12, 35 et 60 µl/sec)</li>
         <li>Prend des suspension cellulaire de 1 x 10<sup>5</sup> à 2 x 10<sup>7</sup> particules/ml</li>
