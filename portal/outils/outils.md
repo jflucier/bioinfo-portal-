@@ -12,7 +12,7 @@ layout: default
     <td  >
         <h4><a href="http://omero.ccs.usherbrooke.ca/"><b>OMERO</b></a></h4>
         <p>
-            OMERO est un logiciel client - serveur pour la visualisation, la gestion et l'analyse dèimages provenant de microscope. 
+            OMERO est un logiciel client - serveur pour la visualisation, la gestion et l'analyse d'images provenant de microscope traditionnel ou à haut débit. 
         </p>
     </td>
 </tr>
@@ -40,7 +40,7 @@ layout: default
     <td  >
         <h4><a href="/cgi-bin/CrisypyCrunch/index.pl"><b>Crispy CRISPR</b></a></h4>
         <p>
-            Un logiciel de prédiction pour lèinhibition de votre gene d'intérêt a l'aide de la technologie Crispr / Cas9.  
+            Un logiciel de prédiction pour l'inhibition de votre gene d'intérêt a l'aide de la technologie Crispr / Cas9.  
         </p>
     </td>
 </tr>

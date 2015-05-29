@@ -168,6 +168,7 @@ layout: default
         <tr >
             <td colspan='4'>
             <ul>
+                <li><i>Légende des graphiques: excitation (bleu), émission (rouge) et dichroïque (gris).</i></li>
                 <li><i>Un maximum de 5 filtres peuvent être utilisés simultanément.</i></li>
                 <li><i>Les filtres d'excitation sont découplés des filtres dichroïque et d'émission afin de pouvoir faire de multiples combinaisons.</i></li>
             </ul>

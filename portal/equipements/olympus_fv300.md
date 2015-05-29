@@ -160,6 +160,7 @@ layout: default
         <tr >
             <td colspan='4'>
             <ul>
+                <li><i>Légende des graphiques: excitation (bleu), émission (rouge) et dichroïque (vert).</i></li>
                 <li><i>Un maximum de 4 filtres peuvent être utilisés simultanément (incluant le champ claire).</i></li>
             </ul>
             </td>

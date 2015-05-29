@@ -11,7 +11,7 @@ layout: default
 <p>
 <h4><b>Notre expertise en bref</b></h4>
 <ul>
-<li>Analyse de vos besoins et estimation de coûts.</li>
+<li>Analyse de vos besoins et estimations de coûts.</li>
 <li>Criblage phénotypique à haut débit.</li>
 <li>Microscopie en épifluorescence, confocal, champ claire, contraste de phase et contraste interférentiel.</li>
 <li>Analyse d'images et écriture de modules ImageJ/Fiji.</li>
@@ -87,13 +87,13 @@ de jumelé ces techniques à un rendement haut débit.
 <td >
 <h4><b>Analyse d'images</b></h4>
 <p>
-Le traitement et l’analyse de vos images vous permet d’extraire rapidement et de façon quantitative un 
+Le traitement et l’analyse nous permet d’extraire rapidement et de façon quantitative un 
 maximum d’informations sur les phénotypes que l'on retrouve sur vos images tel la morphologie de vos échantillons, 
-la localisation de votre biomarqueur d'intérêts dans votre modèle d'intérêt ou bien la colocalisation de ce biomarqueur en lien avec une autre molécule 
+la localisation de votre biomarqueur dans vos modèles d'intérêts ou bien la colocalisation de ce biomarqueur en lien avec une autre molécule 
 qui suscite votre intérêt. Divers échantillons peuvent être analysées comme par exemple des cellules eucaryotes, bactéries, boîte de Petri, plantes, 
 environnement, buvardages, etc. L’analyse se fait selon vos besoin afin d’extraire le maximum d'informations pertinentes répondant à vos hypothèses. 
 On offre aussi la possibilité de vous écrire des modules <a href='http://imagej.nih.gov/ij/features.html'>ImageJ</a> / <a href='http://fiji.sc/Fiji'>Fiji</a> 
-réutilisable pour automatiser des opérations répétitives nécessaire à l'analyse de vos images. Hésiter pas anous contacter pour de plus ample détails sur notre 
+réutilisable pour automatiser des opérations répétitives nécessaire à l'analyse de vos images. N'hésitez pas a nous contacter pour de plus ample détails sur notre 
 expertise.
 </p>
 </td>

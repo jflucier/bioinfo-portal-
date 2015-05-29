@@ -153,6 +153,15 @@ layout: default
             <td><b>Émission</b></td>
         </tr>
     </thead>
+    <tfoot>
+        <tr >
+            <td colspan='4'>
+            <ul>
+                <li><i>Légende des graphiques: excitation (bleu), émission (rouge) et dichroïque (gris).</i></li>
+            </ul>
+            </td>
+        </tr>
+    </tfoot>
     <tbody >
         <tr >
             <td align='center'>
