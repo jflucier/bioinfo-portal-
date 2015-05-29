@@ -12,15 +12,15 @@ layout: default
 <p>
 <h4><b>Notre expertise en bref</b></h4>
 <ul>
-<li>Analyse de vos besoins et estimations de coûts</li>
+<li>Analyse de vos besoins et estimation de coûts</li>
 <li>Analyse de données de séquençage à haut débit (DNA-seq, RNA-seq, Chip-seq, etc.)</li>
 <li>Développement de scripts d'analyses et d'outils bioinformatiques "sur mesure"</li>
 <li>Optimisation et parallélisation d'algorithme</li>
-<li>Analyse bio-statistiques diverses de vos résultats (clustering, heatmap, PCA, etc)</li>
+<li>Analyses bio-statistiques diverses de vos résultats (clustering, heatmap, PCA, etc)</li>
 </ul>
 </p>
 <p>
-Pour le détails de nos réalisations, svp vous référez à notre <a href='/services/portefolio.html'>portefolio</a>. Pour vous renseignez sur notre expertise ou pour nous
+Pour le détails de nos réalisations, svp vous référez à notre <a href='/services/portefolio.html'>portfolio</a>. Pour vous renseignez sur notre expertise ou pour nous
 soumettre un projet, contactez <a href='/contact.html'>Jean-François Lucier</a>
 </p>
 </td>
@@ -36,7 +36,7 @@ soumettre un projet, contactez <a href='/contact.html'>Jean-François Lucier</a>
 <h4><b>L'explosion de données biologiques</b></h4>
 <p>L'avancement technologique durant la dernière décennie a contribué à la croissance des données liées à la biologie. La création d'outils tel que
 les séquenceurs de nouvelle génération et microscopes à haut débit ont grandement contribué à cette hausse. De nos jours, la plupart des laboratoires et entreprises
-privées, petites ou grosses, ont recours à ces technologies pour tester une multitudes d'hypothèses liées à leurs programmes de recherche. Par
+privées, petites ou grosses, ont recours à ces technologies pour tester une multitude d'hypothèses liées à leurs programmes de recherche. Par
 conséquent, le besoin de personnes qualifiées et spécialisées dans le traitement de ces données est donc devenu une nécessité pour l'avancement de vos recherches. </p>
 </td>
 </tr>
@@ -75,7 +75,7 @@ donc un un accès privilégié à cette super ressource informatique ce qui nous
 </td>
 <td >
 <h4><b>Une solution bio-informatique pour vos besoins</b></h4>
-<p>Quels que soient vos besoins en bio-informatique, notre service est permet 
+<p>Quels que soient vos besoins en bio-informatique, notre service permet
 de solutionner efficacement vos problèmes d'analyses, et ce, à un coût très concurrentiel. Nous travaillons
 de pair avec nos clients afin de bien comprendre leur domaine de recherche et la problématique liée à l'analyse de leur données. Ceci permet d'identifier
 les éléments qui devront être developpés pour assurer une analyse juste des données répondant à vos besoins.</p>
