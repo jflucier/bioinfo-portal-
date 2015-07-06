@@ -13,12 +13,12 @@ layout: default
     <td  >
         <h4><b>Microscope entièrement automatisé à haut débit</b></h4>
         <p>
-            Microscope inversé entièrement automatisé idéal pour plaques multi-puits et lames en fluorescence ou en champ claire. 
-            Ce microscope vous permet de prendre automatiquement des images multi-canal, multi-plans (Z-Stack), multi-positions et 
-            à différents temps (time lapse). La chambre environnementale permet l'acquisition d'image provenant d'organismes vivants sans 
-            altération de l'environnement de croissance optimal asssocié à votre modèle. Les objectifs à grande ouverture numérique et la caméra 
-            à large champ de 5 mégapixels permet de couvrir une surface plus grande, procurent une 
-            très grande sensibilité et une excellente résolution. De plus, 
+            Microscope inversé entièrement automatisé idéal pour plaques multi-puits et lames en fluorescence ou en champ claire.
+            Ce microscope vous permet de prendre automatiquement des images multi-canal, multi-plans (Z-Stack), multi-positions et
+            à différents temps (time lapse). La chambre environnementale permet l'acquisition d'image provenant d'organismes vivants sans
+            altération de l'environnement de croissance optimal asssocié à votre modèle. Les objectifs à grande ouverture numérique et la caméra
+            à large champ de 5 mégapixels permet de couvrir une surface plus grande, procurent une
+            très grande sensibilité et une excellente résolution. De plus,
             l'utilisation de l'Apotome vous permet d'imager des sections optiques fines grâce à l'augmentation de la résolution axiale.
         </p>
         <p>
@@ -142,7 +142,7 @@ layout: default
             <td>0.19 mm</td>
             <td>X</td>
             <td>-</td>
-            <td>DIC II</td>
+            <td>DIC III</td>
             <td>X</td>
         </tr>
         <tr>
