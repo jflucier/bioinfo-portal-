@@ -25,7 +25,7 @@ Courriel: <a href='mailto:jean-francois.lucier@usherbrooke.ca'>jean-francois.luc
 <td >
 <h2>Service de phénotypage et d'instrumentation</h2>
 <p>
-<h4><b>Daniel Garneau, Coordonateur en instrumentation</b></h4>
+<h4><b>Daniel Garneau, Coordonnateur en instrumentation</b></h4>
 Département de Biologie                          <br/>
 2500, boulevard de l'Université                  <br/>
 Sherbrooke (Québec) J1K 2R1                      <br/>
