@@ -44,9 +44,10 @@ layout: default
             <li>Microscope inversé</li>
             <li>Champs clair, DIC et contraste de phase</li>
             <li>Épifluorescence</li>
-            <li>Apotome (augmente la résolution axiale)</li>
+            <li>Apotome (sections optiques)</li>
             <li>Chambre à température contrôlée</li>
-            <li>Caméra monochrome de 5 mégapixels à large champ (14 bits)</li>
+            <li>Caméra monochrome de 6 mégapixels à large champ (14 bits)</li>
+            <li>Caméra couleur de 5 mégapixels</li>
         </ul>
 
     </td>
@@ -64,7 +65,7 @@ layout: default
     <td  >
         <b>Modes d'acquisition :</b>
         <ul>
-            <li>Supporte l'acquisition de plaques multipuits, slide et petri</li>
+            <li>Supporte l'acquisition de plaques multipuits, slides et Pétri</li>
             <li>Multicanaux</li>
             <li>Plans multiples (Z-stack)</li>
             <li>Temps multiples (time lapse)</li>
@@ -127,12 +128,12 @@ layout: default
         </tr>
         <tr>
             <td>63X</td>
-            <td>0.75</td>
-            <td>Air</td>
-            <td>1.7 à 0.75 mm</td>
+            <td>1.25</td>
+            <td>Huile</td>
+            <td>0.10 mm</td>
             <td>X</td>
-            <td>Ph2</td>
-            <td>DIC II</td>
+            <td>Ph3</td>
+            <td>-</td>
             <td>X</td>
         </tr>
         <tr>
