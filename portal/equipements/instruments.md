@@ -110,7 +110,7 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
     </td>
     <td align='center' colspan='2'>
         <p align='center'>
-            <a name="cytometre"></a><h3><b>Cytomètres</b></h3>
+            <a name="cytometre"></a><h3><b>Cytomètres et trieurs</b></h3>
         </p>
     </td>
 
@@ -134,6 +134,20 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
     </td>
     <td width='30%'>
         <p align='center'>
+            <img src='/images/bd_facsjazz.jpg' width='200px' />
+            <br/>
+            <b><a href='/equipements/bd_facsjazz.html'>BD FACSJazz</a>
+        </p>
+        <p >
+            <ul>
+                <li>Trieur de cellules</li>
+                <li>Deux lasers d'excitation</li>
+                <li>Détection de 6 couleurs</li>
+            </ul>
+        </p>
+    </td>
+    <td width='30%'>
+        <p align='center'>
             <a href='/equipements/bd_facscalibur.html'><img src='/images/bd_facscalibur.jpg' width='200px' /> </a>
             <br/>
             <b><a href='/equipements/bd_facscalibur.html'>BD FACSCalibur</a></b>
@@ -144,16 +158,6 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
                 <li>Deux lasers d'excitation</li>
                 <li>Détection de 4 couleurs</li>
             </ul>
-        </p>
-    </td>
-    <td width='30%'>
-        <p align='center'>
-            <img src='/images/trieur_cytometrie.png' width='200px' />
-            <br/>
-            <b>Trieur de cellule à haute vitesse</a>
-        </p>
-        <p align='center'>
-            <font color="red">Disponible fin été 2015</font>
         </p>
     </td>
 

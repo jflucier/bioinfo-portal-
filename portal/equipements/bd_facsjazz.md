@@ -2,23 +2,23 @@
 layout: default
 ---
 
-<h2>BD FACSCalibur</h2>
+<h2>BD FACSJazz</h2>
 <table >
 <tbody>
 <tr style="background-color:#FFFFFF">
     <td width='300px'>
-        <img src='/images/bd_facscalibur.jpg' width='275px' />
+        <img src='/images/bd_facsjazz.jpg' width='275px' />
     </td>
     <td  >
-        <h4><b>Cytomètre analyseur multi-couleur</b></h4>
+        <h4><b>Trieur multi-couleur</b></h4>
         <p>
-            Le BD FACSCalibur est un cytomètre de flux ayant une capacité de 4 couleurs. Conçu pour supporté un large éventail d'applications, cet appareil offre un contrôle
-            intuitif de l'instrument et de la fluidique afin d'améliorer la productivité.
+            Le BD FACSJazz est un trieur de cellule permettant de trier ou d'analyser en utlisant jusqu'à six couleurs. Il permet de trier des populations ou d'isoler des cellules individuelles dans différents types de contenant.
 
         </p>
         <p>
         <b>Applications typiques pour cet appareil</b>
         <ul>
+            <li>Tri de cellules individuelles</li>
             <li>Immunophénotypage</li>
             <li>Analyse de cycle cellulaire</li>
         </ul>
@@ -36,7 +36,7 @@ layout: default
         <b>Généralités</b>
         <ul>
             <li>Deux lasers pour excitation</li>
-            <li>Détection de 4 couleurs</li>
+            <li>Détection de 6 couleurs</li>
 
         </ul>
 
@@ -44,8 +44,9 @@ layout: default
     <td  >
         <b>Fluidique</b>
         <ul>
-        <li>Trois vitesses d'acquisition (12, 35 et 60 µl/sec)</li>
-        <li>Suspension cellulaire de 1 x 10<sup>5</sup> à 2 x 10<sup>7</sup> particules/ml</li>
+        <li>Fluidique entièrement changeable</li>
+        <li>Nozzle de 100 µm</li>
+        <li>Support pour tubes 5 ml et 15 ml, plaques 96 et 384 puits, lames, plats de Pétri</li>
         </ul>
     </td>
 </tr>
@@ -70,38 +71,53 @@ layout: default
             </td>
             <td >FL1</td>
             <td >488</td>
-            <td >560SP</td>
-            <td >530/30</td>
+            <td >550LP</td>
+            <td >530/40</td>
         </tr>
         <tr >
             <td align='center'>
-
-                Cy3, DsRed, PE, PI
+                PerCP-Cy5.5
             </td>
             <td >FL2</td>
             <td >488</td>
-            <td >640LP</td>
-            <td >585/42</td>
+            <td >-</td>
+            <td >710/50</td>
         </tr>
         <tr >
             <td align='center'>
-
-                PE-Cy5, 7-AAD, PerCP
+                DsRed, PE, AlexaFluor 546
             </td>
             <td >FL3</td>
-            <td >488</td>
-            <td >Demi-miroir</td>
-            <td >670LP</td>
+            <td >561</td>
+            <td >600LP</td>
+            <td >585/29</td>
         </tr>
         <tr >
             <td align='center'>
-
-                AlexaFluor 647, Cy5, APC
+                mCherry, PI
             </td>
             <td >FL4</td>
-            <td >635</td>
-            <td >Demi-miroir</td>
-            <td >661/16</td>
+            <td >561</td>
+            <td >645LP</td>
+            <td >610/20</td>
+        </tr>
+        <tr >
+            <td align='center'>
+                PE-Cy5
+            </td>
+            <td >FL5</td>
+            <td >561</td>
+            <td >740LP</td>
+            <td >670/30</td>
+        </tr>
+        <tr >
+            <td align='center'>
+                PE-Cy7
+            </td>
+            <td >FL6</td>
+            <td >561</td>
+            <td >-</td>
+            <td >750LP</td>
         </tr>
     </tbody>
 </table>

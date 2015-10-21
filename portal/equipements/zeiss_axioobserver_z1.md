@@ -24,7 +24,7 @@ layout: default
         <p>
         <b>Applications typique pour cet appareil:</b>
         <ul>
-            <li>Prise d'images multi-canal, multi-plans, multi-positions ou à différents temps</li>
+            <li>Prise d'images multi-canal, multi-plans, multi-positions ainsi qu'à différents temps</li>
             <li>Permet l'acquisition d'organismes vivants sans stress environnemental</li>
             <li>Cribblage à haut débit</li>
         </ul>
