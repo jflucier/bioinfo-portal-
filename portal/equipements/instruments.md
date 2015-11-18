@@ -136,7 +136,7 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
         <p align='center'>
             <img src='/images/bd_facsjazz.jpg' width='200px' />
             <br/>
-            <b><a href='/equipements/bd_facsjazz.html'>BD FACSJazz</a>
+            <b><a href='/equipements/bd_facsjazz.html'>BD FACSJazz</a></b>
         </p>
         <p >
             <ul>

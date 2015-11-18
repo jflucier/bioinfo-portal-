@@ -16,9 +16,11 @@ layout: default
 
         </p>
         <p>
-        <b>Applications typiques pour cet appareil</b>
+        <b>Applications pour cet appareil</b>
         <ul>
             <li>Tri de cellules individuelles</li>
+            <li>Tri populations</li>
+            <li>Tri en tube ou en plaques</li>
             <li>Immunophénotypage</li>
             <li>Analyse de cycle cellulaire</li>
         </ul>
@@ -37,7 +39,8 @@ layout: default
         <ul>
             <li>Deux lasers pour excitation</li>
             <li>Détection de 6 couleurs</li>
-
+            <li>Tri jusqu`à deux populations</li>
+            <li>Tri en tubes, sur lames ou en plaques 96 et 384 puits</li>
         </ul>
 
     </td>
@@ -46,7 +49,6 @@ layout: default
         <ul>
         <li>Fluidique entièrement changeable</li>
         <li>Nozzle de 100 µm</li>
-        <li>Support pour tubes 5 ml et 15 ml, plaques 96 et 384 puits, lames, plats de Pétri</li>
         </ul>
     </td>
 </tr>
@@ -67,21 +69,21 @@ layout: default
     <tbody >
         <tr >
             <td align='center'>
-                GFP, AlexaFluor 488, FITC, YFP
+                GFP, AlexaFluor 488, FITC
             </td>
             <td >FL1</td>
             <td >488</td>
-            <td >550LP</td>
-            <td >530/40</td>
+            <td >527LP</td>
+            <td >513/17</td>
         </tr>
         <tr >
             <td align='center'>
-                PerCP-Cy5.5
+                YFP
             </td>
             <td >FL2</td>
             <td >488</td>
             <td >-</td>
-            <td >710/50</td>
+            <td >542/27</td>
         </tr>
         <tr >
             <td align='center'>
