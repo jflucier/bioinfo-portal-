@@ -6,7 +6,7 @@ layout: default
 
 ![OMERO](/images/omero-logo-200.png)
 
-OMERO permet de stocker toutes vos images à un seul endroit et ce, de façon sécuritaire. Vous pouvez sauvegarder, voir, organiser, analyser et partager vos images partout où vous avez accès à Internet. OMERO vous permet de pouvoir travailler avec vos images en utilisant une application installable sur votre ordinateur (Windows, Mac et Linux), à partir d'un fureteur Internet ou via certaines applications tierces. Plus de 130 formats d'images sont supportés, incluant la majorité des formats de microscopie.
+OMERO permet de stocker toutes vos images à un seul endroit et ce, de façon sécuritaire. Vous pouvez sauvegarder, voir, organiser, analyser et partager vos images partout où vous avez accès à Internet. OMERO vous permet de pouvoir travailler avec vos images en utilisant une application installable sur votre ordinateur (Windows, Mac et Linux), à partir d'un fureteur Internet ou via certaines applications tierces. Plus de 140 formats d'images sont supportés, incluant la majorité des formats utilisés en microscopie.
 
 [Site officiel (en anglais)](http://www.openmicroscopy.org/site/products/omero)
 
@@ -17,8 +17,8 @@ Vous pouvez utiliser [OMERO.web](http://omero.ccs.usherbrooke.ca/) ou le client 
 
 1. **Installation du client OMERO.insight (Windows, Mac, Linux)**
     * Télécharger le client OMERO [ici](http://downloads.openmicroscopy.org/omero/5.1.0/).
-    * Suivre les instruction se trouvent [ici](http://help.openmicroscopy.org/getting-started-5.html).
-    * L'adresse du serveur est "omero.ccs.usherbrooke.ca" (vous en aurez besoin pour l'installation du client).
+    * L'adresse du serveur est "omero.ccs.usherbrooke.ca" (vous en aurez besoin lors des prochaines étapes).
+    * Suivre les instruction se trouvant [ici](http://help.openmicroscopy.org/getting-started-5.html).
 <br>
 <br>
 2. **Changer votre mot de passe avec [OMERO.web](http://omero.ccs.usherbrooke.ca/)**
@@ -52,7 +52,7 @@ Vous pouvez utiliser [OMERO.web](http://omero.ccs.usherbrooke.ca/) ou le client 
 <br>
 <br>
 5. **Voir les images d'autres utilisateurs**
-    * À noter que vous pouvez uniquement voir les images des personnes étant dans le même groupe que vous.
+    * À noter que vous pouvez uniquement voir les images des personnes étant dans le même groupe (laboratoire) que vous.
     * **Avec OMERO.web**
         * Cliquer à l'endroit où on voit le nom de l'utilisateur en haut du panneau de gauche.
         * Sélectionner le groupe et l'utilisateur désiré.  
