@@ -16,8 +16,7 @@ La réservation des instruments suivants se fait via un calendrier Google.
 * Agilent 2100 Bioanalyzer
 
 <p>
-Pour réserver un appareil, dirigez-vous sur <a href='https://www.google.com/calendar/'>Google Calendar</a> et connectez-vous sous l'utilisateur <i>instrument.bio@gmail.com</i>.
-Choisissez le calendrier correspondant à l'appareil. Réservez la plage horaire voulue en inscrivant : Prénom Nom (laboratoire).
+Pour réserver un appareil, dirigez-vous sur <a href='https://www.google.com/calendar/'>Google Calendar</a> et connectez-vous sous l'utilisateur <i>instrument.bio@gmail.com</i>. Réservez la plage horaire voulue en inscrivant votre nom complet (laboratoire) et en choisissant le calendrier correspondant à l'appareil. 
 </p>
 <img src='/images/Agenda selection.png' width='275px' border='5 pixels'/>
 <br>
