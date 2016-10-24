@@ -38,7 +38,7 @@ layout: default
         <img src='/images/bioinfo/crispy_crispr.png' width='200px' />
     </td>
     <td  >
-        <h4><a href="/cgi-bin/CrisypyCrunch/index.pl"><b>Crispy CRISPR</b></a></h4>
+        <h4><a href="/cgi-bin/CrispyCrunch/index.pl"><b>CrispyCRISPR</b></a></h4>
         <p>
             Un logiciel de prédiction pour l'inhibition de votre gene d'intérêt à l'aide de la technologie Crispr / Cas9.  
         </p>
