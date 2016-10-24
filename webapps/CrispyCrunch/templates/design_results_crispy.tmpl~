@@ -1,44 +1,39 @@
 <html>
     <head>
-        <title>TOSS predictions</title>
-        <style type="text/css" media="all">@import "/toss_designs/design.css";</style>
+        <title>Crispy CRISPR</title>
+        <style type="text/css" media="all">@import "/CrispyCrunch/design.css";</style>
         
     </head>
     <body>
         <a name='results'></a>
-        <h1>TOSS predictions</h1>
+        <h1>Crispy CRISPR predictions</h1>
         <p>
         Note: If you need help interpreting this result table, see information below prediction table or click <a href='#doc'>here</a>.
         </p>
-        <TMPL_IF name='TOSS_LIST'>
+        <TMPL_IF name='CRISPR_LIST'>
             <form name = 'edit' method='post'>
-                <input type='hidden' name='page' value = 'toss_details'>
-                <input type='hidden' name='pred_nbr' value = ''>
-                <input type='hidden' name='gene_name' value = '<TMPL_VAR name="GENE_NAME">'>
-                <input type='hidden' name='rna_seq' value = ''>
-                <input type='hidden' name='5ss_dist' value = ''>
-                <input type='hidden' name='inhouse_criteria_str' value = ''>
-                <input type='hidden' name='offtarget_major' value = ''>
-                <input type='hidden' name='offtarget_minor' value = ''>
-                <input type='hidden' name='ess_mapping' value = ''>
-                <input type='hidden' name='mapped_seq' value = ''>
+                <input type='hidden' name='page' value = 'crispr_details'>
                 <table border=1>
                     <tr class='header'>
                         <td>Nbr</td>
-                        <td>TOSS Sequence (tail-antisens)</td>
-                        <td >ESS / ESE Mapping</td>
-                        <td>Target gene</td>
-                        <td>In silico offtargets</td>
-                        <td >Binding region (identified in red)</td>
+                        <td>Spacer sequence</td>
+                        <td>Target sequence</td>
+                        <td>Localisation bin</td>
+                        <td>Position</td>
+                        <td>Internal DG</td>
+                        <td>Hybridisation DG</td>
+                        <td>Offtargets</td>
                     </tr>
-                    <TMPL_LOOP name = 'TOSS_LIST'>
+                    <TMPL_LOOP name = 'CRISPR_LIST'>
                         <tr>
                             <td><TMPL_VAR name="NBR"></td>
-                            <td>UAUGAUAGGGACUUAGGGUG<b>-</b><TMPL_VAR name="RNA_SEQUENCE"></td>
-                            <td><TMPL_VAR name="ESS_MAPPING"></td>
-                            <td><TMPL_VAR name="PERFECT_TARGETS"></td>
-                            <td><TMPL_VAR name="OFFTARGETS_MAJOR"></td>
-                            <td><pre><font face="courier new"><TMPL_VAR name="MAPPED_SEQUENCE"></font></pre></td>
+                            <td><TMPL_VAR name="SPACER"></td>
+                            <td><TMPL_VAR name="TARGET"></td>
+                            <td><TMPL_VAR name="LOCAL_BIN"></td>
+                            <td><TMPL_VAR name="LOCAL_POS"></td>
+                            <td><TMPL_VAR name="INTERNAL_DG"></td>
+                            <td><TMPL_VAR name="HYBRID_DG"></td>
+                            <td><TMPL_VAR name="OFFTARGETS"></td>
                         </tr>
                     </TMPL_LOOP>
                 </table>
@@ -52,69 +47,47 @@
                     <b>Nbr:</b> The prediction number. Please note that the designs are sorted by order of preference based on the following 4 criterias listed below:
                     <ul>
                         <li>
-                            1. TOSS optimal distance score. TOSS that are within 30 nucleotides upstream of the 3&prime; end of the submitted 
-                            sequence are listed first. We consider this criteria as most important if the the goal is to inhibit the 5&prime;ss 
-                            or 3&prime;ss that is located at the 3&prime; end of the AIR. Please re-assess the order if the goal is to repress 
-                            the upstream splice site at the 5&prime; end of the AIR. 
+                            1. x
                         </li>
                         <li>
-                            2. Number of possible off-targets with four mismatches or less. The designs with the least number of off-targets 
-                            are listed first.
+                            2. y
                         </li>
                         <li>
-                            3. ESS / ESE mapping score. TOSS overlapping ESE are favored because they might provide further inhibition 
-                            by antagonizing the binding of positive splicing regulators. For more information about ESS / ESE mapping, 
-                            please refer to the description below.
+                            3. z
                         </li>
                         <li>
-                            4. TOSS distance. TOSS designs that are located upstream of 30 nucleotides from the 3&prime; end of AIR, are ranked by 
-                            distance relative to the 3&prime; end of AIR.
+                            4. xxx
                         </li>
                     </ul>
                 </li>
                 <li class="leaf"  >
-                    <b>TOSS Sequence (tail-antisens):</b> The TOSS sequence is shown 5&prime; to 3&prime; and include the hnRNP A1 recruting tail. 
-                    The sequence of the tail sequence is followed by a "-" sign and then the antisense portion.
+                    <b>Spacer sequence:</b> The spacer sequence is shown 5&prime; to 3&prime;. This sequence must be attached in 3&prime; to the sgRNA sequence 
+                    <TMPL_VAR name="CRISPR_TAIL">
                 </li>
                 <li class="leaf" >
-                    <b>ESS / ESE Mapping:</b> 
-                    In order to provide the user with information concerning the existence of putative exonic silencer sequences (ESS) 
-                    and exonic enhancer sequences (ESE),  we have included a search for these elements based on the following studies: 
-                    <ul>
-                    <li>
-                    Cartegni L, Wang J, Zhu Z, Zhang MQ, Krainer AR. ESEfinder: A web resource to identify exonic splicing enhancers. 
-                    Nucleic Acids Res. 2003 Jul 1;31(13):3568-71. PubMed PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=12824367">12824367</a>; 
-                    PubMed Central PMCID: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC169022/">PMC169022</a>.
-                    </li>
-                    <li>
-                    Stadler MB, Shomron N, Yeo GW, Schneider A, Xiao X, Burge CB. Inference of splicing regulatory activities by sequence neighborhood analysis. 
-                    PLoS Genet. 2006 Nov 24;2(11):e191. Epub 2006 Sep 28. PubMed PMID: 
-                    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17121466">17121466</a>; 
-                    PubMed Central PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1657047/">PMC1657047</a>.
-                    </li>
-                    </ul>
-                    Each ESE and each ESS motifs are searched in the submitted sequence. If an ESE or an ESS is found, each 
-                    nucleotide position in the corresponding site in the submitted sequence is attributed a +1 or -1 score, respectively. 
-                    The values shown in the column represents the sum of these scores for each position of the antisense region. 
-                    For example, an ESE / ESS mapping of "<font color="red">-3-2-2-1-1-1-1-1</font>00-1-1<font color="blue">14566532</font>" 
-                    means that the 5&prime; portion of the binding region is overrepresented by ESSs (in red) whereas the 3&prime; region is 
-                    overrepresented by ESEs (in blue). Note that a TOSS design targeting a region enriched in ESE motifs should be favored.
+                    <b>Target sequence:</b> sfsdfesf
                 </li>
                 <li class="leaf" >
-                    <b>Target gene:</b> This column shows targets with perfect match ("|") to antisense region of TOSS designs.
+                    <b>Localisation bin:</b> sfsdfesf
+                </li>
+                <li class="leaf" >
+                    <b>Position:</b> sfsdfesf
+                </li>
+                <li class="leaf" >
+                    <b>Internal DG:</b> sfsdfesf
+                </li>
+                <li class="leaf" >
+                    <b>Hybridisation DG:</b> sfsdfesf
                 </li>
                 <li class="leaf" >
                     <b>In silico offtargets:</b> This column shows possible off-targets with 4 mismatches (".") or less relative to 
-                    the antisense portion of TOSS.
+                    the antisense portion of spacer.
                 </li>
-                <li class="leaf" >
-                    <b>Binding region:</b> The submitted region is shown, with the portion complementary to the TOSS indicated in red.</li>
-                </ul>
                 <br/>
                 Go <a href='#results'>back</a> to result table.
             </p>
         <TMPL_ELSE>
-            No valid TOSS could be generated using this AIR sequence.
+            No valid CRISPR  could be generated using this sequence.
         </TMPL_IF>
     </body>
 </html>

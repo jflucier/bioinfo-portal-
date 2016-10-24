@@ -8,7 +8,7 @@
         <a name='results'></a>
         <h1>Crispy CRISPR predictions</h1>
         <p>
-        Note: If you need help interpreting this result table, see information below prediction table or click <a href='#doc'>here</a>.
+        Note: If you need help interpreting this result table, see documentation section below prediction table or click <a href='#doc'>here</a>.
         </p>
         <TMPL_IF name='CRISPR_LIST'>
             <form name = 'edit' method='post'>
@@ -16,8 +16,8 @@
                 <table border=1>
                     <tr class='header'>
                         <td>Nbr</td>
-                        <td>Spacer sequence</td>
                         <td>Target sequence</td>
+                        <td>Spacer sequence</td>
                         <td>Localisation bin</td>
                         <td>Position</td>
                         <td>Internal DG</td>
@@ -39,50 +39,65 @@
                 </table>
                 <br />
             </form>
+            <a name='doc'></a>
+            <h2>Documentation</h2>
             <p>
-                <a name='doc'></a>
-                Following is a description of each column presented in the TOSS design table above:
+                <p>
+                    Here is an example image of gRNA-Cas9 aligned to a target sequence:
+                </p>
+                <img src="/CrispyCrunch/gRNA-Cas9.png" width="600"><br />
+                Reference: Mali P, Esvelt KM, Church GM. (2013) Cas9 as a versatile tool for engineering biology. Nature Methods. 10:10:957-63.
+                <hr />
+                <p>
+                    Following is a description of each column presented in the Crispy CRISPR design table above:
+                </p>
                 <ul>
-                <li class="leaf" >
-                    <b>Nbr:</b> The prediction number. Please note that the designs are sorted by order of preference based on the following 4 criterias listed below:
-                    <ul>
-                        <li>
-                            1. x
-                        </li>
-                        <li>
-                            2. y
-                        </li>
-                        <li>
-                            3. z
-                        </li>
-                        <li>
-                            4. xxx
-                        </li>
-                    </ul>
-                </li>
-                <li class="leaf"  >
-                    <b>Spacer sequence:</b> The spacer sequence is shown 5&prime; to 3&prime;. This sequence must be attached in 3&prime; to the sgRNA sequence 
-                    <TMPL_VAR name="CRISPR_TAIL">
-                </li>
-                <li class="leaf" >
-                    <b>Target sequence:</b> sfsdfesf
-                </li>
-                <li class="leaf" >
-                    <b>Localisation bin:</b> sfsdfesf
-                </li>
-                <li class="leaf" >
-                    <b>Position:</b> sfsdfesf
-                </li>
-                <li class="leaf" >
-                    <b>Internal DG:</b> sfsdfesf
-                </li>
-                <li class="leaf" >
-                    <b>Hybridisation DG:</b> sfsdfesf
-                </li>
-                <li class="leaf" >
-                    <b>In silico offtargets:</b> This column shows possible off-targets with 4 mismatches (".") or less relative to 
-                    the antisense portion of spacer.
-                </li>
+                    <li class="leaf"  >
+                        <b>Nbr:</b> The prediction number. Please note that the designs are sorted by order of preference based on the following 4 criterias listed below:
+                        <ul>
+                            <li class="leaf" >
+                                
+                                <ul>
+                                    <li>
+                                        1. Least number of off-targets
+                                    </li>
+                                    <li>
+                                        2. Position
+                                    </li>
+                                    <li>
+                                        3. Internal dG
+                                    </li>
+                                    <li>
+                                        4. Hybridization dG
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="leaf" >
+                        <b>Target sequence:</b> Reverse-complement of the spacer
+                    </li>
+                    <li class="leaf"  >
+                        <b>Spacer sequence:</b> The spacer sequence is shown 5&prime; to 3&prime;. This sequence must be attached in 5&prime; to the gRNA sequence 
+                        (5&prime;3&prime;Spacer)<TMPL_VAR name="CRISPR_TAIL">
+                    </li>
+                    <li class="leaf" >
+                        <b>Localisation bin:</b> Subdivision of the submitted DNA region to be targeted 
+                    </li>
+                    <li class="leaf" >
+                        <b>Position:</b> The localization in the submitted DNA region to be targeted
+                    </li>
+                    <li class="leaf" >
+                        <b>Internal DG:</b> The folding of the spacer sequence to favor sequence with the lowest potential of generating intra molecular secondary structures
+                    </li>
+                    <li class="leaf" >
+                        <b>Hybridisation DG:</b> Hybridization energy between the spacer and the targeted sequence to favor spacer sequence with high affinity for its target sequence
+                    </li>
+                    <li class="leaf" >
+                        <b>In silico offtargets:</b> Possible off-targets with 4 mismatches (".") or less relative to 
+                        the antisense portion of spacer.
+                    </li>
+                </ul>
                 <br/>
                 Go <a href='#results'>back</a> to result table.
             </p>
