@@ -17,8 +17,8 @@ layout: default
             vivantes. Son laser 405 nm de 50 mW peut aussi être utilisé afin de
             générer des dommages à l'ADN.
 
-            Ce microscope est aussi muni d'une caméra afin de faire de
-            l'épifluorescence.
+            Ce microscope est de plus muni d'une caméra afin de pouvoir prendre
+            des images en épifluorescence.
         </p>
     </td>
 </tr>
@@ -33,10 +33,10 @@ layout: default
         <b>Caractéristiques du confocal</b>
         <ul>
             <li>Confocal à balayage</li>
-            <li>5 lasers (405, 445, 488, 561, 647)</li>
+            <li>5 lasers (405, 445, 488, 561 et 647 nm)</li>
             <li>Détection spectrale</li>
             <li>2 PMT standards</li>
-            <li>2 PMT haute-sensibilités</li>
+            <li>2 PMT à haute-sensibilité</li>
             <li>PMT pour lumière transmise</li>
             <li>Déconvolution</li>
         </ul>
@@ -46,10 +46,10 @@ layout: default
         <b>Caractéristiques générales</b>
         <ul>
             <li>Microscope inversé</li>
-            <li>Incubateur avec CO2 controlé</li>
+            <li>Incubateur avec température et CO2 controlé</li>
             <li>Système d'autofocus (ZDC)</li>
             <li>Contraste interférentiel (DIC)</li>
-            <li>Épifluorescence avec caméra Hamamatsu 1.4 Mpx</li>
+            <li>Épifluorescence avec caméra 1.4 Mpx</li>
             <li>Lampe pour épifluorescence au LED</li>
         </ul>
     </td>
@@ -164,7 +164,6 @@ layout: default
             <td colspan='4'>
             <ul>
                 <li><i>Légende des graphiques: excitation (bleu), émission (rouge) et dichroïque (vert).</i></li>
-                <li><i>Un maximum de 4 filtres peuvent être utilisés simultanément (incluant le champ claire).</i></li>
             </ul>
             </td>
         </tr>

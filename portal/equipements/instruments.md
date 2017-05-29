@@ -36,7 +36,7 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
         <p align='center'>
             <a href='/equipements/olympus_fv3000.html'><img src='/images/Olympus_FV3000.jpg' width='200px' /> </a>
             <br/>
-            <b><a href='/equipements/olympus_fv300.html'>Olympus FV3000</a></b>
+            <b><a href='/equipements/olympus_fv3000.html'>Olympus FV3000</a></b>
         </p>
         <p>
             <ul>

@@ -52,7 +52,7 @@ layout: default
 </tbody>
 </table>
 
-<h3>Filtres pour Épifluorescence</h3>
+<h3>Filtres pour épifluorescence</h3>
 <table width='100%'>
     <thead>
         <tr>
