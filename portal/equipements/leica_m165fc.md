@@ -38,14 +38,15 @@ layout: default
         <b>Généralités</b>
         <ul>
             <li>Grossissement de 16.5:1 (0.73x à 12x)</li>
-            <li>Diamètres visible (31.5 mm à 1.92 mm)</li>
-            <li>Objectif 1.0x PlanApo</li>
+            <li>Objectif 0.63x PlanApo</li>
+            <li>Grossissement final (4.67x à 76.8x)</li>
+            <li>Diamètres visible à l'oculaire (49.2 mm à 2.99 mm)</li>
             <li>Illumination par lumière transmise, champ noir ou Contrast
              Rottermann</li>
             <li>Illumination par goosenecks</li>
             <li>Épifluorescence (CFP, GFP, YFP, mKate2)</li>
             <li>2 caméras (couleur et monochrome)</li>
-            <li>Zoom, filtres de fluorescence encodé</li>
+            <li>Zoom et filtres de fluorescence encodés</li>
         </ul>
 
 </tr>
