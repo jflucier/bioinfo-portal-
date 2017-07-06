@@ -32,6 +32,24 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
             </ul>
         </p>
     </td>
+    <td width='30%' >
+        <p align='center'>
+            <a href='/equipements/olympus_fv3000.html'><img src='/images/Olympus_FV3000.jpg' width='200px' /> </a>
+            <br/>
+            <b><a href='/equipements/olympus_fv3000.html'>Olympus FV3000</a></b>
+        </p>
+        <p>
+            <ul>
+                <li>Microscope confocal à balayage</li>
+                <li>5 lasers et détection spectrale</li>
+                <li>4 PMT dont 2 à haute sensibilité</li>
+                <li>Incubateur</li>
+                <li>Système d'autofocus</li>
+                <li>Déconvolution</li>
+                <li>Épifluorescence</li>
+            </ul>
+        </p>
+    </td>
     <td width='30%'>
         <p align='center'>
             <a href='/equipements/zeiss_axioobserver_z1.html'><img src='/images/zeiss_axioobserver_Z1.jpg' width='200px' /> </a>
@@ -42,29 +60,12 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
             <ul>
                 <li>Microscope inversé</li>
                 <li>Champ claire (DIC et contraste de phase)</li>
-                <li>Épifluorescence (Apotome)</li>
+                <li>Épifluorescence avec Apotome2</li>
                 <li>Chambre à température controlée</li>
                 <li>Entièrement automatisé</li>
             </ul>
         </p>
     </td>
-    <td width='30%' >
-        <p align='center'>
-            <a href='/equipements/olympus_fv300.html'><img src='/images/olympus_fv300.jpg' width='200px' /> </a>
-            <br/>
-            <b><a href='/equipements/olympus_fv300.html'>Olympus FV-300</a></b>
-        </p>
-        <p>
-            <ul>
-                <li>Microscope confocal</li>
-                <li>Épifluorescence</li>
-                <li>Champ claire (DIC)</li>
-                <li>Microscope inversé</li>
-            </ul>
-        </p>
-    </td>
-
-
 </tr>
 <tr style="background-color:#FFFFFF">
     <td width='30%'>
@@ -92,6 +93,40 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
                 <li>Microscope droit</li>
                 <li>Champ clair (DIC, contraste de phase)</li>
                 <li>Épifluorescence</li>
+                <li>Caméra couleur</li>
+            </ul>
+        </p>
+    </td>
+</tr>
+</tr>
+<tr style="background-color:#FFFFFF">
+    <td width='0%'>
+        <p align='center'>
+            <a href='/equipements/leica_m165fc.html'><img src='/images/Leica_M165FC.jpg' width='150px'/> </a>
+            <br/>
+            <b><a href='/equipements/leica_m165fc.html'>Leica M165FC</a></b>
+        </p>
+        <p>
+            <ul>
+                <li>Stéréomicroscope avec zoom de 16.5x</li>
+                <li>Lumière transmise et goosenecks</li>
+                <li>Champ noir et contraste Rottermann</li>
+                <li>Épifluorescence</li>
+                <li>Caméra couleur et monochrome</li>
+                <li>Zoom encodé</li>
+            </ul>
+        </p>
+    </td>
+    <td width='30%'>
+        <p align='center'>
+            <a href='/equipements/olympus_szx7.html'><img src='/images/olympus_szx7.jpg' width='150px' /> </a>
+            <br/>
+            <b><a href='/equipements/olympus_szx7.html'>Olympus SZX7</a></b>
+        </p>
+        <p>
+            <ul>
+                <li>Stéréomicroscpe avec zoom de 7x</li>
+                <li>Lumière transmise et réfléchie</li>
                 <li>Caméra couleur</li>
             </ul>
         </p>
@@ -143,6 +178,9 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
                 <li>Trieur de cellules</li>
                 <li>Deux lasers d'excitation</li>
                 <li>Détection de 6 couleurs</li>
+                <li>Tri deux voies</li>
+                <li>Déposition de cellule simple</li>
+                <li>Tri en tubes ou en plaques</li>
             </ul>
         </p>
     </td>
@@ -160,6 +198,8 @@ Accès direct: <a href="#microscopes">Microscopes</a> | <a href="#cytometre">Cyt
             </ul>
         </p>
     </td>
+
+
 
 </tbody>
 </table>

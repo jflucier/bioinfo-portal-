@@ -41,6 +41,7 @@ layout: default
             <li>Détection de 6 couleurs</li>
             <li>Tri jusqu`à deux populations</li>
             <li>Tri en tubes, sur lames ou en plaques 96 et 384 puits</li>
+            <li>Peut trier jusqu'à 20 000 événements/sec.</li>
         </ul>
 
     </td>
