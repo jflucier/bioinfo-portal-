@@ -38,7 +38,7 @@ Cloner le repo :
 
 ```
 git clone <<username>>@bitbucket.org:jflucier/crispycrispr.git
- 
+
 cd crispycrispr
 
 ```
@@ -60,7 +60,7 @@ Au besoin exécuter le "playbook" de provisioning :
 vagrant provision
 ```
 
-Pour zapper la VM et repartir à zéro : 
+Pour zapper la VM et repartir à zéro :
 
 ```
 vagrant destroy
@@ -82,4 +82,9 @@ jekyll "surveille" les modifs aux fichiers dans ./portal, et regénère le site 
 
 # Déployer en prod
 
-doc à venir...
+```
+cd /var/bio-info/code
+git pull origin master
+
+
+```
