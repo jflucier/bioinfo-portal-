@@ -85,6 +85,7 @@ jekyll "surveille" les modifs aux fichiers dans ./portal, et regénère le site 
 ```
 cd /var/bio-info/code
 git pull origin master
-
+cd /var/bio-info/code/portal
+jekyll build --source /var/bio-info/code/portal
 
 ```
